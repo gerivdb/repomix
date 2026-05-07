@@ -1,6 +1,6 @@
 # PRD - Architecture Diamant pour l'Organisation des Verses
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Date:** 2026-05-07  
 **Auteur:** Kilo (Agent IA)  
 **Statut:** Proposition  
@@ -171,7 +171,7 @@ graph TD
 ### 📅 Phases de Mise en Œuvre
 
 #### **Phase 1: Fondation (Semaine 1-2)**
-- Créer `gerivdb/VERSES-HUB`
+- Créer `gerivdb/VERSUS`
 - Migrer BATVERSE core depuis NEXUS
 - Implémenter registry central
 - Définir politiques de gouvernance
@@ -267,8 +267,8 @@ GET  /verses/{id}/versions
 ### 🏛️ Infrastructure
 
 #### **Dépôts GitHub**
-- `gerivdb/VERSES-HUB` : Noyau central (private)
-- `gerivdb/VERSES-{DOMAIN}` : Spokes spécialisés (public pour PHYSICS, MATH, SCIENCE)
+- `gerivdb/VERSUS` : Noyau central (private)
+- `gerivdb/VERSUS-{DOMAIN}` : Spokes spécialisés (public pour PHYSICS, MATH, SCIENCE)
 - Marketplace hébergé sur `verses.ecosystem`
 
 #### **CI/CD Pipeline**
@@ -325,26 +325,26 @@ wolfram_physics_2020.verse.yaml -> VERSES-PHYSICS/
 ```
 
 #### **Script de Migration Automatique**
-```bash
-#!/bin/bash
-# migrate-verses.sh
-
-SOURCE_DIRS=(
-    "D:\DO\WEB\TOOLS\L0-CANON\NEXUS\verses"
-    "D:\DO\WEB\TOOLS\L0-CANON\NEXUS\batverse"
-    "D:\DO\WEB\TOOLS\BRAIN-DOCS\verses"
-)
-
-TARGET_HUB="gerivdb/VERSES-HUB"
-
-for dir in "${SOURCE_DIRS[@]}"; do
-    echo "Migrating $dir..."
-    # Analyse contenu
-    # Classification automatique par domaine
-    # Migration avec historique git préservé
-    # Validation post-migration
-done
-```
+ ```bash
+ #!/bin/bash
+ # migrate-verses.sh
+ 
+ SOURCE_DIRS=(
+     "D:\DO\WEB\TOOLS\L0-CANON\NEXUS\verses"
+     "D:\DO\WEB\TOOLS\L0-CANON\NEXUS\batverse"
+     "D:\DO\WEB\TOOLS\BRAIN-DOCS\verses"
+ )
+ 
+ TARGET_HUB="gerivdb/VERSUS"
+ 
+ for dir in "${SOURCE_DIRS[@]}"; do
+     echo "Migrating $dir..."
+     # Analyse contenu
+     # Classification automatique par domaine
+     # Migration avec historique git préservé
+     # Validation post-migration
+ done
+ ```
 
 ### 🔄 Transition Progressive
 
