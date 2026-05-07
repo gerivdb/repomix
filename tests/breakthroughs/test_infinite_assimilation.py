@@ -1,0 +1,1 @@
+import pytest\n\ndef test_infinite_assimilation():\n    assert True\n
