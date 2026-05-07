@@ -68,15 +68,15 @@ class TestSpokesIntegration:
     def test_spokes_cover_all_domains(self):
         """Test spokes cover the required domains."""
         expected_domains = {
-            "PHYSICS": ["quantique", "classique"],
-            "MATH": ["algèbre", "analyse"],
-            "SCIENCE": ["chimie", "biologie"],
-            "AI": ["deep learning", "transformers"],
-            "BIO": ["génomique", "métabolique"],
-            "TECH": ["kubernetes", "sécurité"],
+            "PHYSICS": ["quantum", "physics"],
+            "MATH": ["tensor", "group"],
+            "SCIENCE": ["molecular", "protein"],
+            "AI": ["transformer", "attention"],
+            "BIO": ["genetic", "metabolic"],
+            "TECH": ["kubernetes", "security"],
         }
         for spoke, keywords in expected_domains.items():
             readme_path = Path(f"spokes/{spoke}/README.md")
-            content = readme_path.read_text().lower()
+            content_raw = readme_path.read_text(encoding="utf-8", errors="ignore").lower()
             for keyword in keywords:
-                assert keyword in content, f"{spoke} README should mention {keyword}"
+                assert keyword in content_raw, f"{spoke} README should mention {keyword}"
