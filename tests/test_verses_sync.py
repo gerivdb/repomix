@@ -2,10 +2,7 @@
 
 import pytest
 import asyncio
-import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent.parent / "verses_sync"))
 
 # Import through __init__ to cover the __init__.py file
 from verses_sync import VersesSyncManager, LocalCache, RemoteRegistry  # noqa: F401

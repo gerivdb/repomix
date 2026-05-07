@@ -37,7 +37,7 @@ class LocalCache:
 class RemoteRegistry:
     """Remote registry client."""
     
-    def __init__(self, registry_url: str = "https://verses-hub.local"):
+    def __init__(self, registry_url: str = "https://versus.local"):
         self.registry_url = registry_url
         
     async def fetch(self, verse_id: str) -> Dict:

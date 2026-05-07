@@ -2,11 +2,16 @@
 
 import pytest
 from fastapi.testclient import TestClient
-import sys
 from pathlib import Path
+import sys
+import os
 
-sys.path.insert(0, str(Path(__file__).parent.parent / "verses-marketplace"))
-from marketplace_api import app
+# Force correct working directory
+PROJECT_ROOT = Path(__file__).parent.parent
+os.chdir(PROJECT_ROOT)
+
+sys.path.insert(0, str(PROJECT_ROOT / "verses-marketplace"))
+from marketplace_api import app  # noqa: E402
 
 client = TestClient(app)
 
