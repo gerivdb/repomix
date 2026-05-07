@@ -1,0 +1,20 @@
+# VERSE: BAT-LOGOS - Logical Reasoning Framework
+id: bat-logos
+version: 1.0.0
+domain: core
+status: canonical
+
+concepts:
+  - Raisonnement systématique
+  - Validation par contradiction
+  - Preuves par élimination
+
+primitives:
+  - logoi (raisonnement)
+  - antilogoi (réfutation)
+  - syndesis (synthèse)
+
+capabilities:
+  - Déduction formelle
+  - Induction probabiliste
+  - Abduction créative

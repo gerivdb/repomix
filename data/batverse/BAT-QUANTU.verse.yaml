@@ -1,0 +1,20 @@
+# VERSE: BAT-QUANTU - Quantum Computing
+id: bat-quantu
+version: 1.0.0
+domain: tech
+status: canonical
+
+concepts:
+  - Qubit superposition
+  - Portes quantiques
+  - Interférence quantique
+
+primitives:
+  - Hadamard gate
+  - CNOT entanglement
+  - Grover iteration
+
+capabilities:
+  - Algorithme quantique
+  - Speedup exponentiel
+  - Cryptographie quantique

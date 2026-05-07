@@ -1,0 +1,20 @@
+# VERSE: BAT-CRYPTO - Cryptographic Security
+id: bat-crypto
+version: 1.0.0
+domain: tech
+status: canonical
+
+concepts:
+  - Chiffrement symétrique
+  - Signatures numeriques
+  - Fonctions de hachage
+
+primitives:
+  - AES encryption
+  - RSA signatures
+  - Blockchain linking
+
+capabilities:
+  - Sécurité des données
+  - Authentification
+  - Zero-knowledge proofs

@@ -1,0 +1,20 @@
+# VERSE: BAT-QUANTUM - Quantum Mechanics Core
+id: bat-quantum
+version: 1.0.0
+domain: physics
+status: canonical
+
+concepts:
+  - Principe de superposition
+  - Intrication quantique
+  - Mesure et decoherence
+
+primitives:
+  - Ondes de phase
+  - Anneaux de Berry
+  - Tomographie quantique
+
+capabilities:
+  - Simulation qubit
+  - Algo quantique
+  - Correction d'erreurs

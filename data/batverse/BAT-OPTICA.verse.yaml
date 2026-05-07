@@ -1,0 +1,20 @@
+# VERSE: BAT-OPTICA - Optical Systems
+id: bat-optica
+version: 1.0.0
+domain: physics
+status: canonical
+
+concepts:
+  - Ondes electromagnetiques
+  - Fiber optics
+  - Lasers cavite
+
+primitives:
+  - Beam propagation
+  - Resonators
+  - Nonlinear optics
+
+capabilities:
+  - Télécommunications
+  - LIDAR
+  - Holographie

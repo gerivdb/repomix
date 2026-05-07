@@ -1,0 +1,20 @@
+# VERSE: BAT-NEURAL - Neural Networks
+id: bat-neural
+version: 1.0.0
+domain: ai
+status: canonical
+
+concepts:
+  - Perceptron multilineaire
+  - Fonctions d'activation
+  - Optimisation stochastique
+
+primitives:
+  - Forward pass
+  - Backprop
+  - Batch normalization
+
+capabilities:
+  - Deep learning
+  - Fine-tuning
+  - Transfer learning

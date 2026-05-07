@@ -1,0 +1,20 @@
+# VERSE: BAT-TENSOR - Tensor Calculus
+id: bat-tensor
+version: 1.0.0
+domain: math
+status: canonical
+
+concepts:
+  - Algèbre tensorielle
+  - Covarianz/contravarianz
+  - Dérivées covariantes
+
+primitives:
+  - Produit tensoriel
+  - Métrique pseudo-riemannienne
+  - Connexion affine
+
+capabilities:
+  - Calcul différentiel
+  - Physique théorique
+  - ML tensoriel

@@ -1,0 +1,20 @@
+# VERSE: BAT-PRIME - Prime Mathematics
+id: bat-prime
+version: 1.0.0
+domain: math
+status: canonical
+
+concepts:
+  - Nombres premiers universels
+  - Distribution statistique
+  - Conjecture RH embarquée
+
+primitives:
+  - π(x) fonctions
+  - ζ(s) fonction
+  - Erreurs d'approximation
+
+capabilities:
+  - Test de primalité
+  - Factorisation assistée
+  - Cryptographie quantique

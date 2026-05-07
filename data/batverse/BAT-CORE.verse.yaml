@@ -1,0 +1,20 @@
+# VERSE: BAT-CORE - Core Fundamental Operations
+id: bat-core
+version: 1.0.0
+domain: core
+status: canonical
+
+concepts:
+  - Hamiltonien BAT
+  - Opérateurs logiques
+  - Principes axiomatiques
+
+primitives:
+  - H = T + V
+  - L, G, M, E notations
+  - Relations causales
+
+capabilities:
+  - Calcul fondamental
+  - Validation logique
+  - Intégration aux spokes

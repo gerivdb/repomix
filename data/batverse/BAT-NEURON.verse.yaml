@@ -1,0 +1,20 @@
+# VERSE: BAT-NEURON - Neural Biology
+id: bat-neuron
+version: 1.0.0
+domain: bio
+status: canonical
+
+concepts:
+  - Potentiels d'action
+  - Synaptique plasticité
+  - Focs dendritiques
+
+primitives:
+  - Hodgkin-Huxley
+  - STDP rule
+  - Integrate-and-fire
+
+capabilities:
+  - Neurosciences
+  - Cerveau artificiel
+  - Neuromorphic

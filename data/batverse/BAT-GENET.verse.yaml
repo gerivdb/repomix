@@ -1,0 +1,20 @@
+# VERSE: BAT-GENET - Genetic Algorithms
+id: bat-genet
+version: 1.0.0
+domain: bio
+status: canonical
+
+concepts:
+  - Selection naturelle
+  - Crossover recombinaison
+  - Mutations adaptatives
+
+primitives:
+  - Chromosome encoding
+  - Fitness function
+  - Population dynamics
+
+capabilities:
+  - Optimisation combinatoire
+  - Neuroevolution
+  - Architecture search

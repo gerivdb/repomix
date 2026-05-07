@@ -1,0 +1,20 @@
+# VERSE: BAT-FIELDS - Gauge Fields
+id: bat-fields
+version: 1.0.0
+domain: physics
+status: canonical
+
+concepts:
+  - Symétries locales
+  - Champ de jauge
+  - Bosons de Goldstone
+
+primitives:
+  - Covariant derivative
+  - Champ de Chern
+  - Topologie instantonnee
+
+capabilities:
+  - QCD confinement
+  - EM force carriers
+  - Brisure spontanée

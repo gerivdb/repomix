@@ -1,0 +1,20 @@
+# VERSE: BAT-KUBERP - Kubernetes Orchestration
+id: bat-kuberp
+version: 1.0.0
+domain: tech
+status: canonical
+
+concepts:
+  - Conteneurs Docker
+  - Orchestration cluster
+  - Services mesh
+
+primitives:
+  - Pod scheduling
+  - Service discovery
+  - Rolling updates
+
+capabilities:
+  - Déploiement scalable
+  - Zero-downtime
+  - Auto-réparation

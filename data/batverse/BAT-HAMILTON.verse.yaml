@@ -1,0 +1,20 @@
+# VERSE: BAT-HAMILTON - Hamiltonian Dynamics
+id: bat-hamilton
+version: 1.0.0
+domain: physics
+status: canonical
+
+concepts:
+  - H = T + V formulation
+  - Variables conjuguées
+  - Symplectic geometry
+
+primitives:
+  - Canonical equations
+  - Poisson brackets
+  - Liouville theorem
+
+capabilities:
+  - Systèmes conservatifs
+  - Mécanique analytique
+  - Chaos deterministe

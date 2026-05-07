@@ -1,0 +1,20 @@
+# VERSE: BAT-AI - Artificial Intelligence
+id: bat-ai
+version: 1.0.0
+domain: ai
+status: canonical
+
+concepts:
+  - Réseaux de neurones
+  - Apprentissage profond
+  - Attention mechanism
+
+primitives:
+  - Gradient descent
+  - Backpropagation
+  - Transformer arch
+
+capabilities:
+  - NLP
+  - Vision par ordinateur
+  - Agents autonomes

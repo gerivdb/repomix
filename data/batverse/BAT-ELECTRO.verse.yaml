@@ -1,0 +1,20 @@
+# VERSE: BAT-ELECTRO - ElectroDynamics
+id: bat-electro
+version: 1.0.0
+domain: physics
+status: canonical
+
+concepts:
+  - Champ electromagnetique
+  - Loi de Maxwell
+  - Dualité électromagnétique
+
+primitives:
+  - Faux tenseur
+  - Dipôle moments
+  - Radiation reaction
+
+capabilities:
+  - Optique guidée
+  - Lasers
+  - Antennes

@@ -1,0 +1,20 @@
+# VERSE: BAT-PARTIC - Particle Physics
+id: bat-partic
+version: 1.0.0
+domain: physics
+status: canonical
+
+concepts:
+  - Symétries de jauge
+  - Bosons et fermions
+  - Renormalization group
+
+primitives:
+  - Lagrangians standard
+  - Feynman diagrams
+  - Yukawa coupling
+
+capabilities:
+  - Physique des particules
+  - LHC simulation
+  - Matiere noire

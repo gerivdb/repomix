@@ -1,0 +1,20 @@
+# VERSE: BAT-RELATIV - Relativistic Mechanics
+id: bat-relativ
+version: 1.0.0
+domain: physics
+status: canonical
+
+concepts:
+  - Invariance lorentzienne
+  - Géométrie pseudo-riemannienne
+  - Gravité comme courbure
+
+primitives:
+  - Tenseur energie-impulsion
+  - Connexion de spin
+  - Rayonnement de champ proche
+
+capabilities:
+  - Astrophysique
+  - GPS relativiste
+  - Ondes gravitationnelles

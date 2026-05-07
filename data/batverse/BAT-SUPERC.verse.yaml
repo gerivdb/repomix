@@ -1,0 +1,20 @@
+# VERSE: BAT-SUPERC - Superconductivity
+id: bat-superc
+version: 1.0.0
+domain: physics
+status: canonical
+
+concepts:
+  - Condensat de Bose
+  - Paire de Cooper
+  - Effet Meissner
+
+primitives:
+  - Gap equation
+  - BCS theory
+  - Coherence length
+
+capabilities:
+  - Matériaux supraconducteurs
+  - Qubit transmon
+  - Calcul quantique

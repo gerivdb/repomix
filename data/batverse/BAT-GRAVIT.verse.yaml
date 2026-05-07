@@ -1,0 +1,20 @@
+# VERSE: BAT-GRAVIT - Gravitation Theory
+id: bat-gravit
+version: 1.0.0
+domain: physics
+status: canonical
+
+concepts:
+  - GR covariante
+  - Géométrie courbée
+  - Horizon des événements
+
+primitives:
+  - Einstein field equations
+  - Killing vectors
+  - ADM formalism
+
+capabilities:
+  - Trous noirs
+  - Ondes gravitationnelles
+  - Cosmologie
