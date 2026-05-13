@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis trit_quantum_resolve.py vers spoke PHYSICS"
+id: PHYSICS_TRIT_QUANTUM_RESOLVE
+name: Trit Quantum Resolve (PHYSICS)
+source_file: GOVERNANCE-HUB\trit_quantum_resolve.py
+spoke: PHYSICS
+status: migrated
+tags:
+- physics
+- py

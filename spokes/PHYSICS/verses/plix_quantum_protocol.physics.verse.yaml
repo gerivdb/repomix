@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis plix_quantum_protocol.py vers spoke PHYSICS"
+id: PHYSICS_PLIX_QUANTUM_PROTOCOL
+name: Plix Quantum Protocol (PHYSICS)
+source_file: wazaa_bus\plix_quantum_protocol.py
+spoke: PHYSICS
+status: migrated
+tags:
+- physics
+- py

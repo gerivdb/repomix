@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis benchmark.py vers spoke PHYSICS"
+id: PHYSICS_BENCHMARK
+name: Benchmark (PHYSICS)
+source_file: DiamondOptimization\benchmark.py
+spoke: PHYSICS
+status: migrated
+tags:
+- physics
+- py

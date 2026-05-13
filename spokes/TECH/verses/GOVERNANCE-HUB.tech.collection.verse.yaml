@@ -1,0 +1,23 @@
+created: '2026-05-13'
+description: "Collection de verses migr\xE9s depuis GOVERNANCE-HUB vers spoke TECH"
+files_count: 13
+id: TECH_GOVERNANCE-HUB_COLLECTION
+name: GOVERNANCE-HUB Collection (TECH)
+sample_files:
+- ADR-2026-05-11-001.md
+- AGENT_RAM.yaml
+- ARCHITECTURE_OVERVIEW.md
+- blo_registry.yaml
+- citizens.yaml
+- config_primitives.py
+- dependencies_primitives.py
+- deploy_primitives.py
+- DRAGONFLOW_MONITORING_READY.txt
+- EPIC_TEMPLATE.md
+source_directory: GOVERNANCE-HUB
+spoke: TECH
+status: migrated
+tags:
+- tech
+- collection
+- directory

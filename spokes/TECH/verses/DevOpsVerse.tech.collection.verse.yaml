@@ -1,0 +1,23 @@
+created: '2026-05-13'
+description: "Collection de verses migr\xE9s depuis DevOpsVerse vers spoke TECH"
+files_count: 12
+id: TECH_DEVOPSVERSE_COLLECTION
+name: DevOpsVerse Collection (TECH)
+sample_files:
+- demo.py
+- README.md
+- tui_monitor.py
+- Core\workflow_dsl.py
+- Core\workflow_executor.py
+- Examples\diamond_kiva_workflows.devops.tql
+- Examples\diamond_workflows.devops.tql
+- Integrations\blo_integration.py
+- Integrations\kiva_integration.py
+- Core\__pycache__\workflow_dsl.cpython-312.pyc
+source_directory: DevOpsVerse
+spoke: TECH
+status: migrated
+tags:
+- tech
+- collection
+- directory

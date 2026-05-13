@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis paperclip.py vers spoke SCIENCE"
+id: SCIENCE_PAPERCLIP
+name: Paperclip (SCIENCE)
+source_file: paperclip.py
+spoke: SCIENCE
+status: migrated
+tags:
+- science
+- py

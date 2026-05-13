@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis integration.py vers spoke PHYSICS"
+id: PHYSICS_INTEGRATION
+name: Integration (PHYSICS)
+source_file: DiamondOptimization\integration.py
+spoke: PHYSICS
+status: migrated
+tags:
+- physics
+- py

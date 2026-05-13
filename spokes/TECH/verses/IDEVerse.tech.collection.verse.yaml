@@ -1,0 +1,21 @@
+created: '2026-05-13'
+description: "Collection de verses migr\xE9s depuis IDEVerse vers spoke TECH"
+files_count: 8
+id: TECH_IDEVERSE_COLLECTION
+name: IDEVerse Collection (TECH)
+sample_files:
+- ContextEngine\context_engine.py
+- ContextEngine\README.md
+- ContextEngine\test_context_engine.py
+- CPUOptimization\validation.py
+- IntelligentCache\intelligent_cache.py
+- IntelligentCache\README.md
+- LanguageServer\README.md
+- LanguageServer\ternary_language_server.py
+source_directory: IDEVerse
+spoke: TECH
+status: migrated
+tags:
+- tech
+- collection
+- directory

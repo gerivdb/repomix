@@ -1,8 +1,16 @@
 {
   "spoke": "PHYSICS",
   "domain": "Physique et Sciences Physiques",
-  "verses_count": 0,
-  "workflows_count": 0,
+  "verses_count": 6,
+  "workflows_count": 1,
   "last_updated": "2026-05-13",
-  "status": "active"
+  "status": "active",
+  "migration_sources": [
+    "IDEVerse/PhysicsEditor/physics_editor.py",
+    "DiamondOptimization/benchmark.py",
+    "DiamondOptimization/integration.py",
+    "plix_quantum_protocol.py",
+    "wazaa_bus/plix_quantum_protocol.py",
+    "GOVERNANCE-HUB/trit_quantum_resolve.py"
+  ]
 }

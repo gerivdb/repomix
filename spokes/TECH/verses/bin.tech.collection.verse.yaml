@@ -1,0 +1,15 @@
+created: '2026-05-13'
+description: "Collection de verses migr\xE9s depuis bin vers spoke TECH"
+files_count: 2
+id: TECH_BIN_COLLECTION
+name: bin Collection (TECH)
+sample_files:
+- ecos-cli.ps1
+- ecos-launch-enhanced.ps1
+source_directory: bin
+spoke: TECH
+status: migrated
+tags:
+- tech
+- collection
+- directory

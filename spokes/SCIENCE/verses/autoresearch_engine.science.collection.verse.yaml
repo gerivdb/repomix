@@ -1,0 +1,24 @@
+created: '2026-05-13'
+description: "Collection de verses migr\xE9s depuis autoresearch_engine vers spoke\
+  \ SCIENCE"
+files_count: 16
+id: SCIENCE_AUTORESEARCH_ENGINE_COLLECTION
+name: autoresearch_engine Collection (SCIENCE)
+sample_files:
+- concrete_engine.py
+- constraint_checker.py
+- core_engine.py
+- data_models.py
+- git_adapter.py
+- metric_runner.py
+- mode_norm_tuning.py
+- modification_providers.py
+- __init__.py
+- __pycache__\core_engine.cpython-312.pyc
+source_directory: autoresearch_engine
+spoke: SCIENCE
+status: migrated
+tags:
+- science
+- collection
+- directory

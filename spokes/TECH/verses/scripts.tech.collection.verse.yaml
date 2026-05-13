@@ -1,0 +1,23 @@
+created: '2026-05-13'
+description: "Collection de verses migr\xE9s depuis scripts vers spoke TECH"
+files_count: 19
+id: TECH_SCRIPTS_COLLECTION
+name: scripts Collection (TECH)
+sample_files:
+- activate_autoresearch_scheduler.sh
+- activate_kiro_citizenship.sh
+- alfred_ssh_proxy.py
+- archive_legacy_versions.sh
+- audit_final_report.json
+- audit_tools_structure.py
+- auto_fix_encoding.py
+- auto_fix_safe.py
+- bdcp_graph_daemon.py
+- bdcp_search_daemon.py
+source_directory: scripts
+spoke: TECH
+status: migrated
+tags:
+- tech
+- collection
+- directory

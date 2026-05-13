@@ -1,8 +1,16 @@
 {
   "spoke": "SCIENCE",
   "domain": "M\u00e9thodologies Scientifiques",
-  "verses_count": 0,
-  "workflows_count": 0,
+  "verses_count": 6,
+  "workflows_count": 1,
   "last_updated": "2026-05-13",
-  "status": "active"
+  "status": "active",
+  "migration_sources": [
+    "autoresearch_engine/",
+    "PRD_AUTODISCOVER_V1.md",
+    "paperclip.py",
+    "academic-digestion-engine.py",
+    "academic-digestion-engine-simple.py",
+    "scientific_knowledge_ingestion.py"
+  ]
 }

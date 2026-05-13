@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis PRD_AUTODISCOVER_V1.md vers spoke SCIENCE"
+id: SCIENCE_PRD_AUTODISCOVER_V1
+name: Prd Autodiscover V1 (SCIENCE)
+source_file: PRD_AUTODISCOVER_V1.md
+spoke: SCIENCE
+status: migrated
+tags:
+- science
+- md

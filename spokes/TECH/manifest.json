@@ -1,8 +1,16 @@
 {
   "spoke": "TECH",
   "domain": "Technologies et Ing\u00e9nierie",
-  "verses_count": 0,
-  "workflows_count": 0,
+  "verses_count": 6,
+  "workflows_count": 1,
   "last_updated": "2026-05-13",
-  "status": "active"
+  "status": "active",
+  "migration_sources": [
+    "IDEVerse/",
+    "DevOpsVerse/",
+    "scripts/",
+    "deploy_*.py",
+    "GOVERNANCE-HUB/",
+    "bin/"
+  ]
 }

@@ -1,0 +1,11 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis academic-digestion-engine-simple.py vers spoke\
+  \ SCIENCE"
+id: SCIENCE_ACADEMIC-DIGESTION-ENGINE-SIMPLE
+name: Academic-Digestion-Engine-Simple (SCIENCE)
+source_file: academic-digestion-engine-simple.py
+spoke: SCIENCE
+status: migrated
+tags:
+- science
+- py
