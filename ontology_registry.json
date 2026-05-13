@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-05-13",
+  "spokes": {
+    "AI": {
+      "verses_count": 2,
+      "verses": [
+        "jkd_intercepting_fist.verse",
+        "kung_fu_adaptive_strategy.verse"
+      ],
+      "ontology_consistent": true
+    },
+    "BIO": {
+      "verses_count": 0,
+      "verses": [],
+      "ontology_consistent": true
+    },
+    "MATH": {
+      "verses_count": 1,
+      "verses": [
+        "jkd_non_committal.verse"
+      ],
+      "ontology_consistent": true
+    },
+    "PHYSICS": {
+      "verses_count": 1,
+      "verses": [
+        "kung_fu_energy_management.verse"
+      ],
+      "ontology_consistent": true
+    },
+    "SCIENCE": {
+      "verses_count": 1,
+      "verses": [
+        "jkd_simplicity.verse"
+      ],
+      "ontology_consistent": true
+    },
+    "TECH": {
+      "verses_count": 1,
+      "verses": [
+        "kung_fu_combat_flow.verse"
+      ],
+      "ontology_consistent": true
+    }
+  },
+  "cross_references": [],
+  "validation_status": "pending"
+}

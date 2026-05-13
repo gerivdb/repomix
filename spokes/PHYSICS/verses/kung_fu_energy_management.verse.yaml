@@ -1,0 +1,11 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis kung_fu: energy_management"
+id: KUNG_FU_ENERGY_MANAGEMENT
+name: Energy Management
+source: kung_fu
+spoke: PHYSICS
+status: active
+tags:
+- kung_fu
+- energy_management
+- physics

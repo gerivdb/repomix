@@ -1,0 +1,11 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis kung_fu: adaptive_strategy"
+id: KUNG_FU_ADAPTIVE_STRATEGY
+name: Adaptive Strategy
+source: kung_fu
+spoke: AI
+status: active
+tags:
+- kung_fu
+- adaptive_strategy
+- ai

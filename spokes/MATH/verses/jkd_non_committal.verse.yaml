@@ -1,0 +1,11 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis jkd: non_committal"
+id: JKD_NON_COMMITTAL
+name: Non Committal
+source: jkd
+spoke: MATH
+status: active
+tags:
+- jkd
+- non_committal
+- math
