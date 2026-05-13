@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis predict_pka.py vers spoke AI"
+id: AI_PREDICT_PKA
+name: Predict Pka (AI)
+source_file: predict_pka.py
+spoke: AI
+status: migrated
+tags:
+- ai
+- py

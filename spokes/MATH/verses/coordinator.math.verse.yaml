@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis coordinator.py vers spoke MATH"
+id: MATH_COORDINATOR
+name: Coordinator (MATH)
+source_file: primitives\triple_write\coordinator.py
+spoke: MATH
+status: migrated
+tags:
+- math
+- py

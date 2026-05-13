@@ -1,8 +1,15 @@
 {
   "spoke": "MATH",
   "domain": "Math\u00e9matiques et Logique",
-  "verses_count": 0,
-  "workflows_count": 0,
+  "verses_count": 5,
+  "workflows_count": 1,
   "last_updated": "2026-05-13",
-  "status": "active"
+  "status": "active",
+  "migration_sources": [
+    "GOVERNANCE-HUB/kungfu/entropy.py",
+    "VERSE/kung_fu/entropy.py",
+    "GOVERNANCE-HUB/trit_entropy_measure.py",
+    "phase8_validation.py",
+    "primitives/triple_write/coordinator.py"
+  ]
 }

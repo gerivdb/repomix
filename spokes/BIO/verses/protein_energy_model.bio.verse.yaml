@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis protein_energy_model.py vers spoke BIO"
+id: BIO_PROTEIN_ENERGY_MODEL
+name: Protein Energy Model (BIO)
+source_file: protein_energy_model.py
+spoke: BIO
+status: migrated
+tags:
+- bio
+- py

@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis entropy.py vers spoke MATH"
+id: MATH_ENTROPY
+name: Entropy (MATH)
+source_file: VERSE\kung_fu\entropy.py
+spoke: MATH
+status: migrated
+tags:
+- math
+- py

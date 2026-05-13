@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis trit_entropy_measure.py vers spoke MATH"
+id: MATH_TRIT_ENTROPY_MEASURE
+name: Trit Entropy Measure (MATH)
+source_file: GOVERNANCE-HUB\trit_entropy_measure.py
+spoke: MATH
+status: migrated
+tags:
+- math
+- py

@@ -1,0 +1,18 @@
+created: '2026-05-13'
+description: "Collection de verses migr\xE9s depuis ChemistryVerse vers spoke BIO"
+files_count: 10
+id: BIO_CHEMISTRYVERSE_COLLECTION
+name: ChemistryVerse Collection (BIO)
+sample_files:
+- chemistryverse_demo.py
+- README.md
+- test_chemistryverse.py
+- Engine\EnergyMinimizer.py
+- Primitive\TritAngle.py
+source_directory: ChemistryVerse
+spoke: BIO
+status: migrated
+tags:
+- bio
+- collection
+- directory

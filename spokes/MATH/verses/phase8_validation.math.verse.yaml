@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis phase8_validation.py vers spoke MATH"
+id: MATH_PHASE8_VALIDATION
+name: Phase8 Validation (MATH)
+source_file: phase8_validation.py
+spoke: MATH
+status: migrated
+tags:
+- math
+- py

@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis predict_pka.py vers spoke BIO"
+id: BIO_PREDICT_PKA
+name: Predict Pka (BIO)
+source_file: predict_pka.py
+spoke: BIO
+status: migrated
+tags:
+- bio
+- py

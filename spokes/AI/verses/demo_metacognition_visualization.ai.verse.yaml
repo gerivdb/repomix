@@ -1,0 +1,11 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis demo_metacognition_visualization.py vers spoke\
+  \ AI"
+id: AI_DEMO_METACOGNITION_VISUALIZATION
+name: Demo Metacognition Visualization (AI)
+source_file: demo_metacognition_visualization.py
+spoke: AI
+status: migrated
+tags:
+- ai
+- py

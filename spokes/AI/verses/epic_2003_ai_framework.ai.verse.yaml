@@ -1,0 +1,10 @@
+created: '2026-05-13'
+description: "Verse migr\xE9 depuis epic_2003_ai_framework.py vers spoke AI"
+id: AI_EPIC_2003_AI_FRAMEWORK
+name: Epic 2003 Ai Framework (AI)
+source_file: epic_2003_ai_framework.py
+spoke: AI
+status: migrated
+tags:
+- ai
+- py

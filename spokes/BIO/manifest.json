@@ -1,8 +1,14 @@
 {
   "spoke": "BIO",
   "domain": "Biologie et Sciences de la Vie",
-  "verses_count": 0,
-  "workflows_count": 0,
+  "verses_count": 4,
+  "workflows_count": 1,
   "last_updated": "2026-05-13",
-  "status": "active"
+  "status": "active",
+  "migration_sources": [
+    "BioVerse.py",
+    "ChemistryVerse/",
+    "protein_energy_model.py",
+    "predict_pka.py"
+  ]
 }

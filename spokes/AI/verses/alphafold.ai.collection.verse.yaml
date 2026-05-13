@@ -1,0 +1,18 @@
+created: '2026-05-13'
+description: "Collection de verses migr\xE9s depuis alphafold vers spoke AI"
+files_count: 7
+id: AI_ALPHAFOLD_COLLECTION
+name: alphafold Collection (AI)
+sample_files:
+- alphafold_maison.py
+- conftest.py
+- README.md
+- run_coverage_100.py
+- tests\test_ternary_coverage.py
+source_directory: alphafold
+spoke: AI
+status: migrated
+tags:
+- ai
+- collection
+- directory

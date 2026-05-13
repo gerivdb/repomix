@@ -1,8 +1,15 @@
 {
   "spoke": "AI",
   "domain": "Intelligence Artificielle et Machine Learning",
-  "verses_count": 0,
-  "workflows_count": 0,
+  "verses_count": 7,
+  "workflows_count": 1,
   "last_updated": "2026-05-13",
-  "status": "active"
+  "status": "active",
+  "migration_sources": [
+    "alphafold/",
+    "epic_2003_ai_framework.py",
+    "predict_pka.py",
+    "demo_metacognition_visualization.py",
+    "test_metacognition_visualization.py"
+  ]
 }
