@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poincare-topology-verse"
+version = "1.0.0"
+description = "Poincaré Topology VERSE - Invariants topologiques pour graphes cognitifs"
+authors = [{name = "Kilo AI"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/gerivdb/NEXUS"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["poincare_topology_verse*"]

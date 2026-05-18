@@ -1,0 +1,31 @@
+# REGISTRY - VERSES-HUB
+
+Version: 1.0.0
+Date: 2026-05-07
+
+## Verses Disponibles
+
+| ID | Nom | Domaine | Description | Status |
+|----|-----|---------|-------------|--------|
+| BAT-VERSE-01 | BATVERSE Core | Foundation | 16 sub-verses fondamentaux | Actif |
+
+## API Endpoints
+
+```
+GET /verses                    # Liste tous les verses
+GET /verses/{id}              # Détails d'un verse
+GET /verses/domain/{domain}   # Filtrer par domaine
+```
+
+## Schéma JSON-LD
+
+```json
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "identifier": "VERSE-ID",
+  "name": "Nom du verse",
+  "domain": "Domaine associé",
+  "qualityScore": 0-100
+}
+```
