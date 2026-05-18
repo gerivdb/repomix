@@ -1,0 +1,65 @@
+# VERSE: Wolfram Physics Project 2020
+# Source: https://writings.stephenwolfram.com/2020/04/finally-we-may-have-a-path-to-the-fundamental-theory-of-physics/
+id: wolfram_physics_fundamental_theory_2020
+version: 1.0.0
+author: Stephen Wolfram
+publication_date: 2020-04-14
+domain: fundamental_physics
+status: canonical
+origin: external
+
+concepts:
+  - Réseau hypergraphique fondamental
+  - Règles de réécriture universelles
+  - Causalité émergente
+  - Temps comme séquence de mises à jour
+  - Espace comme structure relationnelle
+  - Relativité générale émergente
+  - Mécanique quantique comme multi-chemins
+  - Principe d'invariance causale
+  - Dimension effective émergente
+  - Singularités comme défaillances topologiques
+  - Horizon des événements comme coupures causales
+  - Constantes fondamentales comme propriétés asymptotiques
+
+primitives:
+  - Hypergraphe discret comme substrat universel
+  - Règle de remplacement {x,y} -> {x,y,z}
+  - Mise à jour séquentielle non déterministe
+  - Graphe causal
+  - Multiplicité des chemins d'évolution
+  - Superposition comme branchement
+  - Décohérence comme séparation causale
+  - Courbure comme densité de connexions
+  - Masse / Energie comme débit de mise à jour
+
+capabilities:
+  - Dérive la relativité générale sans postulats
+  - Dérive la mécanique quantique sans axiomes
+  - Explique la dimension 3+1 comme émergente
+  - Unifie toutes les forces physiques fondamentales
+  - Prédit la structure fine de l'espace
+  - Permet la simulation numérique de l'univers
+  - Fournit un cadre formel pour l'ontologie universelle
+
+axioms:
+  - L'univers est constitué uniquement de relations abstraites
+  - Il n'existe rien d'autre que ces relations
+  - L'évolution suit uniquement des règles de réécriture locales
+  - Toutes les propriétés macroscopiques sont émergentes
+  - Aucune loi fondamentale n'existe au niveau le plus bas
+
+corollaries:
+  - Le temps n'est pas fondamental
+  - L'espace n'est pas continu
+  - Il n'existe pas de coordonnées absolues
+  - L'observateur est un sous-système causalement fermé
+  - La réalité est invariante par choix de règle équivalente
+
+nexus_alignment:
+  ontology_compatible: true
+  graph_representation_native: true
+  causal_invariance_mapped: true
+  hypergraph_support: native
+  integration_level: full
+  target_system: brain.fundamental_reality
