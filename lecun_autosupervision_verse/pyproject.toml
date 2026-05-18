@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lecun-autosupervision-verse"
+version = "1.0.0"
+description = "LeCun Auto-supervision VERSE - Prédiction auto-supervisée de clusters manquants"
+authors = [{name = "Kilo AI"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.21.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/gerivdb/NEXUS"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lecun_autosupervision_verse*"]
