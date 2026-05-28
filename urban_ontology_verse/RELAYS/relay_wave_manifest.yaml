@@ -1,7 +1,7 @@
 # relay_wave_manifest.yaml — Etat des vagues Stratum Relays
 # UrbanVerse v1.0.0 | gerivdb/VERSUS | Mis a jour: 2026-05-29
 
-version: "1.3.0"
+version: "1.4.0"
 last_updated: "2026-05-29"
 propagator: "urban_ontology_verse/TOOLS/relay_propagator.py v2.0"
 template: "urban_ontology_verse/TEMPLATES/STRATUM_RELAY_TEMPLATE.md"
@@ -18,11 +18,12 @@ repos:
 
   LLM-REPO:
     strate: L1b
-    vague_courante: 0
+    vague_courante: 2
     vague_cible: 2
-    statut: "Repo non cree — voir PRD migration ECOS-CLI"
-    derniere_synchro: null
+    statut: "Vague 2 deployee — CREE 2026-05-29"
+    derniere_synchro: "2026-05-29"
     priorite: P0-BLOQUANT
+    note: "Repo cree + enregistre dans known_repositories.yaml v1.1 (73 repos)"
 
   ECOYSTEM:
     strate: L1
@@ -97,9 +98,9 @@ repos:
     priorite: P0-CRITIQUE
 
 summary:
-  total_pilotes_pha3: 11
-  vague_2_deployes: 10
+  total_pilotes_pha4: 11
+  vague_2_deployes: 11
   vague_1_deployes: 0
-  non_deployes: 1
-  cadastre_full: 72
-  propagateur: v2.0
+  cadastre_full: 73
+  known_repositories: 73
+  batch_vague_1_restant: 61
