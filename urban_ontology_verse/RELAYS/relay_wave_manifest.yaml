@@ -1,79 +1,114 @@
-# relay_wave_manifest.yaml — État des vagues par repo
-# Version: 1.0.0 | Date: 2026-05-28
-# Ce fichier constitue la source de vérité de l'avancement du déploiement
-# des Stratum Relays (stations de métro cognitives) dans chaque repo.
+# relay_wave_manifest.yaml — État des vagues Stratum Relays
+# UrbanVerse v1.0.0 | gerivdb/VERSUS | Mis à jour: 2026-05-28
 
-version: 1.0.0
-last_updated: 2026-05-28
-total_repos: 10
+version: "1.1.0"
+last_updated: "2026-05-28"
+propagator: "urban_ontology_verse/TOOLS/relay_propagator.py"
+template: "urban_ontology_verse/TEMPLATES/STRATUM_RELAY_TEMPLATE.md"
 
 repos:
   GOVERNANCE-HUB:
     strate: L0
+    role_court: "Constitution — Super-Super-Hub"
     vague_courante: 0
-    vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "GOVERNANCE-HUB/STRATUM_RELAY.md"
+    vague_cible: 2
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P0-CRITIQUE
 
   LLM-REPO:
     strate: L1b
+    role_court: "Substrat cognitif LLM (privé)"
     vague_courante: 0
-    vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "LLM-REPO/STRATUM_RELAY.md"
+    vague_cible: 2
+    statut: "À créer (repo non encore créé)"
+    derniere_synchro: null
+    priorite: P0-BLOQUANT
+    note: "LLM-REPO n'existe pas encore — voir PRD §11"
 
   ECOYSTEM:
     strate: L1
+    role_court: "SOT opérationnel global"
     vague_courante: 0
     vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "ECOYSTEM/STRATUM_RELAY.md"
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P1
+
+  NEXUS:
+    strate: L1
+    role_court: "Agrégation data cross-repo"
+    vague_courante: 0
+    vague_cible: 1
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P1
 
   BRAIN:
     strate: L2
+    role_court: "Hub cognitif racine"
+    vague_courante: 0
+    vague_cible: 2
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P0-CRITIQUE
+
+  FLUENCE:
+    strate: L2
+    role_court: "Logique ternaire-floue"
     vague_courante: 0
     vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "BRAIN/STRATUM_RELAY.md"
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P1
 
   ECOS-CLI:
     strate: L3
+    role_court: "CLI maître orchestrateur (exécutable pur)"
     vague_courante: 0
-    vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "ECOS-CLI/STRATUM_RELAY.md"
+    vague_cible: 2
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P0-CRITIQUE
 
   KIVA:
     strate: L4
+    role_court: "Orchestrateur LXC/LXD HP Z600"
     vague_courante: 0
     vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "KIVA/STRATUM_RELAY.md"
-
-  BOINC-LLM-P2P:
-    strate: L5
-    vague_courante: 0
-    vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "BOINC-LLM-P2P/STRATUM_RELAY.md"
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P1
 
   MIMIR:
     strate: L6
+    role_court: "Wiki Atomique Diamond"
     vague_courante: 0
     vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "MIMIR/STRATUM_RELAY.md"
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P2
 
   COMET:
     strate: L7
+    role_court: "Browser automation & web navigation"
     vague_courante: 0
     vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "COMET/STRATUM_RELAY.md"
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P2
 
   VERSUS:
     strate: L8
+    role_court: "Hub verses ontologiques — Architecture Diamant"
     vague_courante: 0
-    vague_cible: 1
-    statut: "⏳ À déployer"
-    fichier_relay: "VERSUS/STRATUM_RELAY.md"
+    vague_cible: 2
+    statut: "A déployer"
+    derniere_synchro: null
+    priorite: P0-CRITIQUE
+
+summary:
+  total_pilotes: 11
+  vague_1_deployes: 0
+  vague_2_deployes: 0
+  non_deployes: 11
