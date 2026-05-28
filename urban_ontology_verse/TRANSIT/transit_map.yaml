@@ -1,0 +1,113 @@
+# transit_map.yaml — Réseau de Transport Cognitif Gerivdb Métropole
+# Version: 1.0.0 | Date: 2026-05-28
+#
+# Lignes de métro, RER, tram, bus et noctilien de l'écosystème gerivdb.
+# Chaque ligne = un chemin de transit cognitif entre strates.
+# Chaque arrêt = une strate (L0→L9) ou un repo spécifique (tram/bus).
+
+lines:
+  - id: M1
+    name: "Ligne Cognitive Principale"
+    type: metro
+    stops: [L0, L1b, L1a, L2, L2b, L3, L4, L5, L6, L7, L8, L9]
+    frequency: "à chaque session LLM"
+    description: "Boot sequence canonique complète — toutes les strates en ordre"
+    recall_pack: true
+
+  - id: RER-A
+    name: "Transversale Gouvernance ↔ Archéologie"
+    type: rer
+    stops: [L0, L3, L6, L9]
+    frequency: "sur demande"
+    description: "Relie gouvernance à exécution sans correspondances intermédiaires"
+    recall_pack: false
+
+  - id: RER-B
+    name: "Transversale Constitution ↔ IA ↔ Créatif"
+    type: rer
+    stops: [L0, L2, L5, L8]
+    frequency: "sur demande"
+    description: "Relie fondations à l'intelligence distribuée et au créatif"
+    recall_pack: false
+
+  - id: T1
+    name: "Tramway Infrastructure L4"
+    type: tram
+    stops: [KIVA, ATLAS, GATEWAY-MANAGER, CONTAINER-ORCHESTRATOR]
+    frequency: "propagation vague N"
+    description: "Mise à jour groupée repos infrastructure"
+    recall_pack: false
+
+  - id: T2
+    name: "Tramway IA Distribuée L5"
+    type: tram
+    stops: [BOINC-LLM-P2P, CLIP-FACTORY, vsix-ai-orchestrator]
+    frequency: "propagation vague N"
+    description: "Mise à jour groupée repos IA"
+    recall_pack: false
+
+  - id: BUS-72
+    name: "Bus APIs REST"
+    type: bus
+    repos_group: "api_rest"
+    rule_delivered: "versionnement_endpoint_policy.md"
+    frequency: "sur propagation règle"
+    description: "Distribution règle de versionnement à tous les repos API"
+    recall_pack: false
+
+  - id: BUS-91
+    name: "Bus Interfaces CLI"
+    type: bus
+    repos_group: "cli_tools"
+    rule_delivered: "cli_public_interface_policy.md"
+    frequency: "sur propagation règle"
+    description: "Distribution règle d'interface publique CLI"
+    recall_pack: false
+
+  - id: N1
+    name: "Noctilien — Session light"
+    type: noctilien
+    stops: [L0, L1b]
+    frequency: "session nocturne ou contexte court"
+    description: "Boot minimal — gouvernance + substrat cognitif uniquement"
+    recall_pack: true
+
+zones:
+  - id: zone_1
+    name: "Paris intra-muros"
+    scope: "repos gerivdb actifs L0→L9"
+    trust: "FULL"
+    description: "Zone de confiance totale — cœur de l'écosystème"
+
+  - id: zone_2
+    name: "Petite Couronne"
+    scope: "dépôts partenaires de confiance"
+    trust: "TRUSTED"
+    description: "Partenaires validés — accès contrôlé mais fluide"
+
+  - id: zone_3
+    name: "Grande Couronne"
+    scope: "intégrations publiques, forks communautaires"
+    trust: "LIMITED"
+    description: "Accès limité — nécessite un échangeur (repo passerelle)"
+
+  - id: zone_4
+    name: "Hors IDF — SaaS"
+    scope: "services cloud tiers (GitHub, Anthropic, etc.)"
+    trust: "EXTERNAL"
+    description: "Services externes — périmètre de sécurité obligatoire"
+
+  # Périphérique (anneau de contrôle L3→L9)
+peripherique:
+  description: "Anneau de contrôle de périphérie — aucune connexion directe Zone 3→Zone 1"
+  portes:
+    - type: API_GATEWAY
+      description: "Point d'entrée API public"
+    - type: CLI_PUBLIQUE
+      description: "Interface CLI exposée"
+    - type: WEBHOOK
+      description: "Réception événements externes"
+  echangeurs:
+    - "repo_passerelle_github"
+    - "repo_passerelle_anthropic"
+  regle: "Aucune connexion directe Zone 3→Zone 1 sans échangeur validé"
