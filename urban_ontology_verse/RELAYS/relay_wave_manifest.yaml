@@ -1,0 +1,79 @@
+# relay_wave_manifest.yaml — État des vagues par repo
+# Version: 1.0.0 | Date: 2026-05-28
+# Ce fichier constitue la source de vérité de l'avancement du déploiement
+# des Stratum Relays (stations de métro cognitives) dans chaque repo.
+
+version: 1.0.0
+last_updated: 2026-05-28
+total_repos: 10
+
+repos:
+  GOVERNANCE-HUB:
+    strate: L0
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "GOVERNANCE-HUB/STRATUM_RELAY.md"
+
+  LLM-REPO:
+    strate: L1b
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "LLM-REPO/STRATUM_RELAY.md"
+
+  ECOYSTEM:
+    strate: L1
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "ECOYSTEM/STRATUM_RELAY.md"
+
+  BRAIN:
+    strate: L2
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "BRAIN/STRATUM_RELAY.md"
+
+  ECOS-CLI:
+    strate: L3
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "ECOS-CLI/STRATUM_RELAY.md"
+
+  KIVA:
+    strate: L4
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "KIVA/STRATUM_RELAY.md"
+
+  BOINC-LLM-P2P:
+    strate: L5
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "BOINC-LLM-P2P/STRATUM_RELAY.md"
+
+  MIMIR:
+    strate: L6
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "MIMIR/STRATUM_RELAY.md"
+
+  COMET:
+    strate: L7
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "COMET/STRATUM_RELAY.md"
+
+  VERSUS:
+    strate: L8
+    vague_courante: 0
+    vague_cible: 1
+    statut: "⏳ À déployer"
+    fichier_relay: "VERSUS/STRATUM_RELAY.md"
