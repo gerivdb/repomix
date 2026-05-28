@@ -1,114 +1,105 @@
-# relay_wave_manifest.yaml — État des vagues Stratum Relays
-# UrbanVerse v1.0.0 | gerivdb/VERSUS | Mis à jour: 2026-05-28
+# relay_wave_manifest.yaml — Etat des vagues Stratum Relays
+# UrbanVerse v1.0.0 | gerivdb/VERSUS | Mis a jour: 2026-05-29
 
-version: "1.2.0"
-last_updated: "2026-05-28"
-propagator: "urban_ontology_verse/TOOLS/relay_propagator.py"
+version: "1.3.0"
+last_updated: "2026-05-29"
+propagator: "urban_ontology_verse/TOOLS/relay_propagator.py v2.0"
 template: "urban_ontology_verse/TEMPLATES/STRATUM_RELAY_TEMPLATE.md"
+cadastre: "urban_ontology_verse/CADASTRE/cadastre_full.yaml"
 
 repos:
   GOVERNANCE-HUB:
     strate: L0
-    role_court: "Constitution — Super-Super-Hub"
     vague_courante: 2
     vague_cible: 2
-    statut: "Vague 2 déployée"
+    statut: "Vague 2 deployee"
     derniere_synchro: "2026-05-28"
     priorite: P0-CRITIQUE
 
   LLM-REPO:
     strate: L1b
-    role_court: "Substrat cognitif LLM (privé)"
     vague_courante: 0
     vague_cible: 2
-    statut: "Repo non encore créé — voir PRD §11"
+    statut: "Repo non cree — voir PRD migration ECOS-CLI"
     derniere_synchro: null
     priorite: P0-BLOQUANT
 
   ECOYSTEM:
     strate: L1
-    role_court: "SOT opérationnel global"
-    vague_courante: 1
-    vague_cible: 1
-    statut: "Vague 1 déployée"
-    derniere_synchro: "2026-05-28"
+    vague_courante: 2
+    vague_cible: 2
+    statut: "Vague 2 deployee"
+    derniere_synchro: "2026-05-29"
     priorite: P1
 
   NEXUS:
     strate: L1
-    role_court: "Agrégation data cross-repo"
-    vague_courante: 1
-    vague_cible: 1
-    statut: "Vague 1 déployée"
-    derniere_synchro: "2026-05-28"
+    vague_courante: 2
+    vague_cible: 2
+    statut: "Vague 2 deployee"
+    derniere_synchro: "2026-05-29"
     priorite: P1
 
   BRAIN:
     strate: L2
-    role_court: "Hub cognitif racine"
     vague_courante: 2
     vague_cible: 2
-    statut: "Vague 2 déployée"
+    statut: "Vague 2 deployee"
     derniere_synchro: "2026-05-28"
     priorite: P0-CRITIQUE
 
   FLUENCE:
     strate: L2
-    role_court: "Logique ternaire-floue"
-    vague_courante: 1
-    vague_cible: 1
-    statut: "Vague 1 déployée"
-    derniere_synchro: "2026-05-28"
+    vague_courante: 2
+    vague_cible: 2
+    statut: "Vague 2 deployee"
+    derniere_synchro: "2026-05-29"
     priorite: P1
 
   ECOS-CLI:
     strate: L3
-    role_court: "CLI maître orchestrateur (exécutable pur)"
     vague_courante: 2
     vague_cible: 2
-    statut: "Vague 2 déployée"
+    statut: "Vague 2 deployee"
     derniere_synchro: "2026-05-28"
     priorite: P0-CRITIQUE
 
   KIVA:
     strate: L4
-    role_court: "Orchestrateur LXC/LXD HP Z600"
-    vague_courante: 1
-    vague_cible: 1
-    statut: "Vague 1 déployée"
-    derniere_synchro: "2026-05-28"
+    vague_courante: 2
+    vague_cible: 2
+    statut: "Vague 2 deployee"
+    derniere_synchro: "2026-05-29"
     priorite: P1
 
   MIMIR:
     strate: L6
-    role_court: "Wiki Atomique Diamond"
-    vague_courante: 1
-    vague_cible: 1
-    statut: "Vague 1 déployée"
-    derniere_synchro: "2026-05-28"
+    vague_courante: 2
+    vague_cible: 2
+    statut: "Vague 2 deployee"
+    derniere_synchro: "2026-05-29"
     priorite: P2
 
   COMET:
     strate: L7
-    role_court: "Browser automation & web navigation"
-    vague_courante: 1
-    vague_cible: 1
-    statut: "Vague 1 déployée"
-    derniere_synchro: "2026-05-28"
+    vague_courante: 2
+    vague_cible: 2
+    statut: "Vague 2 deployee"
+    derniere_synchro: "2026-05-29"
     priorite: P2
 
   VERSUS:
     strate: L8
-    role_court: "Hub verses ontologiques — Architecture Diamant"
     vague_courante: 2
     vague_cible: 2
-    statut: "Vague 2 déployée (auto-référentiel)"
+    statut: "Vague 2 deployee (auto-referentiel)"
     derniere_synchro: "2026-05-28"
     priorite: P0-CRITIQUE
 
 summary:
-  total_pilotes: 11
-  vague_2_deployes: 4
-  vague_1_deployes: 6
+  total_pilotes_pha3: 11
+  vague_2_deployes: 10
+  vague_1_deployes: 0
   non_deployes: 1
-  note_llm_repo: "LLM-REPO sera ajouté dès sa création"
+  cadastre_full: 72
+  propagateur: v2.0
