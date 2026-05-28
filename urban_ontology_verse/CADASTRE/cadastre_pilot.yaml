@@ -1,94 +1,142 @@
-# cadastre_pilot.yaml — 10 entrées pilotes du cadastre UrbanVerse
-# Version: 1.0.0 | Date: 2026-05-28
-# Ce fichier constitue le cadastre initial — 10 repos représentatifs (1 par strate majeure)
+# cadastre_pilot.yaml — 11 parcelles pilotes UrbanVerse
+# Version: 1.1.0 | Date: 2026-05-28
 
-parcels:
-  - repo_name: "GOVERNANCE-HUB"
+version: "1.1.0"
+last_updated: "2026-05-28"
+schema_ref: "CADASTRE/cadastre_schema.yaml"
+
+parcelles:
+  - repo_name: GOVERNANCE-HUB
     strate: L0
-    arrondissement: "1er — Constitution & Gouvernance"
-    adresse: "GOVERNANCE-HUB/STRATUM_RELAY.md"
-    connectivite: DSL
+    arrondissement: "L0 — Hôtel de Ville (Constitution)"
+    role_canonique: "Constitution de l'écosystème — registres, règles, mémoire LLM cross-session"
+    adresse: "STRATUM_RELAY.md"
+    connectivite: FIBRE
     zone: zone_1
     vague_courante: 0
     derniere_synchro: null
+    fichiers_cles:
+      - known_repositories.yaml
+      - AGENT_RAM.yaml
+      - TritRegistry.yaml
+      - OrgansRegistry.yaml
+    langage_principal: YAML/Markdown
 
-  - repo_name: "LLM-REPO"
+  - repo_name: LLM-REPO
     strate: L1b
-    arrondissement: "3e — Substrat Cognitif Central"
-    adresse: "LLM-REPO/STRATUM_RELAY.md"
+    arrondissement: "L1b — Cerveau de navigation LLM (privé)"
+    role_canonique: "Substrat cognitif LLM — modes agents, règles comportement, boot sequence"
+    adresse: "STRATUM_RELAY.md"
     connectivite: DSL
     zone: zone_1
     vague_courante: 0
     derniere_synchro: null
+    fichiers_cles:
+      - AGENTS/AGENTS.md
+      - AGENTS/modes/.kilocodemodes
+      - BOOT/boot_sequence.md
+      - RULES/behavior_rules.md
+    langage_principal: Markdown/YAML
+    note: "REPO NON ENCORE CREE — migration ECOS-CLI en attente"
 
-  - repo_name: "ECOYSTEM"
+  - repo_name: ECOYSTEM
     strate: L1
-    arrondissement: "5e — Source of Truth Opérationnel"
-    adresse: "ECOYSTEM/STRATUM_RELAY.md"
+    arrondissement: "L1 — Substrat global (Préfecture)"
+    role_canonique: "Source of truth opérationnel global de l'écosystème"
+    adresse: "STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+    langage_principal: Go
+
+  - repo_name: NEXUS
+    strate: L1
+    arrondissement: "L1 — Substrat global (Centre de données)"
+    role_canonique: "Agrégation data cross-repo, entity resolution, super-hub données"
+    adresse: "STRATUM_RELAY.md"
     connectivite: DSL
     zone: zone_1
     vague_courante: 0
     derniere_synchro: null
 
-  - repo_name: "BRAIN"
+  - repo_name: BRAIN
     strate: L2
-    arrondissement: "7e — Pouvoir Cognitif"
-    adresse: "BRAIN/STRATUM_RELAY.md"
+    arrondissement: "L2 — Système nerveux (Grandes Écoles)"
+    role_canonique: "Cortex central — hub cognitif racine de l'écosystème"
+    adresse: "STRATUM_RELAY.md"
+    connectivite: FIBRE
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+    langage_principal: Go
+
+  - repo_name: FLUENCE
+    strate: L2
+    arrondissement: "L2 — Système nerveux (Labo recherche)"
+    role_canonique: "Logique ternaire-floue — exécution multi-langage Go/Rust/Python"
+    adresse: "STRATUM_RELAY.md"
     connectivite: DSL
     zone: zone_1
     vague_courante: 0
     derniere_synchro: null
+    langage_principal: Go
 
-  - repo_name: "ECOS-CLI"
+  - repo_name: ECOS-CLI
     strate: L3
-    arrondissement: "11e — Voiries & Action CLI"
-    adresse: "ECOS-CLI/STRATUM_RELAY.md"
-    connectivite: DSL
+    arrondissement: "L3 — Système moteur (Gare centrale)"
+    role_canonique: "CLI maître orchestrateur multi-dépôts — exécutable pur post-migration v1.1.0"
+    adresse: "STRATUM_RELAY.md"
+    connectivite: FIBRE
     zone: zone_1
     vague_courante: 0
     derniere_synchro: null
+    langage_principal: Go
 
-  - repo_name: "KIVA"
+  - repo_name: KIVA
     strate: L4
-    arrondissement: "13e — Bâti Infrastructure"
-    adresse: "KIVA/STRATUM_RELAY.md"
+    arrondissement: "L4 — Infrastructure (Centrale électrique)"
+    role_canonique: "Orchestrateur LXC/LXD sur HP Z600 — corps physique de l'écosystème"
+    adresse: "STRATUM_RELAY.md"
     connectivite: DSL
     zone: zone_1
     vague_courante: 0
     derniere_synchro: null
+    langage_principal: Go
 
-  - repo_name: "BOINC-LLM-P2P"
-    strate: L5
-    arrondissement: "15e — Grandes Écoles IA"
-    adresse: "BOINC-LLM-P2P/STRATUM_RELAY.md"
-    connectivite: DSL
-    zone: zone_1
-    vague_courante: 0
-    derniere_synchro: null
-
-  - repo_name: "MIMIR"
+  - repo_name: MIMIR
     strate: L6
-    arrondissement: "17e — Archives & Mémoire"
-    adresse: "MIMIR/STRATUM_RELAY.md"
+    arrondissement: "L6 — Mémoire (Bibliothèque nationale)"
+    role_canonique: "Wiki Atomique Diamond — méta-roadmap visuelle de l'écosystème"
+    adresse: "STRATUM_RELAY.md"
     connectivite: DSL
     zone: zone_1
     vague_courante: 0
     derniere_synchro: null
+    langage_principal: Markdown
 
-  - repo_name: "COMET"
+  - repo_name: COMET
     strate: L7
-    arrondissement: "19e — Espaces Publics & Interfaces"
-    adresse: "COMET/STRATUM_RELAY.md"
+    arrondissement: "L7 — Interfaces (Espaces publics numériques)"
+    role_canonique: "Browser automation et web navigation — interface humain-web"
+    adresse: "STRATUM_RELAY.md"
     connectivite: DSL
     zone: zone_1
     vague_courante: 0
     derniere_synchro: null
+    langage_principal: TypeScript
 
-  - repo_name: "VERSUS"
+  - repo_name: VERSUS
     strate: L8
-    arrondissement: "20e — Culture & Créatif"
-    adresse: "VERSUS/STRATUM_RELAY.md"
-    connectivite: DSL
+    arrondissement: "L8 — Vie réelle & Créatif (Musées & Culture)"
+    role_canonique: "Hub des verses ontologiques — Architecture Diamant — contient UrbanVerse"
+    adresse: "STRATUM_RELAY.md"
+    connectivite: FIBRE
     zone: zone_1
     vague_courante: 0
     derniere_synchro: null
+    fichiers_cles:
+      - ontology_registry.json
+      - urban_ontology_verse/TRANSIT/transit_map.yaml
+      - urban_ontology_verse/TOOLS/relay_propagator.py
+    langage_principal: Python/YAML
