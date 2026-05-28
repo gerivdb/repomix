@@ -1,0 +1,94 @@
+# cadastre_pilot.yaml — 10 entrées pilotes du cadastre UrbanVerse
+# Version: 1.0.0 | Date: 2026-05-28
+# Ce fichier constitue le cadastre initial — 10 repos représentatifs (1 par strate majeure)
+
+parcels:
+  - repo_name: "GOVERNANCE-HUB"
+    strate: L0
+    arrondissement: "1er — Constitution & Gouvernance"
+    adresse: "GOVERNANCE-HUB/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+
+  - repo_name: "LLM-REPO"
+    strate: L1b
+    arrondissement: "3e — Substrat Cognitif Central"
+    adresse: "LLM-REPO/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+
+  - repo_name: "ECOYSTEM"
+    strate: L1
+    arrondissement: "5e — Source of Truth Opérationnel"
+    adresse: "ECOYSTEM/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+
+  - repo_name: "BRAIN"
+    strate: L2
+    arrondissement: "7e — Pouvoir Cognitif"
+    adresse: "BRAIN/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+
+  - repo_name: "ECOS-CLI"
+    strate: L3
+    arrondissement: "11e — Voiries & Action CLI"
+    adresse: "ECOS-CLI/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+
+  - repo_name: "KIVA"
+    strate: L4
+    arrondissement: "13e — Bâti Infrastructure"
+    adresse: "KIVA/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+
+  - repo_name: "BOINC-LLM-P2P"
+    strate: L5
+    arrondissement: "15e — Grandes Écoles IA"
+    adresse: "BOINC-LLM-P2P/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+
+  - repo_name: "MIMIR"
+    strate: L6
+    arrondissement: "17e — Archives & Mémoire"
+    adresse: "MIMIR/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+
+  - repo_name: "COMET"
+    strate: L7
+    arrondissement: "19e — Espaces Publics & Interfaces"
+    adresse: "COMET/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
+
+  - repo_name: "VERSUS"
+    strate: L8
+    arrondissement: "20e — Culture & Créatif"
+    adresse: "VERSUS/STRATUM_RELAY.md"
+    connectivite: DSL
+    zone: zone_1
+    vague_courante: 0
+    derniere_synchro: null
