@@ -1,11 +1,11 @@
 # cadastre_full.yaml — Cadastre complet de l'ecosysteme gerivdb
-# Source : GOVERNANCE-HUB/known_repositories.yaml (72 repos, v1.0, 2026-05-18)
-# Version: 1.0.0 | Date: 2026-05-29
+# Source : GOVERNANCE-HUB/known_repositories.yaml (73 repos, v1.1, 2026-05-29)
+# Version: 1.1.0 | Date: 2026-05-29
 
-version: "1.0.0"
+version: "1.1.0"
 last_updated: "2026-05-29"
 source: "GOVERNANCE-HUB/known_repositories.yaml"
-total_repos: 72
+total_repos: 73
 schema_ref: "CADASTRE/cadastre_schema.yaml"
 
 parcelles:
@@ -21,7 +21,7 @@ parcelles:
     connectivite: DSL
     zone: zone_1
     vague_cible: 2
-    vague_courante: 1
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P1
 
@@ -34,7 +34,7 @@ parcelles:
     connectivite: DSL
     zone: zone_1
     vague_cible: 2
-    vague_courante: 1
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P1
 
@@ -47,7 +47,7 @@ parcelles:
     connectivite: DSL
     zone: zone_1
     vague_cible: 2
-    vague_courante: 1
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -127,7 +127,7 @@ parcelles:
     connectivite: DSL
     zone: zone_1
     vague_cible: 2
-    vague_courante: 1
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P1
 
@@ -202,7 +202,7 @@ parcelles:
     strate: L6
     layer_source: L2_COMPOSITION
     arrondissement: "L6 — Memoire (Documentation BRAIN)"
-    role_canonique: "Documentation de BRAIN — 66 issues — wiki BRAIN-specific"
+    role_canonique: "Documentation de BRAIN — wiki BRAIN-specific"
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
@@ -215,12 +215,25 @@ parcelles:
     strate: L6
     layer_source: L2_COMPOSITION
     arrondissement: "L6 — Memoire (Registre competences)"
-    role_canonique: "SOT capacites — registre des skills (28 actifs) — structure tripartite"
+    role_canonique: "SOT capacites — registre des skills — structure tripartite"
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
     vague_cible: 1
     vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: MIMIR
+    strate: L6
+    layer_source: L2_COMPOSITION
+    arrondissement: "L6 — Memoire (Wiki Atomique Diamond)"
+    role_canonique: "Wiki Atomique Diamond — source of truth visuelle, roadmaps, diagrammes"
+    phi_cps: null
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -580,7 +593,7 @@ parcelles:
     connectivite: DSL
     zone: zone_1
     vague_cible: 1
-    vague_courante: 0
+    vague_couranta: 0
     lifecycle: ACTIVE
     priorite: P3
 
@@ -736,7 +749,7 @@ parcelles:
     connectivite: DSL
     zone: zone_1
     vague_cible: 2
-    vague_courante: 1
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -903,27 +916,30 @@ parcelles:
     lifecycle: DEPRECATED
     priorite: P5-EXCLU
 
-  # -- L1b — A creer -----------------------------------------------------------
+  # -- L1b — CREE ----------------------------------------------------------------
 
   - repo_name: LLM-REPO
     strate: L1b
     layer_source: L1b
     arrondissement: "L1b — Substrat cognitif LLM (prive)"
     role_canonique: "Modes agents, regles comportement LLM, boot sequence — substrat cognitif central"
-    connectivite: DSL
+    phi_cps: 3.697
+    connectivite: FIBRE
     zone: zone_1
     vague_cible: 2
-    vague_courante: 0
-    lifecycle: PENDING_CREATION
+    vague_courante: 2
+    lifecycle: ACTIVE
     priorite: P0-BLOQUANT
-    note: "REPO NON ENCORE CREE — voir PRD migration ECOS-CLI"
+    note: "Cree 2026-05-29 — enregistre dans known_repositories.yaml v1.1 (73 repos)"
 
 summary:
-  total: 72
-  actifs: 55
+  total: 73
+  actifs: 56
   dormants: 4
   deprecated: 12
-  pending_creation: 1
-  vague_2_cible: 10
+  pending_creation: 0
+  vague_2_cible: 11
+  vague_2_deployees: 11
   vague_1_cible: 50
+  vague_1_a_deployer: 50
   exclu_deploiement: 12
