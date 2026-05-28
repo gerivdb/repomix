@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "last_updated": "2026-05-13",
+  "version": "1.1",
+  "last_updated": "2026-05-28",
   "spokes": {
     "AI": {
       "verses_count": 2,
@@ -44,6 +44,37 @@
       "ontology_consistent": true
     }
   },
-  "cross_references": [],
-  "validation_status": "pending"
+  "ontologies": {
+    "urban_ontology_verse": {
+      "name": "UrbanVerse",
+      "type": "ontological_operational",
+      "strate": "L8",
+      "description": "Holographie ontologique métropole Paris/IDF — grille de lecture opérationnelle de l'écosystème gerivdb (~170 repos)",
+      "prd": "PRD/PRD_URBAN_ONTOLOGY_VERSE_V1.md",
+      "distinct_from": "BATVERSE (narratif)",
+      "status": "active",
+      "created": "2026-05-28",
+      "components": [
+        "CADASTRE/cadastre_schema.yaml",
+        "CADASTRE/cadastre_pilot.yaml",
+        "TRANSIT/transit_map.yaml",
+        "TRANSIT/transit_map.mermaid.md",
+        "RELAYS/relay_wave_manifest.yaml",
+        "TEMPLATES/STRATUM_RELAY_TEMPLATE.md"
+      ]
+    }
+  },
+  "cross_references": [
+    {
+      "from": "urban_ontology_verse",
+      "to": "GOVERNANCE-HUB/PRD/PRD_ECOSYSTEM_SUPERSTRUCTURE_L0-L9_V1.md",
+      "relation": "subordinated_to"
+    },
+    {
+      "from": "urban_ontology_verse",
+      "to": "LLM-REPO",
+      "relays_hosted_in": "STRATUM_RELAY.md files deployed per repo"
+    }
+  ],
+  "validation_status": "active"
 }
