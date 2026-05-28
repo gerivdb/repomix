@@ -1,0 +1,40 @@
+# cadastre_schema.yaml — Schéma ontologique des parcelles (repos)
+# Chaque entrée = un repo = une parcelle urbaine
+# Version: 1.0.0 | Date: 2026-05-28
+
+parcel_schema:
+  fields:
+    - name: repo_name
+      type: string
+      required: true
+      description: "Nom du repo GitHub"
+    - name: strate
+      type: enum [L0, L1, L1b, L2, L2b, L3, L4, L5, L6, L7, L8, L9]
+      required: true
+      description: "Strate écosystème — équivalent arrondissement"
+    - name: arrondissement
+      type: string
+      description: "Libellé humain de la strate (ex: '7e — Pouvoir cognitif')"
+    - name: adresse
+      type: string
+      description: "Chemin vers STRATUM_RELAY.md (borne DSL ou fibre optique)"
+    - name: connectivite
+      type: enum [DSL, FIBRE]
+      description: "Niveau de relais (Vague 1-2 = DSL, Vague 3+ = FIBRE)"
+    - name: zone
+      type: enum [zone_1, zone_2, zone_3, zone_4]
+      default: zone_1
+      description: "Zone métropolitaine (1=Paris intra-muros, 4=SaaS externe)"
+    - name: vague_courante
+      type: integer
+      default: 0
+      description: "Vague de déploiement du Stratum Relay (0 = aucun)"
+    - name: derniere_synchro
+      type: date
+      description: "Date de dernière synchronisation du relais"
+
+  # Contraintes métier
+  constraints:
+    - rule: "connectivite FIBRE requiert vague_courante >= 3"
+    - rule: "zone_4 ne peut pas avoir connectivite FIBRE"
+    - rule: "Un repo ne peut appartenir qu'à une seule strate"
