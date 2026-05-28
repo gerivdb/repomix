@@ -1,0 +1,929 @@
+# cadastre_full.yaml — Cadastre complet de l'ecosysteme gerivdb
+# Source : GOVERNANCE-HUB/known_repositories.yaml (72 repos, v1.0, 2026-05-18)
+# Version: 1.0.0 | Date: 2026-05-29
+
+version: "1.0.0"
+last_updated: "2026-05-29"
+source: "GOVERNANCE-HUB/known_repositories.yaml"
+total_repos: 72
+schema_ref: "CADASTRE/cadastre_schema.yaml"
+
+parcelles:
+
+  # -- P0_CONSTITUTIONAL --------------------------------------------------------
+
+  - repo_name: NEXUS
+    strate: L1
+    layer_source: L1_CAUSALITY
+    arrondissement: "L1 — Substrat global (Centre donnees)"
+    role_canonique: "Mega-SOT — registre des registres, gouvernance cross-repo"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 1
+    lifecycle: ACTIVE
+    priorite: P1
+
+  - repo_name: ECOYSTEM
+    strate: L1
+    layer_source: L2_COMPOSITION
+    arrondissement: "L1 — Substrat global (Prefecture)"
+    role_canonique: "BLO orchestrator — PLAN/, WAL, phi-CPS governance — SOT operationnel"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 1
+    lifecycle: ACTIVE
+    priorite: P1
+
+  - repo_name: KIVA
+    strate: L4
+    layer_source: L1_CAUSALITY
+    arrondissement: "L4 — Infrastructure (Centrale electrique)"
+    role_canonique: "Infrastructure runtime — agents, scheduler, WAL — orchestrateur LXC/LXD HP Z600"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 1
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: GATEWAY-MANAGER
+    strate: L4
+    layer_source: L1_CAUSALITY
+    arrondissement: "L4 — Infrastructure (Peripherique reseau)"
+    role_canonique: "Proxy/reverse proxy — BDCP, Clapet — gestion trafic entrant/sortant"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: BRAIN
+    strate: L2
+    layer_source: L3_EMERGENCE
+    arrondissement: "L2 — Systeme nerveux (Grandes Ecoles)"
+    role_canonique: "Couche IA principale — agents cognitifs — hub cognitif racine"
+    phi_cps: 3.697
+    connectivite: FIBRE
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 2
+    lifecycle: ACTIVE
+    priorite: P0
+
+  - repo_name: ECOS-CLI
+    strate: L3
+    layer_source: L1_CAUSALITY
+    arrondissement: "L3 — Systeme moteur (Gare centrale)"
+    role_canonique: "Orchestrateur local CLI — workflows EECS — executable pur post-migration v1.1.0"
+    phi_cps: 3.697
+    connectivite: FIBRE
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 2
+    lifecycle: ACTIVE
+    priorite: P0
+
+  # -- P1_STRATEGIC -------------------------------------------------------------
+
+  - repo_name: KIVA-CLI
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (CLI projets)"
+    role_canonique: "CLI orchestrateur projets/apps — scaffolding KIVA"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: ONTOLOGY
+    strate: L1
+    layer_source: L1_CAUSALITY
+    arrondissement: "L1 — Substrat global (Dictionnaire canonique)"
+    role_canonique: "SOT semantique — dictionnaire canonique — ontologies de l'ecosysteme"
+    phi_cps: 4.092
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P1
+
+  - repo_name: FLUENCE
+    strate: L2
+    layer_source: L3_EMERGENCE
+    arrondissement: "L2 — Systeme nerveux (Labo logique ternaire)"
+    role_canonique: "Orchestration cognitive — logique ternaire-floue — multi-langage Go/Rust/Python"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 1
+    lifecycle: ACTIVE
+    priorite: P1
+
+  - repo_name: CANDIDATOR
+    strate: L8
+    layer_source: L3_EMERGENCE
+    arrondissement: "L8 — Vie reelle (Applications humaines)"
+    role_canonique: "Gestion candidatures, CV, lettres de motivation — vie professionnelle"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: GeriCode
+    strate: L7
+    layer_source: L2_COMPOSITION
+    arrondissement: "L7 — Interfaces (IDE developpeur)"
+    role_canonique: "Fork KiloCode — generation de code — automation dev"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: GOVERNANCE-HUB
+    strate: L0
+    layer_source: L2_COMPOSITION
+    arrondissement: "L0 — Hotel de Ville (Constitution)"
+    role_canonique: "SOT execution — regles gouvernance executables — Trit*, registres, AGENT_RAM"
+    phi_cps: 3.697
+    connectivite: FIBRE
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 2
+    lifecycle: ACTIVE
+    priorite: P0
+
+  # -- P2_SUPPORT ---------------------------------------------------------------
+
+  - repo_name: DevTools
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (Atelier outillage)"
+    role_canonique: "SOT infrastructure DevOps — environnement, MCP, runtimes, CI/CD"
+    phi_cps: 4.672
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: Gitnote
+    strate: L7
+    layer_source: L3_EMERGENCE
+    arrondissement: "L7 — Interfaces (Sync mobile)"
+    role_canonique: "Sync Android — bridge DevTools/FLUENCE/ECOYSTEM"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: BRAIN-DOCS
+    strate: L6
+    layer_source: L2_COMPOSITION
+    arrondissement: "L6 — Memoire (Documentation BRAIN)"
+    role_canonique: "Documentation de BRAIN — 66 issues — wiki BRAIN-specific"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: SKILLS
+    strate: L6
+    layer_source: L2_COMPOSITION
+    arrondissement: "L6 — Memoire (Registre competences)"
+    role_canonique: "SOT capacites — registre des skills (28 actifs) — structure tripartite"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: GERIBOOKING
+    strate: L7
+    layer_source: L4_GOVERNANCE
+    arrondissement: "L7 — Interfaces (Application reservation)"
+    role_canonique: "Systeme de reservation et booking"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: BANK-BUSTER
+    strate: L8
+    layer_source: L4_GOVERNANCE
+    arrondissement: "L8 — Vie reelle (Audit financier)"
+    role_canonique: "Audit financier — contestation frais bancaires"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: racines
+    strate: L8
+    layer_source: L3_EMERGENCE
+    arrondissement: "L8 — Vie reelle (Identite & Origines)"
+    role_canonique: "Racines identitaires — fondation biographique"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: vsix-ai-orchestrator
+    strate: L5
+    layer_source: L2_COMPOSITION
+    arrondissement: "L5 — IA distribuee (Orchestration IDE)"
+    role_canonique: "Multi-agent VSCode — Cline, Kilocode, Copilot — orchestration IDE"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: vscode-lm-proxy
+    strate: L5
+    layer_source: L2_COMPOSITION
+    arrondissement: "L5 — IA distribuee (Proxy LLM)"
+    role_canonique: "Proxy LM pour VSCode — bridge modeles locaux/cloud"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: FLUENCE-CLI
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (CLI FLUENCE)"
+    role_canonique: "CLI orchestration cognitive FLUENCE — delegue a ECOS-CLI"
+    phi_cps: 3.697
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  # -- P3_DORMANT ---------------------------------------------------------------
+
+  - repo_name: CLIP-FACTORY
+    strate: L5
+    layer_source: L3_EMERGENCE
+    arrondissement: "L5 — IA distribuee (Factory embeddings)"
+    role_canonique: "Generation embeddings CLIP vision-language"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: DORMANT
+    priorite: P4
+
+  - repo_name: TOOL-FACTORY-1
+    strate: L3
+    layer_source: L3_EMERGENCE
+    arrondissement: "L3 — Systeme moteur (Factory outils)"
+    role_canonique: "Factory outils generiques"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: DORMANT
+    priorite: P4
+
+  - repo_name: email-sender-1
+    strate: L3
+    layer_source: L3_EMERGENCE
+    arrondissement: "L3 — Systeme moteur (Envoi email)"
+    role_canonique: "Envoi emails automatise — instance 1"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: DORMANT
+    priorite: P4
+
+  - repo_name: email-sender-2
+    strate: L3
+    layer_source: L3_EMERGENCE
+    arrondissement: "L3 — Systeme moteur (Envoi email)"
+    role_canonique: "Envoi emails automatise — instance 2"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: DORMANT
+    priorite: P4
+
+  # -- PRD_V36_ADDITIONS ---------------------------------------------------------
+
+  - repo_name: VERSUS
+    strate: L8
+    layer_source: L3_EMERGENCE
+    arrondissement: "L8 — Vie reelle & Creatif (Hub verses)"
+    role_canonique: "SOT cognitif — architecture Diamant verses — contient UrbanVerse"
+    phi_cps: 3.697
+    connectivite: FIBRE
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 2
+    lifecycle: ACTIVE
+    priorite: P0
+
+  - repo_name: DevTools-CLI
+    strate: L3
+    layer_source: L0_INFRASTRUCTURE
+    arrondissement: "L3 — Systeme moteur (CLI DevOps)"
+    role_canonique: "DevOps automation CLI — templates CI/CD"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: FORGE
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (CI/CD)"
+    role_canonique: "CI/CD automation — build orchestration — pipelines"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: PULSE
+    strate: L4
+    layer_source: L2_COMPOSITION
+    arrondissement: "L4 — Infrastructure (Monitoring)"
+    role_canonique: "Monitoring temps reel — alerting — health metrics"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: ECOS-VISION
+    strate: L7
+    layer_source: L3_EMERGENCE
+    arrondissement: "L7 — Interfaces (Visualisation ecosysteme)"
+    role_canonique: "Visualisation et intelligence diagrammatique — 16+ repos"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: VDB
+    strate: L2
+    layer_source: L3_EMERGENCE
+    arrondissement: "L2 — Systeme nerveux (Base vectorielle)"
+    role_canonique: "Vector database — embeddings nomic-embed 768-dim — 29 issues"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P1
+
+  - repo_name: DATA-MINER
+    strate: L2
+    layer_source: L2_COMPOSITION
+    arrondissement: "L2 — Systeme nerveux (Mining repositories)"
+    role_canonique: "Mining Software Repositories — detection anti-patterns"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: BATVERSE
+    strate: L8
+    layer_source: L3_EMERGENCE
+    arrondissement: "L8 — Vie reelle & Creatif (Narratif)"
+    role_canonique: "Cluster narratif-dramatique — projection holographique — verse narratif distinct de VERSUS"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: ATHENA
+    strate: L9
+    layer_source: L1_CAUSALITY
+    arrondissement: "L9 — Archeologie (Diamond v16)"
+    role_canonique: "Hub central Diamond v16 — coquille vide depreciee"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: ARES
+    strate: L9
+    layer_source: L1_CAUSALITY
+    arrondissement: "L9 — Archeologie (Diamond v16)"
+    role_canonique: "Moteur decision Diamond v16 — coquille vide depreciee"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: APOLLO
+    strate: L9
+    layer_source: L3_EMERGENCE
+    arrondissement: "L9 — Archeologie (Diamond v16)"
+    role_canonique: "Moteur creatif Diamond v16 — coquille vide depreciee"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: HERMES
+    strate: L9
+    layer_source: L3_EMERGENCE
+    arrondissement: "L9 — Archeologie (Diamond v16)"
+    role_canonique: "Moteur communication Diamond v16 — coquille vide depreciee"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: VULKAN
+    strate: L9
+    layer_source: L2_COMPOSITION
+    arrondissement: "L9 — Archeologie (Diamond v16)"
+    role_canonique: "Moteur outils Diamond v16 — coquille vide depreciee"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: OPENCLAW-CLI
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (Intent Gateway)"
+    role_canonique: "Intent Normalization Gateway — normalisation des intentions entrantes"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: BRAIN-CLI
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (CLI BRAIN)"
+    role_canonique: "CLI extraction BRAIN — phi-CPS 4.267"
+    phi_cps: 4.267
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: DOC-UNIV-DEV
+    strate: L6
+    layer_source: L3_EMERGENCE
+    arrondissement: "L6 — Memoire (Base R&D)"
+    role_canonique: "Base de connaissances R&D — 18 issues"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: GOST
+    strate: L3
+    layer_source: L3_EMERGENCE
+    arrondissement: "L3 — Systeme moteur (Acces furtif)"
+    role_canonique: "Ghost Operations — acces furtif ressources numeriques"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: TINA
+    strate: L2
+    layer_source: L3_EMERGENCE
+    arrondissement: "L2 — Systeme nerveux (Architecture neuro-symbolique)"
+    role_canonique: "Trusted Intelligent Neurosymbolic Architecture"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: TRANSCENDANCE
+    strate: L8
+    layer_source: L5_META
+    arrondissement: "L8 — Vie reelle & Creatif (Meta-evolution)"
+    role_canonique: "Evolution emergente et patterns transcendantaux de NEXUS"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: FERMI-EVER
+    strate: L4
+    layer_source: L0_INFRASTRUCTURE
+    arrondissement: "L4 — Infrastructure (GPUs Fermi)"
+    role_canonique: "Orchestrateur IA pour GPUs NVIDIA Fermi abandonnes"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: PLIX
+    strate: L5
+    layer_source: L0_INFRASTRUCTURE
+    arrondissement: "L5 — IA distribuee (Langage video ternaire)"
+    role_canonique: "Langage video ternaire pour LLM graphes — substrat IA locale"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: CodeDB-E5620
+    strate: L4
+    layer_source: L0_INFRASTRUCTURE
+    arrondissement: "L4 — Infrastructure (CodeDB Xeon E5620)"
+    role_canonique: "Fork CodeDB pour Xeon E5620 sans AVX — Zig"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: LYCOS
+    strate: L4
+    layer_source: L0_INFRASTRUCTURE
+    arrondissement: "L4 — Infrastructure (CodeDB + FLUENCE)"
+    role_canonique: "Fork CodeDB avec FLUENCE matrix encoding + Janus compression — Zig"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: PITCH-1
+    strate: L8
+    layer_source: L3_EMERGENCE
+    arrondissement: "L8 — Vie reelle (Pitch commercial)"
+    role_canonique: "Pitch commercial — 4 issues"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: DMR
+    strate: L8
+    layer_source: L3_EMERGENCE
+    arrondissement: "L8 — Vie reelle (Python utilitaire)"
+    role_canonique: "Utilitaire Python — usage interne"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P4
+
+  - repo_name: CONTAINER-ORCHESTRATOR
+    strate: L4
+    layer_source: L0_INFRASTRUCTURE
+    arrondissement: "L4 — Infrastructure (Orchestration LXC native)"
+    role_canonique: "Orchestration LXC/LXD native HP Z600"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: ATLAS
+    strate: L4
+    layer_source: L0_INFRASTRUCTURE
+    arrondissement: "L4 — Infrastructure (IaC declaratif)"
+    role_canonique: "Infrastructure as Code — Terraform/K8s/Docker"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: WAZAA
+    strate: L2
+    layer_source: L3_EMERGENCE
+    arrondissement: "L2 — Systeme nerveux (Orchestration multi-depots)"
+    role_canonique: "Orchestrateur multi-depots — bots, agentique — LangChain/CrewAI, n8n"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: ecos-plugin-perplexity
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (Plugin Perplexity)"
+    role_canonique: "Plugin Perplexity/SuperMemory pour ECOS-CLI — Intent Hash, Notion sync"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: LUKAS-PRESTATIONS
+    strate: L8
+    layer_source: L4_GOVERNANCE
+    arrondissement: "L8 — Vie reelle (Prestations)"
+    role_canonique: "Gestion prestations Lukas"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P4
+
+  - repo_name: JOURNALISTE
+    strate: L8
+    layer_source: L3_EMERGENCE
+    arrondissement: "L8 — Vie reelle (Journalisme)"
+    role_canonique: "Journalisme et investigation"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P4
+
+  - repo_name: COMET
+    strate: L7
+    layer_source: L3_EMERGENCE
+    arrondissement: "L7 — Interfaces (Browser automation)"
+    role_canonique: "Browser automation et web navigation — interface humain-web"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 1
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: BatMCP
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (MCP PowerShell)"
+    role_canonique: "MCP PowerShell — exposition outils systeme via MCP"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P2
+
+  - repo_name: ECIT-CLI
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (CLI ECIT)"
+    role_canonique: "CLI ECIT — interface ligne de commande ECIT"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: ECO-CLI
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (CLI ECO)"
+    role_canonique: "CLI ECO — interface ligne de commande ECO"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: ecos-diff
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (Diff ECOS)"
+    role_canonique: "Outil de diff pour workflows ECOS"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: strix
+    strate: L3
+    layer_source: L2_COMPOSITION
+    arrondissement: "L3 — Systeme moteur (Strix)"
+    role_canonique: "Strix — outil systeme"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: ONTOLOGY_MC
+    strate: L1
+    layer_source: L2_COMPOSITION
+    arrondissement: "L1 — Substrat global (Ontologie MC)"
+    role_canonique: "ONTOLOGY MC — extension MC de l'ontologie principale"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  - repo_name: GERI-VON-DER-BITSH
+    strate: L8
+    layer_source: L4_GOVERNANCE
+    arrondissement: "L8 — Vie reelle (Politique & Gouvernance)"
+    role_canonique: "Gouvernance politique — expression citoyenne"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 1
+    vague_courante: 0
+    lifecycle: ACTIVE
+    priorite: P3
+
+  # -- DEPRECATED / EXCLU -------------------------------------------------------
+
+  - repo_name: 2025-0905-FRUSTRATION
+    strate: L9
+    layer_source: L3_EMERGENCE
+    role_canonique: "Snapshot 2025-09-05 — archeologie"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: 2025-0906-JP-PETIT
+    strate: L9
+    layer_source: L3_EMERGENCE
+    role_canonique: "Snapshot 2025-09-06 JP Petit — archeologie"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: 2025-0903-comparateur-IA-code
+    strate: L9
+    layer_source: L2_COMPOSITION
+    role_canonique: "Comparateur IA code — snapshot archeologique"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: 2025-0303-BRAIN
+    strate: L9
+    layer_source: L3_EMERGENCE
+    role_canonique: "BRAIN 2025-03-03 — snapshot archeologique"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: 2025-0312-BRAIN2
+    strate: L9
+    layer_source: L3_EMERGENCE
+    role_canonique: "BRAIN2 2025-03-12 — snapshot archeologique"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: 2025-0402-DEEPSITE
+    strate: L9
+    layer_source: L3_EMERGENCE
+    role_canonique: "DEEPSITE 2025-04-02 — snapshot archeologique"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  - repo_name: 2025-0920-BOOKING
+    strate: L9
+    layer_source: L4_GOVERNANCE
+    role_canonique: "BOOKING 2025-09-20 — snapshot archeologique"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 0
+    vague_courante: 0
+    lifecycle: DEPRECATED
+    priorite: P5-EXCLU
+
+  # -- L1b — A creer -----------------------------------------------------------
+
+  - repo_name: LLM-REPO
+    strate: L1b
+    layer_source: L1b
+    arrondissement: "L1b — Substrat cognitif LLM (prive)"
+    role_canonique: "Modes agents, regles comportement LLM, boot sequence — substrat cognitif central"
+    connectivite: DSL
+    zone: zone_1
+    vague_cible: 2
+    vague_courante: 0
+    lifecycle: PENDING_CREATION
+    priorite: P0-BLOQUANT
+    note: "REPO NON ENCORE CREE — voir PRD migration ECOS-CLI"
+
+summary:
+  total: 72
+  actifs: 55
+  dormants: 4
+  deprecated: 12
+  pending_creation: 1
+  vague_2_cible: 10
+  vague_1_cible: 50
+  exclu_deploiement: 12
