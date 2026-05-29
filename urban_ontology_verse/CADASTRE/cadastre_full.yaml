@@ -158,8 +158,8 @@ parcelles:
     phi_cps: 4.092
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P1
 
@@ -184,8 +184,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -197,8 +197,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -238,8 +238,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -251,8 +251,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -264,8 +264,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -290,8 +290,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -303,8 +303,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -316,8 +316,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -391,8 +391,8 @@ parcelles:
     role_canonique: "Cluster narratif-dramatique — projection holographique — verse narratif distinct de VERSUS"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -488,8 +488,8 @@ parcelles:
     role_canonique: "Base de connaissances R&D — 18 issues"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -524,7 +524,7 @@ parcelles:
     role_canonique: "Evolution emergente et patterns transcendantaux de NEXUS"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
+    vague_cible: 2
     vague_couranta: 0
     lifecycle: ACTIVE
     priorite: P3
@@ -584,8 +584,8 @@ parcelles:
     role_canonique: "Pitch commercial — 4 issues"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -596,8 +596,8 @@ parcelles:
     role_canonique: "Utilitaire Python — usage interne"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P4
 
@@ -764,8 +764,8 @@ parcelles:
     role_canonique: "Gouvernance politique — expression citoyenne"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -870,9 +870,8 @@ parcelles:
    dormants: 4
    deprecated: 12
    pending_creation: 0
-    vague_3_deployes: 14
-    vague_2_deployees: 23
-    vague_1_a_deployer: 24
+    vague_3_deployes: 13
+    vague_2_deployees: 35
     exclu_deploiement: 12
     session_G_completee: true
     session_G_repos: [IRIS, KRONOS, ARGUS]
@@ -882,3 +881,6 @@ parcelles:
     session_I_repos: [DevTools, FORGE, KIVA-CLI, FLUENCE-CLI, BRAIN-CLI, OPENCLAW-CLI, DevTools-CLI, strix, GOST, ecos-plugin-perplexity]
     session_J_completee: true
     session_J_repos: [GATEWAY-MANAGER, PULSE, ATLAS, CONTAINER-ORCHESTRATOR, FERMI-EVER, LYCOS, CodeDB-E5620, vsix-ai-orchestrator, vscode-lm-proxy, PLIX, VDB, DATA-MINER, WAZAA, TINA]
+    session_K_completee: true
+    session_K_repos: [SKILLS, BRAIN-DOCS, DOC-UNIV-DEV, GeriCode, ECOS-VISION, Gitnote, GERIBOOKING, CANDIDATOR, BATVERSE, racines, PITCH-1, DMR, TRANSCENDANCE, GERI-VON-DER-BITSH, BANK-BUSTER, ONTOLOGY]
+    session_L_status: "EN_COURS — DORMANT relay minimal + audit final + v2.0.0"
