@@ -1,0 +1,40 @@
+# rungis_components.yaml — Composants Reutilisables (Marche de Rungis)
+# Version: 1.0.0 | Date: 2026-05-29
+
+composants:
+  skills_natifs:
+    description: "Skills developpes en interne"
+    localisation: SKILLS/
+    type: "natifs"
+    comptage: 28
+
+  skills_assimiles:
+    description: "Skills adaptes de l'existant"
+    localisation: SKILLS/
+    type: "assimiles"
+
+  skills_externes:
+    description: "Skills tiers integres"
+    localisation: SKILLS/
+    type: "externes"
+
+  libraries_partagees:
+    description: "Bibliotheques et modules reutilisables"
+    repos:
+      - BRAIN (composants cognitifs)
+      - FLUENCE (logique ternaire)
+    type: "natifs"
+
+  templates_cicd:
+    description: "Templates CI/CD"
+    repos:
+      - DevTools-CLI
+      - FORGE
+    type: "natifs"
+
+  donnees_embedding:
+    description: "Embeddings et modeles"
+    repos:
+      - VDB (nomic-embed 768-dim)
+      - CLIP-FACTORY (DORMANT)
+    type: "natifs"
