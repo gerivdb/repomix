@@ -1,0 +1,49 @@
+# Hypothèse contrefactuelle — Bifurcation Verte
+# mode: counterfactual → destiné à BatVerse pour scénarisation
+
+version: "1.0.0"
+mode: counterfactual
+target: BatVerse
+
+hypothesis:
+  label: "La Bifurcation Verte"
+  description: >-
+    Deux humanités divergent après 2030 : l'une cherche l'abondance
+    par l'IA débridée (0,2,0,2), l'autre la sobriété radicale (2,0,2,0).
+    Entre les deux, un espace de négociation (1,1,1,1) tendu et instable.
+
+worlds:
+  - name: "Techno-Abundance"
+    quadruplet: [0, 2, 0, 2]
+    probability_weight: 0.4
+    trajectory: "croissance_exponentielle_IA"
+
+  - name: "Sobriété Profonde"
+    quadruplet: [2, 0, 2, 0]
+    probability_weight: 0.3
+    trajectory: "décroissance_choisie"
+
+  - name: "Équilibre Précaire"
+    quadruplet: [1, 1, 1, 1]
+    probability_weight: 0.3
+    trajectory: "mix_instable"
+
+tensions:
+  - axis: "I × E"
+    detail: "Deux extremums irréconciliables (0,2,0,2) vs (2,0,2,0) — distance 8"
+  - axis: "point fixe"
+    detail: "(1,1,1,1) — seule position à distance 2 des deux extrêmes"
+
+question_ouverte: >-
+  L'équilibre (1,1,1,1) est-il stable ?
+  Ou bascule-t-il irréversiblement vers l'un des deux extrêmes ?
+
+batverse_directive: >-
+  Développer les 3 trajectoires en arcs narratifs parallèles.
+  Mettre en scène les points de contact et les ruptures.
+  Le point (1,1,1,1) est-il un personnage (négociateur) ou un décor (espace neutre) ?
+
+diamond_relevance: >-
+  Diamond (2,0,2,1) se situe à un cheveu de la Sobriété Profonde (2,0,2,0)
+  — différence : l'IA frugale. Le choix de I=1 plutôt que I=0 est LE
+  discriminant narratif essentiel.

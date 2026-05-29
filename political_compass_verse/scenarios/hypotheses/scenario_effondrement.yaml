@@ -1,0 +1,44 @@
+# Hypothèse contrefactuelle — Effondrement multi-dimensionnel
+# mode: counterfactual → destiné à BatVerse pour scénarisation
+
+version: "1.0.0"
+mode: counterfactual
+target: BatVerse
+
+hypothesis:
+  label: "L'Effondrement Symétrique"
+  description: >-
+    Un monde où toutes les dimensions tombent simultanément à leur
+    minimum : plus de solidarité, plus d'écologie, plus d'IA,
+    mais un marché résiduel (M=1). L'hypothèse de la transition
+    violente comme seul chemin vers Diamond.
+
+quadruplet_hypothetique:
+  S: 0
+  M: 1
+  E: 0
+  I: 0
+
+transition:
+  from: "capitalisme_surveillance"   # (0,2,0,2)
+  to: "diamond"                       # (2,0,2,1)
+  label: "La Grande Bifurcation"
+  estimated_distance_traversal: 7
+
+tensions:
+  - axis: "chute multidimensionnelle"
+    detail: "S:2→0, E:2→0, I:2→0 — effondrement simultané"
+  - axis: "marché résiduel"
+    detail: "M:2→1 — le dernier axe qui résiste"
+
+question_ouverte: >-
+  L'effondrement est-il un préalable nécessaire à la renaissance
+  politique ? Ou existe-t-il un chemin graduel de transition ?
+
+batverse_directive: >-
+  Scénarciser la transition (0,2,0,2) → (2,0,2,1) en 3 actes :
+  Acte 1 — L'insurrection des communs
+  Acte 2 — La décroissance négociée
+  Acte 3 — L'émergence du tissu sobre
+
+estimated_distance_from_diamond: 5

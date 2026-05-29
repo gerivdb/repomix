@@ -1,0 +1,36 @@
+# Hypothèse contrefactuelle — Post-AGI Frugale
+# mode: counterfactual → destiné à BatVerse pour scénarisation
+
+version: "1.0.0"
+mode: counterfactual
+target: BatVerse
+
+hypothesis:
+  label: "Post-AGI Frugale"
+  description: >-
+    Une AGI omniprésente (I=2) dans un monde sobre (E=2).
+    Tension productive : une IA maximale peut-elle fonctionner
+    dans les limites planétaires ? Ou la sobriété impose-t-elle I≤1 ?
+
+quadruplet_hypothetique:
+  S: 2
+  M: 0
+  E: 2
+  I: 2
+
+tensions:
+  - axis: "E × I"
+    detail: "I=2 (IA max) × E=2 (sobre) — contradiction productive"
+  - axis: "S × M"
+    detail: "S=2 × M=0 — cohérence avec Diamond, divergence sur l'IA"
+
+question_ouverte: >-
+  Une IA omniprésente peut-elle être sobre ?
+  Ou la sobriété implique-t-elle nécessairement I≤1 ?
+
+batverse_directive: >-
+  Générer le débat narratif autour de cette tension.
+  Explorer 3 actes : l'émergence, la crise, la résolution (ou pas).
+
+estimated_distance_from_diamond: 1
+# Diamond = (2,0,2,1), hypothèse = (2,0,2,2) → distance = 1

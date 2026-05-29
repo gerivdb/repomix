@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.egg-info/
+.pytest_cache/
+*.egg
+dist/
+build/
+renders/*.mermaid.md
+renders/*.yaml
+renders/*.svg

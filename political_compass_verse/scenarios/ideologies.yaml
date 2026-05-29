@@ -1,0 +1,120 @@
+# political_compass_verse/scenarios/ideologies.yaml
+# 11 scénarios politiques + référence Diamond encodés en quadruplets ternaires (S, M, E, I)
+#
+# Axes :
+#   S = Solidarité      (0=individualiste, 1=mixte, 2=solidaire)
+#   M = Marché          (0=non-marchand, 1=régulé, 2=marchand)
+#   E = Écologie        (0=extractiviste, 1=modérée, 2=sobre)
+#   I = IA              (0=absente, 1=frugale, 2=omniprésente)
+
+version: "1.0.0"
+strate: L5
+verse: political_compass_verse
+encoder: TritPoliticalEncode
+
+diamond_reference:
+  name: "Diamond"
+  S: 2
+  M: 0
+  E: 2
+  I: 1
+  description: >-
+    Référence zéro du tétraèdre : solidaire maximal, non-marchand,
+    sobre thermodynamiquement (E=2), IA frugale (I=1).
+
+scenarios:
+  - name: "libertarien"
+    S: 0
+    M: 2
+    E: 0
+    I: 2
+    distance_vs_diamond: 7
+    opposing: true
+    description: "Marché total, pas de solidarité, extractivisme, IA omniprésente"
+
+  - name: "capitalisme_pur"
+    S: 0
+    M: 2
+    E: 0
+    I: 2
+    distance_vs_diamond: 7
+    opposing: true
+    description: "Équivalent libertarien sur les 4 axes"
+
+  - name: "liberalisme_moderé"
+    S: 0
+    M: 2
+    E: 1
+    I: 2
+    distance_vs_diamond: 5
+    description: "Marché dominant avec régulation écologique minimale"
+
+  - name: "gaulliste_souverainiste"
+    S: 1
+    M: 1
+    E: 1
+    I: 1
+    distance_vs_diamond: 2
+    description: "Équilibre quinaire central sur tous les axes"
+
+  - name: "social_democratie"
+    S: 2
+    M: 1
+    E: 1
+    I: 1
+    distance_vs_diamond: 3
+    description: "Solidarité forte, marché régulé, écologie modérée, IA frugale"
+
+  - name: "communisme_pur"
+    S: 2
+    M: 0
+    E: 1
+    I: 2
+    distance_vs_diamond: 4
+    description: "Solidaire, non-marchand, écologie modérée, IA omniprésente (centralisée)"
+
+  - name: "anarcho_gauche"
+    S: 2
+    M: 1
+    E: 2
+    I: 0
+    distance_vs_diamond: 4
+    description: "Solidaire, écologie maximale, rejet de l'IA centralisée"
+
+  - name: "ecologie_thermodynamique"
+    S: 1
+    M: 0
+    E: 2
+    I: 1
+    distance_vs_diamond: 3
+    description: "Sobriété énergétique amont, non-marchand, IA frugale"
+
+  - name: "capitalisme_surveillance"
+    S: 0
+    M: 2
+    E: 0
+    I: 2
+    distance_vs_diamond: 7
+    opposing: true
+    description: "Maximum d'extractivisme, données comme ressource"
+
+  - name: "communisme_plateforme"
+    S: 2
+    M: 0
+    E: 1
+    I: 1
+    distance_vs_diamond: 2
+    description: "Correspond à BOINC-LLM-P2P : solidaire, non-marchand, IA frugale"
+
+  - name: "ecologie_numerique"
+    S: 1
+    M: 0
+    E: 2
+    I: 0
+    distance_vs_diamond: 3
+    description: "Sobriété numérique radicale — correspond à VERSUS/lecun_*"
+
+metadata:
+  total_scenarios: 11
+  opposing_count: 3
+  closest_count: 2
