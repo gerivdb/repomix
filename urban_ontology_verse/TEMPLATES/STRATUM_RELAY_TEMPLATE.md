@@ -1,72 +1,91 @@
-# 🔁 STRATUM RELAY — [NOM_REPO] ([STRATE])
+# STRATUM RELAY TEMPLATE — v2.0.0
+# UrbanVerse | gerivdb/VERSUS
+# Date: 2026-05-29
 
-🔄 **VAGUE**: [N] | ⏱️ **Synchro**: [DATE] | **Hub**: gerivdb/LLM-REPO
+## Instructions d'utilisation
 
----
+Ce template est utilise par `relay_propagator.py` v3+ pour generer les STRATUM_RELAY.md.
 
-## 🧬 Identité stratique
-
-- **Strate** : [Ln] – [Libellé]
-- **Rôle canonique** : [description du rôle dans l'écosystème]
-- **Arrondissement** : [libellé urbain, ex: "7e — Pouvoir cognitif"]
-- **Parent** : [strate amont — strate parente]
-- **Enfants** : [strates aval — strates dépendantes]
-
----
-
-## 🧭 Navigation rapide
-
-- **PRD canonique** : `GOVERNANCE-HUB/PRD/PRD_ECOSYSTEM_SUPERSTRUCTURE_L0-L9_V1.md`
-- **Substrat central** : `gerivdb/LLM-REPO`
-- **Ontologie urbaine** : `VERSUS/urban_ontology_verse/`
-- **Ecosystème superstructure** : `VERSUS/PRD/PRD_URBAN_ONTOLOGY_VERSE_V1.md`
-- **Règles strate** : `LLM-REPO/RULES/behavior_rules.md#[Ln]`
+Parametres:
+- `{REPO_NOM}` — Nom du repo GitHub
+- `{STRATE}` — Strate UrbanVerse (L0, L1b, L1, L2, L2b, L3, L4, L5, L6, L7, L8, L9)
+- `{ROLE_CANONIQUE}` — Description du role dans l'ecosysteme
+- `{PARENT}` — Strate parente (depuis PARENT_MAP)
+- `{ENFANTS}` — Strates enfants (depuis CHILD_MAP)
+- `{PHI_CPS}` — Valeur phi-CPS (optionnel)
+- `{LIFECYCLE}` — ACTIVE, DEPRECATED, DORMANT, PENDING_CREATION
+- `{VAGUE}` — Niveau de vague (1, 2, 3)
+- `{REGLES_LOCALES}` — Liste de regles (depuis STRATE_RULES)
+- `{KARPATHY_RECALLS}` — Questions de rappel (depuis KARPATHY_RECALLS_V2 ou V3)
+- `{DEPENDANCES}` — Section dependances (Vague 3+ uniquement)
+- `{JOUR}` — Date du jour (YYYY-MM-DD)
 
 ---
 
-## 🚦 Règles locales (extrait hub)
+```markdown
+# STRATUM RELAY — {REPO_NOM} ({STRATE})
 
-- **[R1]** : [règle principale de la strate]
-- **[R2]** : [règle secondaire]
-- **Anti-patterns** :
-  - [anti-pattern 1]
-  - [anti-pattern 2]
+**VAGUE**: {VAGUE} | **Synchro**: {JOUR} | **Hub**: gerivdb/LLM-REPO
+{{#if LIFECYCLE == "DEPRECATED" || LIFECYCLE == "DORMANT"}}
+## Cycle de vie : {LIFECYCLE}
+
+> Ce repo est en etat `{LIFECYCLE}`. Ne pas investir de ressources sans validation GOVERNANCE-HUB.
+{{/if}}
+---
+
+## Identite stratique
+
+- **Strate** : `{STRATE}` — {STRATE_LABEL}
+- **Role canonique** : {ROLE_CANONIQUE}
+- **Parent** : {PARENT}
+- **Enfants** : {ENFANTS}
+{{#if PHI_CPS}}
+- **phi-CPS** : {PHI_CPS}
+{{/if}}
+
+## Navigation rapide
+
+- 📋 PRD canonique : `GOVERNANCE-HUB/PRD/PRD_ECOSYSTEM_SUPERSTRUCTURE_L0-L9_V1.md`
+- 🧭 Substrat cognitif : `gerivdb/LLM-REPO` (L1b — prive)
+- 📐 Standards repo : `REPO-STANDARDS` (RSS-v1)
+- 🗺️ Transit map : `VERSUS/urban_ontology_verse/TRANSIT/transit_map.yaml`
+- 📦 Cadastre : `VERSUS/urban_ontology_verse/CADASTRE/cadastre_full.yaml`
+
+## Regles locales
+
+{REGLES_LOCALES}
+
+{{#if VAGUE >= 2}}
+## Karpathy-Recall local (Vague {VAGUE} — {NB_QUESTIONS}Q)
+
+> Reponds mentalement a ces questions avant d'agir dans ce repo.
+
+{KARPATHY_RECALLS}
+{{/if}}
+
+{{#if VAGUE >= 3}}
+## Dependances directes
+
+{DEPENDANCES}
+{{/if}}
+
+## Vague de mise a jour
+
+| Vague | Contenu | Statut |
+|-------|---------|--------|
+| **{VAGUE} (courante)** | {VAGUE_LABEL} | ✅ Deploye |
+| {VAGUE_SUIVANTE} (suivante) | {SUIVANT_LABEL} | ⏳ Planifie |
 
 ---
 
-## 🧠 Karpathy-Recall local
+*Genere par `VERSUS/urban_ontology_verse/TOOLS/relay_propagator.py` v3.0*
+*UrbanVerse v1.0.0 — gerivdb/VERSUS (L8)*
+```
 
-> Questions de rappel cognitif pour l'agent LLM.
-> À répondre après ingestion du relais, avant de passer à la strate suivante.
+## Legende des vagues
 
-1. [Question de rappel 1 — fondamentaux]
-2. [Question de rappel 2 — règles locales]
-3. [Question de rappel 3 — navigation]
-
----
-
-## 📡 Vague de mise à jour
-
-| Champ | Valeur |
-|-------|--------|
-| Vague courante | [N] |
-| Vague cible | [N+1] |
-| Contenu actuel | [description du contenu de cette vague] |
-| Prochaine vague | [date estimée] |
-
----
-
-## 📍 Adresse postale (parcelle cadastrale)
-
-| Champ | Valeur |
-|-------|--------|
-| Parcelle | [repo_name] |
-| Strate | [Ln] |
-| Connectivité | [DSL / FIBRE] |
-| Zone | [zone_1 / zone_2 / zone_3 / zone_4] |
-| Transit | [lignes M1, RER, tram, bus] |
-
----
-
-*Template v1.0.0 — UrbanVerse — gerivdb/VERSUS*
-*Stratum Relay = Station de Métro Cognitive — Ancrage ontologique minimale*
+| Vague | Contenu | Sections obligatoires |
+|-------|---------|----------------------|
+| **Vague 1** | Identite + navigation | Identite, Navigation, Regles, Vague |
+| **Vague 2** | + Karpathy-Recall 5Q | + Karpathy-Recall (5 questions) |
+| **Vague 3** | + Karpathy-Recall 10Q + dependances | + Karpathy-Recall (10 questions) + Dependances directes |
