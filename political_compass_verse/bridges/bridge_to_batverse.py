@@ -188,6 +188,29 @@ class TritPoliticalNarrate:
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(arc.to_dict(), f, indent=2, ensure_ascii=False)
 
+    def to_character_state(self, arc: "BatVerseArc") -> dict:
+        """
+        Traduit un BatVerseArc en representation compatible CharacterState BatVerse.
+
+        Adaptateur temporaire jusqu'a formalisation du contrat d'arc.
+        Quand BatVerse sera pret a consommer, le NarrativeEntanglementOperator
+        saura quoi faire de entanglement_seed.
+
+        Returns:
+            dict avec character_id, state_vector, narrative_tension, arc_mode, entanglement_seed.
+        """
+        question = None
+        if arc.mode == "counterfactual" and arc.narrative_summary:
+            question = arc.narrative_summary
+
+        return {
+            "character_id": f"political_scenario_{arc.arc_id}",
+            "state_vector": list(arc.source_quadruplet) if arc.source_quadruplet else [0, 0, 0, 0],
+            "narrative_tension": arc.label,
+            "arc_mode": arc.mode,
+            "entanglement_seed": question,
+        }
+
     # ── Cohérence narrative ────────────────────────────────────────────────
 
     def _coherence_score(self, quad: TritQuadruplet) -> float:

@@ -75,3 +75,46 @@ class TritPoliticalDistance:
                 "normalized": round(d / self.MAX_DISTANCE, 3),
             }
         return report
+
+
+# ── Governance thresholds ─────────────────────────────────────────────────
+
+GOVERNANCE_TOLERANCE = 5    # distance acceptable sans alerte
+GOVERNANCE_HARD_LIMIT = 7   # distance maximale observée (marketplace Phase 4)
+
+
+def governance_alert(
+    quadruplet: TritQuadruplet,
+    reference: Optional[TritQuadruplet] = None,
+    label: str = "",
+) -> Optional[dict]:
+    """
+    Retourne un dict d'alerte si la distance dépasse GOVERNANCE_TOLERANCE.
+    Ne bloque rien. Destiné au logging dans political_compass_analysis.yaml.
+
+    Returns:
+        None si distance <= TOLERANCE, sinon dict avec severity, distance, message.
+    """
+    if reference is None:
+        from .trit_encoder import DIAMOND_REFERENCE
+        reference = DIAMOND_REFERENCE
+
+    calc = TritPoliticalDistance()
+    dist = calc.distance(quadruplet, reference)
+
+    if dist <= GOVERNANCE_TOLERANCE:
+        return None
+
+    severity = "CRITICAL" if dist >= GOVERNANCE_HARD_LIMIT else "WARNING"
+
+    return {
+        "label": label,
+        "quadruplet": list(quadruplet),
+        "distance_from_diamond": dist,
+        "severity": severity,
+        "message": (
+            f"Distance {dist} depasse le seuil de tolerance "
+            f"({GOVERNANCE_TOLERANCE}). Severite: {severity}"
+        ),
+    }
+

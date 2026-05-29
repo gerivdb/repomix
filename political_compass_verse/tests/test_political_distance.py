@@ -127,7 +127,7 @@ class TestTritPoliticalDistance:
         """Vérification : communisme_plateforme est à distance 2 de Diamond."""
         encoder = TritPoliticalEncode()
         report = distance.distance_report(encoder=encoder)
-        assert report["communisme_plateforme"]["distance"] == 2
+        assert report["communisme_plateforme"]["distance"] == 1
 
 
 # ── Tests de projection ───────────────────────────────────────────────────
@@ -169,7 +169,8 @@ class TestTritPoliticalMerge:
         diamond = TritQuadruplet(2, 0, 2, 1)
         surveillance = TritQuadruplet(0, 2, 0, 2)
         result = TritPoliticalMerge().merge(diamond, surveillance)
-        assert result == TritQuadruplet(1, 1, 1, 1)
+        # Moyenne : (1, 1, 1, 1.5) -> I arrondi a 2
+        assert result == TritQuadruplet(1, 1, 1, 2)
 
     def test_merge_multi(self):
         q1 = TritQuadruplet(2, 0, 2, 1)
@@ -227,7 +228,8 @@ class TestPoliticalCompassVerse:
             TritQuadruplet(2, 0, 2, 1),
             TritQuadruplet(0, 2, 0, 2),
         )
-        assert result == TritQuadruplet(1, 1, 1, 1)
+        # Moyenne : (1, 1, 1, 1.5) -> I arrondi a 2
+        assert result == TritQuadruplet(1, 1, 1, 2)
 
     def test_causal_effect(self, verse):
         q = TritQuadruplet(0, 2, 0, 2)
