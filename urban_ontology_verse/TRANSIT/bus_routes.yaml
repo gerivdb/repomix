@@ -1,0 +1,37 @@
+# bus_routes.yaml — Manifeste des lignes de Bus UrbanVerse
+# Version: 1.0.0 | Date: 2026-05-29
+
+lignes:
+  - id: BUS-72
+    nom: "Bus APIs REST"
+    type: bus
+    repos_group: "api_rest"
+    rule_delivered: "versionnement_endpoint_policy.md"
+    frequence: "sur propagation regle"
+    description: "Distribution regle de versionnement a tous les repos API"
+    arrets:
+      - repo: ECOYSTEM
+        role: "SOT operationnel (API governance)"
+      - repo: NEXUS
+        role: "Mega-SOT data cross-repo (entity resolution)"
+
+  - id: BUS-91
+    nom: "Bus Interfaces CLI"
+    type: bus
+    repos_group: "cli_tools"
+    rule_delivered: "cli_public_interface_policy.md"
+    frequence: "sur propagation regle"
+    description: "Distribution regle d'interface publique CLI"
+    arrets:
+      - repo: ECOS-CLI
+        role: "CLI maitre orchestrateur"
+      - repo: KIVA-CLI
+        role: "CLI orchestrateur projets/apps"
+      - repo: BRAIN-CLI
+        role: "CLI extraction BRAIN"
+      - repo: OPENCLAW-CLI
+        role: "Intent Normalization Gateway"
+      - repo: FLUENCE-CLI
+        role: "CLI orchestration cognitive"
+      - repo: DevTools-CLI
+        role: "DevOps automation CLI"
