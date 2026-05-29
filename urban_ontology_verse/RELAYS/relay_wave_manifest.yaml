@@ -1,208 +1,105 @@
 # relay_wave_manifest.yaml — Etat des vagues Stratum Relays
 # UrbanVerse v1.0.0 | gerivdb/VERSUS | Mis a jour: 2026-05-29
 
-version: "1.5.0"
+version: "1.5.1"
 last_updated: "2026-05-29"
 propagator: "urban_ontology_verse/TOOLS/relay_propagator.py v2.0"
 template: "urban_ontology_verse/TEMPLATES/STRATUM_RELAY_TEMPLATE.md"
 cadastre: "urban_ontology_verse/CADASTRE/cadastre_full.yaml"
 
-# ═══════════════════════════════════════════════════════════════════════════
-# VAGUE 2 — 11 repos (identite + regles + Karpathy-Recall 5Q)
-# ═══════════════════════════════════════════════════════════════════════════
-
 repos:
-  GOVERNANCE-HUB:
-    strate: L0
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee"
-    derniere_synchro: "2026-05-28"
-    priorite: P0-CRITIQUE
+  GOVERNANCE-HUB: { strate: L0, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee", derniere_synchro: "2026-05-28", priorite: P0-CRITIQUE }
+  LLM-REPO:       { strate: L1b, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — CREE 2026-05-29", derniere_synchro: "2026-05-29", priorite: P0-BLOQUANT }
+  ECOYSTEM:       { strate: L1, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P1 }
+  NEXUS:          { strate: L1, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P1 }
+  BRAIN:          { strate: L2, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee", derniere_synchro: "2026-05-28", priorite: P0-CRITIQUE }
+  FLUENCE:        { strate: L2, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P1 }
+  ECOS-CLI:       { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee", derniere_synchro: "2026-05-28", priorite: P0-CRITIQUE }
+  KIVA:           { strate: L4, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P1 }
+  MIMIR:          { strate: L6, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P2 }
+  COMET:          { strate: L7, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P2 }
+  VERSUS:         { strate: L8, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee (auto-referentiel)", derniere_synchro: "2026-05-28", priorite: P0-CRITIQUE }
 
-  LLM-REPO:
-    strate: L1b
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee — CREE 2026-05-29"
-    derniere_synchro: "2026-05-29"
-    priorite: P0-BLOQUANT
-    note: "Repo cree + enregistre dans known_repositories.yaml v1.1 (73 repos)"
+  ONTOLOGY:     { strate: L1, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  TINA:         { strate: L2, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  WAZAA:        { strate: L2, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  DATA-MINER:   { strate: L2, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  VDB:          { strate: L2, vague_courante: 1, statut: "Vague 1 deployee (branche: master)", derniere_synchro: "2026-05-29" }
 
-  ECOYSTEM:
-    strate: L1
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee"
-    derniere_synchro: "2026-05-29"
-    priorite: P1
+  DevTools:               { strate: L3, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  FORGE:                  { strate: L3, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  ATLAS:                  { strate: L4, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  PULSE:                  { strate: L4, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  CONTAINER-ORCHESTRATOR: { strate: L4, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  GATEWAY-MANAGER:        { strate: L4, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  DevTools-CLI:           { strate: L3, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
 
-  NEXUS:
-    strate: L1
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee"
-    derniere_synchro: "2026-05-29"
-    priorite: P1
+  KIVA-CLI:               { strate: L3, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  BRAIN-CLI:              { strate: L3, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  OPENCLAW-CLI:           { strate: L3, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  FLUENCE-CLI:            { strate: L3, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  strix:                  { strate: L3, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  GOST:                   { strate: L3, vague_courante: 1, statut: "Vague 1 deployee (branche: master)", derniere_synchro: "2026-05-29" }
+  ecos-plugin-perplexity: { strate: L3, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
 
-  BRAIN:
-    strate: L2
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee"
-    derniere_synchro: "2026-05-28"
-    priorite: P0-CRITIQUE
+  vsix-ai-orchestrator: { strate: L5, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  vscode-lm-proxy:      { strate: L5, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
 
-  FLUENCE:
-    strate: L2
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee"
-    derniere_synchro: "2026-05-29"
-    priorite: P1
+  SKILLS:       { strate: L6, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  BRAIN-DOCS:   { strate: L6, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  DOC-UNIV-DEV: { strate: L6, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
 
-  ECOS-CLI:
-    strate: L3
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee"
-    derniere_synchro: "2026-05-28"
-    priorite: P0-CRITIQUE
+  GeriCode:    { strate: L7, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  ECOS-VISION: { strate: L7, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  Gitnote:     { strate: L7, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  GERIBOOKING: { strate: L7, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
 
-  KIVA:
-    strate: L4
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee"
-    derniere_synchro: "2026-05-29"
-    priorite: P1
+  CANDIDATOR: { strate: L8, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  BATVERSE:   { strate: L8, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  racines:    { strate: L8, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  PITCH-1:    { strate: L8, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  DMR:        { strate: L8, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
 
-  MIMIR:
-    strate: L6
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee"
-    derniere_synchro: "2026-05-29"
-    priorite: P2
+  TRANSCENDANCE:      { strate: L8, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  GERI-VON-DER-BITSH: { strate: L8, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  BANK-BUSTER:        { strate: L8, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
 
-  COMET:
-    strate: L7
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee"
-    derniere_synchro: "2026-05-29"
-    priorite: P2
+  FERMI-EVER:   { strate: L4, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  PLIX:         { strate: L5, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  LYCOS:        { strate: L4, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  CodeDB-E5620: { strate: L4, vague_courante: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
 
-  VERSUS:
-    strate: L8
-    vague_courante: 2
-    vague_cible: 2
-    statut: "Vague 2 deployee (auto-referentiel)"
-    derniere_synchro: "2026-05-28"
-    priorite: P0-CRITIQUE
+  CLIP-FACTORY:   { strate: L5, vague_courante: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
+  TOOL-FACTORY-1: { strate: L3, vague_courante: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
+  email-sender-1: { strate: L3, vague_courante: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
+  email-sender-2: { strate: L3, vague_courante: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
 
-  # ═══════════════════════════════════════════════════════════════════════════
-  # VAGUE 1 — 43 repos (identite + navigation)
-  # ═══════════════════════════════════════════════════════════════════════════
+  ATHENA: { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  ARES:   { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  APOLLO: { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  HERMES: { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  VULKAN: { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  2025-0905-FRUSTRATION:        { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  2025-0906-JP-PETIT:           { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  2025-0903-comparateur-IA-code: { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  2025-0303-BRAIN:              { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  2025-0312-BRAIN2:             { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  2025-0402-DEEPSITE:           { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
+  2025-0920-BOOKING:            { strate: L9, statut: "EXCLU — L9/DEPRECATED" }
 
-  # -- Lot 1 : L1/L2 cognitif --
-  ONTOLOGY:     { strate: L1, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  TINA:         { strate: L2, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  WAZAA:        { strate: L2, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  DATA-MINER:   { strate: L2, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 2 : L3/L4 infrastructure --
-  DevTools:               { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  FORGE:                  { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  ATLAS:                  { strate: L4, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  PULSE:                  { strate: L4, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  CONTAINER-ORCHESTRATOR: { strate: L4, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  GATEWAY-MANAGER:        { strate: L4, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  DevTools-CLI:           { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 3 : L3 CLIs --
-  KIVA-CLI:             { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  BRAIN-CLI:            { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  OPENCLAW-CLI:         { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  FLUENCE-CLI:          { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  strix:                { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  ecos-plugin-perplexity: { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 4 : L5 IA distribuee --
-  vsix-ai-orchestrator: { strate: L5, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  vscode-lm-proxy:      { strate: L5, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 5 : L6 memoire --
-  SKILLS:       { strate: L6, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  BRAIN-DOCS:   { strate: L6, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  DOC-UNIV-DEV: { strate: L6, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 6 : L7 interfaces --
-  GeriCode:    { strate: L7, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  ECOS-VISION: { strate: L7, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  Gitnote:     { strate: L7, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  GERIBOOKING: { strate: L7, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 7 : L8 vie reelle --
-  CANDIDATOR: { strate: L8, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  BATVERSE:   { strate: L8, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  racines:    { strate: L8, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  PITCH-1:    { strate: L8, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  DMR:        { strate: L8, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 8 : VDB (branche: master) --
-  VDB: { strate: L2, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee (branche: master)", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 9 : L8 suite --
-  TRANSCENDANCE:      { strate: L8, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  GERI-VON-DER-BITSH: { strate: L8, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  BANK-BUSTER:        { strate: L8, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 10 : L4/L5 specialise --
-  FERMI-EVER:   { strate: L4, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  PLIX:         { strate: L5, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  LYCOS:        { strate: L4, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  CodeDB-E5620: { strate: L4, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-
-  # -- Lot 11 : DORMANT --
-  CLIP-FACTORY:   { strate: L5, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
-  TOOL-FACTORY-1: { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
-  email-sender-1: { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
-  email-sender-2: { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
-
-  # ═══════════════════════════════════════════════════════════════════════════
-  # EXCLUS — L9/DEPRECATED (jamais de STRATUM_RELAY)
-  # ═══════════════════════════════════════════════════════════════════════════
-  ATHENA:                        { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  ARES:                          { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  APOLLO:                        { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  HERMES:                        { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  VULKAN:                        { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  2025-0905-FRUSTRATION:        { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  2025-0906-JP-PETIT:           { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  2025-0903-comparateur-IA-code: { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  2025-0303-BRAIN:              { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  2025-0312-BRAIN2:             { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  2025-0402-DEEPSITE:           { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-  2025-0920-BOOKING:            { strate: L9, vague_courante: 0, vague_cible: 0, statut: "EXCLU — L9/DEPRECATED" }
-
-  # ═══════════════════════════════════════════════════════════════════════════
-  # ECHECS — branche par defaut non trouvable (a resoudre en Phase 5)
-  # ═══════════════════════════════════════════════════════════════════════════
-  ONTOLOGY_MC:       { strate: L1, vague_courante: 0, vague_cible: 1, statut: "ECHEC — branche inconnue", priorite: P3 }
-  BatMCP:            { strate: L3, vague_courante: 0, vague_cible: 1, statut: "ECHEC — branche inconnue", priorite: P2 }
-  ECIT-CLI:          { strate: L3, vague_courante: 0, vague_cible: 1, statut: "ECHEC — branche inconnue", priorite: P3 }
-  JOURNALISTE:       { strate: L8, vague_courante: 0, vague_cible: 1, statut: "ECHEC — branche inconnue", priorite: P4 }
-  LUKAS-PRESTATIONS: { strate: L8, vague_courante: 0, vague_cible: 1, statut: "ECHEC — branche inconnue", priorite: P4 }
-  GOST:              { strate: L3, vague_courante: 0, vague_cible: 1, statut: "ECHEC — branche inconnue", priorite: P3 }
+  BatMCP:            { strate: L3, statut: "INEXISTANT SUR GITHUB — dossier local D:\\DO\\WEB\\TOOLS\\L4-TOOLS\\BatMCP" }
+  ONTOLOGY_MC:       { strate: L1, statut: "INEXISTANT SUR GITHUB — dossier local D:\\DO\\WEB\\TOOLS\\L5-ARCHIVE\\ONTOLOGY_MC" }
+  ECIT-CLI:          { strate: L3, statut: "INEXISTANT SUR GITHUB — dossier local D:\\DO\\WEB\\TOOLS\\L1-INFRA\\ECIT-CLI" }
+  JOURNALISTE:       { strate: L8, statut: "INEXISTANT SUR GITHUB — dossier local D:\\DO\\WEB\\TOOLS\\L3-CITIZENS\\JOURNALISTE" }
+  LUKAS-PRESTATIONS: { strate: L8, statut: "INEXISTANT SUR GITHUB — dossier local D:\\DO\\WEB\\TOOLS\\L3-CITIZENS\\LUKAS-PRESTATIONS" }
 
 summary:
   total_repos_cadastre: 73
   vague_2_deployes: 11
-  vague_1_deployes: 43
-  total_stratum_relay_deployes: 54
+  vague_1_deployes: 44
+  total_stratum_relay_deployes: 55
   exclus_L9_deprecated: 12
-  echecs_a_traiter: 6
-  taux_couverture: "74% (54/73) — 88% sur 61 eligibles"
+  inexistants_github_local_only: 5
+  taux_couverture: "75% (55/73) — 92% sur 61 eligibles"
   phase_courante: "Phase 4 completee"
-  phase_suivante: "Phase 5 — resolution 6 echecs + Vague 3 (recalls enrichis)"
+  phase_suivante: "Phase 5 — creer/pusher 5 repos manquants + Vague 3"
