@@ -13,43 +13,43 @@ parcelles:
   # -- P0_CONSTITUTIONAL --------------------------------------------------------
 
   - repo_name: NEXUS
-    strate: L1
-    layer_source: L1_CAUSALITY
-    arrondissement: "L1 — Substrat global (Centre donnees)"
-    role_canonique: "Mega-SOT — registre des registres, gouvernance cross-repo"
-    phi_cps: 3.697
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P1
+     strate: L1
+     layer_source: L1_CAUSALITY
+     arrondissement: "L1 — Substrat global (Centre donnees)"
+     role_canonique: "Mega-SOT — registre des registres, gouvernance cross-repo"
+     phi_cps: 3.697
+     connectivite: DSL
+     zone: zone_1
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P1
 
   - repo_name: ECOYSTEM
-    strate: L1
-    layer_source: L2_COMPOSITION
-    arrondissement: "L1 — Substrat global (Prefecture)"
-    role_canonique: "BLO orchestrator — PLAN/, WAL, phi-CPS governance — SOT operationnel"
-    phi_cps: 3.697
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P1
+     strate: L1
+     layer_source: L2_COMPOSITION
+     arrondissement: "L1 — Substrat global (Prefecture)"
+     role_canonique: "BLO orchestrator — PLAN/, WAL, phi-CPS governance — SOT operationnel"
+     phi_cps: 3.697
+     connectivite: DSL
+     zone: zone_1
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P1
 
   - repo_name: KIVA
-    strate: L4
-    layer_source: L1_CAUSALITY
-    arrondissement: "L4 — Infrastructure (Centrale electrique)"
-    role_canonique: "Infrastructure runtime — agents, scheduler, WAL — orchestrateur LXC/LXD HP Z600"
-    phi_cps: 3.697
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P2
+     strate: L4
+     layer_source: L1_CAUSALITY
+     arrondissement: "L4 — Infrastructure (Centrale electrique)"
+     role_canonique: "Infrastructure runtime — agents, scheduler, WAL — orchestrateur LXC/LXD HP Z600"
+     phi_cps: 3.697
+     connectivite: DSL
+     zone: zone_1
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P2
 
   - repo_name: GATEWAY-MANAGER
     strate: L4
@@ -65,30 +65,30 @@ parcelles:
     priorite: P2
 
   - repo_name: BRAIN
-    strate: L2
-    layer_source: L3_EMERGENCE
-    arrondissement: "L2 — Systeme nerveux (Grandes Ecoles)"
-    role_canonique: "Couche IA principale — agents cognitifs — hub cognitif racine"
-    phi_cps: 3.697
-    connectivite: FIBRE
-    zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P0
-
-  - repo_name: ECOS-CLI
-     strate: L3
-     layer_source: L1_CAUSALITY
-     arrondissement: "L3 — Systeme moteur (Gare centrale)"
-     role_canonique: "Orchestrateur local CLI — workflows EECS — executable pur post-migration v1.1.0"
+     strate: L2
+     layer_source: L3_EMERGENCE
+     arrondissement: "L2 — Systeme nerveux (Grandes Ecoles)"
+     role_canonique: "Couche IA principale — agents cognitifs — hub cognitif racine"
      phi_cps: 3.697
      connectivite: FIBRE
      zone: zone_1
-     vague_cible: 2
-     vague_courante: 2
+     vague_cible: 3
+     vague_courante: 3
      lifecycle: ACTIVE
      priorite: P0
+
+  - repo_name: ECOS-CLI
+      strate: L3
+      layer_source: L1_CAUSALITY
+      arrondissement: "L3 — Systeme moteur (Gare centrale)"
+      role_canonique: "Orchestrateur local CLI — workflows EECS — executable pur post-migration v1.1.0"
+      phi_cps: 3.697
+      connectivite: FIBRE
+      zone: zone_1
+      vague_cible: 3
+      vague_courante: 3
+      lifecycle: ACTIVE
+      priorite: P0
 
    - repo_name: IRIS
      strate: L3
@@ -171,12 +171,12 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P1
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P1
 
-  - repo_name: CANDIDATOR
+   - repo_name: CANDIDATOR
     strate: L8
     layer_source: L3_EMERGENCE
     arrondissement: "L8 — Vie reelle (Applications humaines)"
@@ -210,12 +210,12 @@ parcelles:
     phi_cps: 3.697
     connectivite: FIBRE
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P0
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P0
 
-  # -- P2_SUPPORT ---------------------------------------------------------------
+   # -- P2_SUPPORT ---------------------------------------------------------------
 
   - repo_name: DevTools
     strate: L3
@@ -277,10 +277,10 @@ parcelles:
     phi_cps: null
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P2
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P2
 
   - repo_name: GERIBOOKING
     strate: L7
@@ -420,10 +420,10 @@ parcelles:
     phi_cps: 3.697
     connectivite: FIBRE
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P0
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P0
 
   - repo_name: DevTools-CLI
     strate: L3
@@ -793,10 +793,10 @@ parcelles:
     role_canonique: "Browser automation et web navigation — interface humain-web"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P2
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P2
 
   - repo_name: BatMCP
     strate: L3
@@ -971,23 +971,25 @@ parcelles:
     phi_cps: 3.697
     connectivite: FIBRE
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P0-BLOQUANT
-    note: "Cree 2026-05-29 — enregistre dans known_repositories.yaml v1.1 (73 repos)"
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P0-BLOQUANT
+     note: "Cree 2026-05-29 — substrat cognitif LLM prive — Vague 3 deployee Session H"
 
-summary:
+  summary:
    total: 76
    actifs: 59
    dormants: 4
    deprecated: 12
    pending_creation: 0
-   vague_3_deployes: 3
-   vague_2_cible: 11
-   vague_2_deployees: 11
-   vague_1_cible: 50
-   vague_1_a_deployer: 50
+   vague_3_deployes: 14
+   vague_2_cible: 0
+   vague_2_deployees: 0
+   vague_1_cible: 44
+   vague_1_a_deployer: 44
    exclu_deploiement: 12
    session_G_completee: true
    session_G_repos: [IRIS, KRONOS, ARGUS]
+   session_H_completee: true
+   session_H_repos: [GOVERNANCE-HUB, LLM-REPO, ECOYSTEM, NEXUS, BRAIN, FLUENCE, ECOS-CLI, KIVA, MIMIR, COMET, VERSUS]

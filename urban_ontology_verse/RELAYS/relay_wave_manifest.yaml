@@ -9,17 +9,17 @@ cadastre: "urban_ontology_verse/CADASTRE/cadastre_full.yaml"
 skill_deploy: "LLM-REPO/AGENTS/modes/urbanverse-deploy.md v1.0"
 
 repos:
-  GOVERNANCE-HUB: { strate: L0, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-28", priorite: P0-CRITIQUE }
-  LLM-REPO:       { strate: L1b, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee — boot_sequence v1.1 + R6 rules", derniere_synchro: "2026-05-29", priorite: P0-BLOQUANT }
-  ECOYSTEM:       { strate: L1, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P1 }
-  NEXUS:          { strate: L1, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P1 }
-  BRAIN:          { strate: L2, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-28", priorite: P0-CRITIQUE }
-  FLUENCE:        { strate: L2, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P1 }
-  ECOS-CLI:       { strate: L3, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-28", priorite: P0-CRITIQUE }
-  KIVA:           { strate: L4, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P1 }
-  MIMIR:          { strate: L6, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P2 }
-  COMET:          { strate: L7, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P2 }
-  VERSUS:         { strate: L8, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee (auto-ref)", derniere_synchro: "2026-05-28", priorite: P0-CRITIQUE }
+  GOVERNANCE-HUB: { strate: L0, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — constitution + guardrails agents", derniere_synchro: "2026-05-29", priorite: P0-CRITIQUE }
+  LLM-REPO:       { strate: L1b, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — boot_sequence v1.1 + R6 rules", derniere_synchro: "2026-05-29", priorite: P0-BLOQUANT }
+  ECOYSTEM:       { strate: L1, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — BLO orchestrator + WAL drift detection", derniere_synchro: "2026-05-29", priorite: P1 }
+  NEXUS:          { strate: L1, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — cross-repo sync integrity", derniere_synchro: "2026-05-29", priorite: P1 }
+  BRAIN:          { strate: L2, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — agents cognitifs phi-CPS", derniere_synchro: "2026-05-29", priorite: P0-CRITIQUE }
+  FLUENCE:        { strate: L2, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — logique ternaire-floue dependances", derniere_synchro: "2026-05-29", priorite: P1 }
+  ECOS-CLI:       { strate: L3, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — workflows EECS post-migration v1.1.0", derniere_synchro: "2026-05-29", priorite: P0-CRITIQUE }
+  KIVA:           { strate: L4, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — runtime agents scheduler WAL", derniere_synchro: "2026-05-29", priorite: P1 }
+  MIMIR:          { strate: L6, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — Wiki Atomique coherence diagrammes", derniere_synchro: "2026-05-29", priorite: P2 }
+  COMET:          { strate: L7, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — browser automation sessions ENV2", derniere_synchro: "2026-05-29", priorite: P2 }
+  VERSUS:         { strate: L8, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — auto-ref UrbanVerse coherence interne", derniere_synchro: "2026-05-29", priorite: P0-CRITIQUE }
 
   IRIS:           { strate: L3, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — canal opensrc + triade cognitive", derniere_synchro: "2026-05-29", priorite: P1 }
   KRONOS:         { strate: L3, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — pipeline source diff + triade cognitive", derniere_synchro: "2026-05-29", priorite: P1 }
@@ -100,16 +100,16 @@ repos:
 
 summary:
    total_repos_cadastre: 76
-   vague_3_deployes: 3
-   vague_2_deployes: 11
+   vague_3_deployes: 14
+   vague_2_deployes: 0
    vague_1_deployes: 44
    vague_0_deployes: 0
    total_stratum_relay_deployes: 58
    exclus_L9_deprecated: 12
    local_only_non_github: 5
    taux_couverture: "76% (58/76) — 95% sur 61 eligibles"
-   phase_courante: "Phase 5 Session G completee — IRIS/KRONOS/ARGUS Vague 3"
-   phase_suivante: "Phase 5 Session H — Vague 4 (agents locaux) pour 14 repos critiques"
+   phase_courante: "Phase 5 Session H completee — 14 repos Vague 3 (P0/P1 SOT)"
+   phase_suivante: "Phase 5 Session I — Vague 2 batch L3 moteur (14 repos)"
    outils:
     relay_propagator: v3.0 (auto-commit, detect_branch, upsert, batch_deploy, validate)
     skill_deploy: urbanverse-deploy v1.0
