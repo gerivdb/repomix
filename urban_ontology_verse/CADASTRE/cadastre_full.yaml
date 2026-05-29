@@ -2,10 +2,10 @@
 # Source : GOVERNANCE-HUB/known_repositories.yaml (76 repos, v1.2, 2026-05-29)
 # Version: 1.2.0 | Date: 2026-05-29
 
-version: "3.0.0"
-last_updated: "2026-05-29"
+version: "4.0.0"
+last_updated: "2026-05-30"
 source: "GOVERNANCE-HUB/known_repositories.yaml"
-total_repos: 76
+total_repos: 79
 schema_ref: "CADASTRE/cadastre_schema.yaml"
 
 parcelles:
@@ -21,7 +21,7 @@ parcelles:
      connectivite: DSL
      zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P1
 
@@ -34,7 +34,7 @@ parcelles:
      connectivite: DSL
      zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P1
 
@@ -47,7 +47,7 @@ parcelles:
      connectivite: DSL
      zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P2
 
@@ -57,10 +57,10 @@ parcelles:
     arrondissement: "L4 — Infrastructure (Peripherique reseau)"
     role_canonique: "Proxy/reverse proxy — BDCP, Clapet — gestion trafic entrant/sortant"
     phi_cps: 3.697
-    connectivite: DSL
-    zone: zone_1
-     vague_cible: 2
-     vague_courante: 2
+     connectivite: DSL
+     zone: zone_1
+     vague_cible: 3
+     vague_courante: 3
      lifecycle: ACTIVE
      priorite: P2
 
@@ -73,7 +73,7 @@ parcelles:
      connectivite: FIBRE
      zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P0
 
@@ -86,7 +86,7 @@ parcelles:
       connectivite: FIBRE
       zone: zone_1
       vague_cible: 3
-      vague_courante: 3
+      vague_courante: 4
       lifecycle: ACTIVE
       priorite: P0
 
@@ -99,7 +99,7 @@ parcelles:
      connectivite: DSL
      zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P1
      opensrc_canal: true
@@ -114,7 +114,7 @@ parcelles:
      connectivite: DSL
      zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P1
      source_diff_pipeline: true
@@ -129,7 +129,7 @@ parcelles:
      connectivite: FIBRE
      zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P0
      scan_proprioceptif: true
@@ -141,14 +141,14 @@ parcelles:
     strate: L3
     layer_source: L2_COMPOSITION
     arrondissement: "L3 — Systeme moteur (CLI projets)"
-    role_canonique: "CLI orchestrateur projets/apps — scaffolding KIVA"
-    phi_cps: 3.697
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P2
+     role_canonique: "CLI orchestrateur projets/apps — scaffolding KIVA"
+     phi_cps: 3.697
+     connectivite: DSL
+     zone: zone_1
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P2
 
   - repo_name: ONTOLOGY
     strate: L1
@@ -158,8 +158,8 @@ parcelles:
     phi_cps: 4.092
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P1
 
@@ -172,7 +172,7 @@ parcelles:
     connectivite: DSL
     zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P1
 
@@ -184,8 +184,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -197,8 +197,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -211,7 +211,7 @@ parcelles:
     connectivite: FIBRE
     zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P0
 
@@ -225,8 +225,8 @@ parcelles:
     phi_cps: 4.672
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -238,8 +238,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -251,8 +251,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -264,8 +264,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -278,7 +278,7 @@ parcelles:
     connectivite: DSL
     zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P2
 
@@ -290,8 +290,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -303,8 +303,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -316,8 +316,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -329,8 +329,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -342,8 +342,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -355,8 +355,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 4
     lifecycle: ACTIVE
     priorite: P2
 
@@ -367,8 +367,8 @@ parcelles:
     role_canonique: "Vector database — embeddings nomic-embed 768-dim — 29 issues"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P1
 
@@ -379,8 +379,8 @@ parcelles:
     role_canonique: "Mining Software Repositories — detection anti-patterns"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -391,8 +391,8 @@ parcelles:
     role_canonique: "Cluster narratif-dramatique — projection holographique — verse narratif distinct de VERSUS"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -463,8 +463,8 @@ parcelles:
     role_canonique: "Intent Normalization Gateway — normalisation des intentions entrantes"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -476,8 +476,8 @@ parcelles:
     phi_cps: 4.267
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -488,8 +488,8 @@ parcelles:
     role_canonique: "Base de connaissances R&D — 18 issues"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -500,8 +500,8 @@ parcelles:
     role_canonique: "Ghost Operations — acces furtif ressources numeriques"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -512,8 +512,8 @@ parcelles:
     role_canonique: "Trusted Intelligent Neurosymbolic Architecture"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -524,7 +524,7 @@ parcelles:
     role_canonique: "Evolution emergente et patterns transcendantaux de NEXUS"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
+    vague_cible: 3
     vague_couranta: 0
     lifecycle: ACTIVE
     priorite: P3
@@ -536,8 +536,8 @@ parcelles:
     role_canonique: "Orchestrateur IA pour GPUs NVIDIA Fermi abandonnes"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -548,8 +548,8 @@ parcelles:
     role_canonique: "Langage video ternaire pour LLM graphes — substrat IA locale"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -560,8 +560,8 @@ parcelles:
     role_canonique: "Fork CodeDB pour Xeon E5620 sans AVX — Zig"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -572,8 +572,8 @@ parcelles:
     role_canonique: "Fork CodeDB avec FLUENCE matrix encoding + Janus compression — Zig"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -584,8 +584,8 @@ parcelles:
     role_canonique: "Pitch commercial — 4 issues"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -596,8 +596,8 @@ parcelles:
     role_canonique: "Utilitaire Python — usage interne"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P4
 
@@ -608,8 +608,8 @@ parcelles:
     role_canonique: "Orchestration LXC/LXD native HP Z600"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -620,8 +620,8 @@ parcelles:
      role_canonique: "Infrastructure as Code — Terraform/K8s/Docker"
      connectivite: DSL
      zone: zone_1
-     vague_cible: 2
-     vague_courante: 2
+     vague_cible: 3
+     vague_courante: 3
      lifecycle: ACTIVE
      priorite: P2
 
@@ -632,8 +632,8 @@ parcelles:
     role_canonique: "Orchestrateur multi-depots — bots, agentique — LangChain/CrewAI, n8n"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -644,8 +644,8 @@ parcelles:
     role_canonique: "Plugin Perplexity/SuperMemory pour ECOS-CLI — Intent Hash, Notion sync"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P2
 
@@ -681,7 +681,7 @@ parcelles:
     connectivite: DSL
     zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P2
 
@@ -740,8 +740,8 @@ parcelles:
     role_canonique: "Strix — outil systeme"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -764,8 +764,8 @@ parcelles:
     role_canonique: "Gouvernance politique — expression citoyenne"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
+    vague_cible: 3
+    vague_courante: 3
     lifecycle: ACTIVE
     priorite: P3
 
@@ -859,7 +859,7 @@ parcelles:
     connectivite: FIBRE
     zone: zone_1
      vague_cible: 3
-     vague_courante: 3
+     vague_courante: 4
      lifecycle: ACTIVE
      priorite: P0-BLOQUANT
      note: "Cree 2026-05-29 — substrat cognitif LLM prive — Vague 3 deployee Session H"
@@ -870,8 +870,9 @@ parcelles:
    dormants: 4
    deprecated: 12
    pending_creation: 0
-    vague_3_deployes: 13
-    vague_2_deployees: 35
+    vague_4_deployes: 14
+    vague_3_deployes: 44
+    vague_2_deployees: 0
     exclu_deploiement: 12
     session_G_completee: true
     session_G_repos: [IRIS, KRONOS, ARGUS]
@@ -883,4 +884,7 @@ parcelles:
     session_J_repos: [GATEWAY-MANAGER, PULSE, ATLAS, CONTAINER-ORCHESTRATOR, FERMI-EVER, LYCOS, CodeDB-E5620, vsix-ai-orchestrator, vscode-lm-proxy, PLIX, VDB, DATA-MINER, WAZAA, TINA]
     session_K_completee: true
     session_K_repos: [SKILLS, BRAIN-DOCS, DOC-UNIV-DEV, GeriCode, ECOS-VISION, Gitnote, GERIBOOKING, CANDIDATOR, BATVERSE, racines, PITCH-1, DMR, TRANSCENDANCE, GERI-VON-DER-BITSH, BANK-BUSTER, ONTOLOGY]
-    session_L_status: "EN_COURS — DORMANT relay minimal + audit final + v2.0.0"
+    session_7_completee: true
+    session_7_repos: [ONTOLOGY, FERMI-EVER, LYCOS, CodeDB-E5620, KIVA-CLI, BRAIN-CLI, OPENCLAW-CLI, FLUENCE-CLI, strix, GOST, ecos-plugin-perplexity, vsix-ai-orchestrator, vscode-lm-proxy, PLIX, SKILLS, BRAIN-DOCS, DOC-UNIV-DEV, GeriCode, ECOS-VISION, Gitnote, GERIBOOKING, VDB, DATA-MINER, WAZAA, TINA, CANDIDATOR, BATVERSE, racines, PITCH-1, DMR, TRANSCENDANCE, GERI-VON-DER-BITSH, BANK-BUSTER, DevTools, FORGE, DevTools-CLI, GATEWAY-MANAGER, PULSE, ATLAS, CONTAINER-ORCHESTRATOR]
+    session_L_status: "COMPLETEE — Phase 7 clôture, 44 repos V3, v4.0.0"
+    phase_courante: "Phase 7 COMPLETEE — Toute l'infrastructure deployee"

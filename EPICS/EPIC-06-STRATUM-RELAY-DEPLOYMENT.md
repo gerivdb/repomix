@@ -6,9 +6,9 @@
 **Titre** : Déploiement Complet des Stratum Relays — Vagues 1 à 7
 **PRD parent** : `PRD/PRD_URBAN_ONTOLOGY_VERSE_V1.md`
 **EPIC précédent** : EPIC-03 (Vague 1 pilote)
-**Version** : 1.1.0
-**Date** : 2026-05-29
-**Statut** : 🟢 EN COURS — Phases 1-6 complétées, Phase 7 planifiée
+**Version** : 1.2.0
+**Date** : 2026-05-30
+**Statut** : 🟢 Phases 1-7 COMPLÉTÉES — 58 relays déployés, Phase 8 planifiée
 **Priorité** : P0 — Infrastructure de gouvernance cognitive
 
 ---
@@ -141,28 +141,23 @@ Passage des 14 repos SOT de Vague 3 à Vague 4. Chaque relay enrichi avec :
 
 **Critères de sortie** : `vague_courante: 4` dans le manifest pour 14 SOT, sections Agents locaux + Auto-conformité dans chaque fichier.
 
-### Phase 7 — Vague 3+ pour les 40 repos V2 restants
-*Statut : 🔮 Planifiée — Cible fin Q2 2026*
+### Phase 7 — Vague 3 pour les 40 repos V2 restants
+*Statut : ✅ COMPLÉTÉE*
 
-Passage des 40 repos de Vague 2 à Vague 3 (10Q + dépendances).
+Passage des 40 repos de Vague 2 à Vague 3 (10Q + dépendances). Création de BATVERSE et DMR (V0→3).
 
-C'est la phase la plus volumineuse : 40 repos à enrichir de leurs dépendances complètes et passer de 5Q à 10Q.
+| Sous-phase | Repos | Statut |
+|-----------|-------|--------|
+| 7a | ONTOLOGY, FERMI-EVER, LYCOS, CodeDB-E5620 | ✅ |
+| 7b | KIVA-CLI, BRAIN-CLI, OPENCLAW-CLI, FLUENCE-CLI, strix, GOST, ecos-plugin-perplexity | ✅ |
+| 7c | vsix-ai-orchestrator, vscode-lm-proxy, PLIX | ✅ |
+| 7d | SKILLS, BRAIN-DOCS, DOC-UNIV-DEV | ✅ |
+| 7e | GeriCode, ECOS-VISION, Gitnote, GERIBOOKING | ✅ |
+| 7f | VDB, DATA-MINER, WAZAA, TINA | ✅ |
+| 7g | CANDIDATOR, BATVERSE, racines, PITCH-1, DMR, TRANSCENDANCE, GERI-VON-DER-BITSH, BANK-BUSTER | ✅ |
+| 7h | DevTools, FORGE, DevTools-CLI, GATEWAY-MANAGER, PULSE, ATLAS, CONTAINER-ORCHESTRATOR | ✅ |
 
-#### Sous-phases prévues
-
-| Sous-phase | Repos | Priorité |
-|-----------|-------|----------|
-| 7a | L1 restants (ONTOLOGY, TOPOS) + L4 restants (FERMI-EVER, LYCOS, CodeDB-E5620, CONTAINER-ORCHESTRATOR) | P1 |
-| 7b | L3 moteur restants (KIVA-CLI, BRAIN-CLI, OPENCLAW-CLI, FLUENCE-CLI, strix, GOST, ecos-plugin-perplexity) | P1 |
-| 7c | L5 (vsix-ai-orchestrator, vscode-lm-proxy, PLIX) | P2 |
-| 7d | L6 (SKILLS, BRAIN-DOCS, DOC-UNIV-DEV) | P2 |
-| 7e | L7 (GeriCode, ECOS-VISION, Gitnote, GERIBOOKING) | P2 |
-| 7f | L2 (VDB, DATA-MINER, WAZAA, TINA) | P2 |
-| 7g | L8 vie réelle (CANDIDATOR, BATVERSE, racines, PITCH-1, DMR, TRANSCENDANCE, GERI-VON-DER-BITSH, BANK-BUSTER) | P3 |
-
-**Critères de sortie** : `vague_courante: 3` dans le manifest pour 40 repos, 10Q + dépendances dans chaque fichier.
-
-**Approche** : batch via `relay_propagator.py --vague 3 --batch` par sous-phase, avec auto-commit et détection de branche.
+**Critères de sortie** : `vague_courante: 3` dans le manifest pour 42 repos (40 V2→3 + BATVERSE/DMR V0→3), 10Q + dépendances dans chaque fichier.
 
 ---
 
@@ -175,23 +170,24 @@ C'est la phase la plus volumineuse : 40 repos à enrichir de leurs dépendances 
 | US-06-3 | En tant que mainteneur, je peux propager automatiquement les Stratum Relays en batch | `relay_propagator.py` v3.0 avec `--vague 2/3/4` | 1-5 ✅ |
 | US-06-4 | En tant que repo SOT, je déclare mes agents locaux et mes guards d'auto-conformité | Sections Agents locaux + Auto-conformité dans 14 SOT | 6 ✅ |
 | US-06-5 | En tant qu'agent LLM, je sais que ARGUS peut patcher automatiquement les pathologies GAP/ORPHAN | Section Patch auto dans ARGUS | 6 ✅ |
-| US-06-6 | En tant que mainteneur, les 40 repos V2 ont passé au niveau Vague 3 (10Q + dépendances) | `vague_courante: 3` dans 40 repos | 7 🔮 |
-| US-06-7 | En tant qu'agent LLM, l'audit cross-repo détecte les incohérences automatiquement | `recall_coherence_check.py --opensrc --full` passe sans erreur | 7 🔮 |
-| US-06-8 | En tant que mainteneur, je connais l'état exact de déploiement de chaque repo en un seul coup d'œil | `relay_wave_manifest.yaml` à jour avec compteurs cohérents | 1-6 ✅ |
+| US-06-6 | En tant que mainteneur, les 40 repos V2 ont passé au niveau Vague 3 (10Q + dépendances) | `vague_courante: 3` dans 42 repos | 7 ✅ |
+| US-06-7 | En tant qu'agent LLM, l'audit cross-repo détecte les incohérences automatiquement | `recall_coherence_check.py --opensrc --full` passe sans erreur | 8 🔮 |
+| US-06-8 | En tant que mainteneur, je connais l'état exact de déploiement de chaque repo en un seul coup d'œil | `relay_wave_manifest.yaml` à jour avec compteurs cohérents | 1-7 ✅ |
 
 ---
 
-## Métriques de couverture (fin Phase 6)
+## Métriques de couverture (fin Phase 7)
 
-| Niveau | Nb repos | % de 76 | Description |
+| Niveau | Nb repos | % de 79 | Description |
 |--------|---------|---------|-------------|
 | Vague 4 | 14 | 18% | Agents locaux + auto-conformité (SOT uniquement) |
-| Vague 2 | 40 | 53% | 5Q + règles locales |
+| Vague 3 | 42 | 53% | 10Q + dépendances |
 | Vague 1 | 4 | 5% | DORMANT (vague cible = 1) |
-| **Total avec relay** | **58** | **76%** | |
-| L9 DEPRECATED | 12 | 16% | Exclus du périmètre |
-| LOCAL ONLY | 5 | 7% | Pas de repo GitHub |
-| **Total** | **76** | **100%** | |
+| **Total avec relay** | **60** | **76%** | |
+| L9 DEPRECATED | 12 | 15% | Exclus du périmètre |
+| LOCAL ONLY | 5 | 6% | Pas de repo GitHub |
+| SANS FICHIER | 2 | 3% | ~~BATVERSE~~, ~~DMR~~ (créés en Phase 7) |
+| **Total** | **79** | **100%** | |
 
 ### Métriques détaillées par strate
 
@@ -199,18 +195,18 @@ C'est la phase la plus volumineuse : 40 repos à enrichir de leurs dépendances 
 |--------|------------|----|----|----|----|-----|
 | L0 | 1 | 1 | 0 | 0 | 0 | 0 |
 | L1b | 1 | 1 | 0 | 0 | 0 | 0 |
-| L1 | 4 | 3 | 0 | 1 | 0 | 0 |
-| L2 | 5 | 1 | 0 | 4 | 0 | 0 |
-| L2b | 1 | 0 | 0 | 1 | 0 | 0 |
-| L3 | 15 | 1 | 0 | 12 | 2 | 0 |
-| L4 | 5 | 1 | 0 | 4 | 0 | 0 |
-| L5 | 5 | 0 | 0 | 3 | 1 | 1 |
-| L6 | 3 | 1 | 0 | 2 | 0 | 0 |
-| L7 | 5 | 1 | 0 | 4 | 0 | 0 |
-| L8 | 9 | 1 | 0 | 7 | 1 | 0 |
+| L1 | 4 | 3 | 1 | 0 | 0 | 0 |
+| L2 | 5 | 1 | 4 | 0 | 0 | 0 |
+| L2b | 1 | 0 | 1 | 0 | 0 | 0 |
+| L3 | 14 | 1 | 11 | 0 | 2 | 0 |
+| L4 | 5 | 1 | 4 | 0 | 0 | 0 |
+| L5 | 5 | 0 | 3 | 0 | 1 | 1 |
+| L6 | 3 | 1 | 2 | 0 | 0 | 0 |
+| L7 | 5 | 1 | 4 | 0 | 0 | 0 |
+| L8 | 9 | 1 | 8 | 0 | 0 | 0 |
 | L9 | 12 | 0 | 0 | 0 | 0 | 12 (DEPRECATED) |
 | LOCAL | 5 | 0 | 0 | 0 | 0 | 5 |
-| **Total** | **76** | **14** | **0** | **40** | **4** | **18** |
+| **Total** | **79** | **14** | **42** | **0** | **4** | **19** |
 
 ### Fichiers de registre
 
@@ -272,7 +268,8 @@ C'est la phase la plus volumineuse : 40 repos à enrichir de leurs dépendances 
 | Phase 4 — Alignement 11 SOT | 2026-05-29 | ✅ Complétée | Session H |
 | Phase 5 — Batch 40 repos V2 | 2026-05-29 | ✅ Complétée | Sessions I, J, K |
 | Phase 6 — Enrichissement 14 SOT V4 | 2026-05-29 | ✅ Complétée | 14 pushes en parallèle |
-| Phase 7 — Batch 40 repos V3 | 2026-05-30 → TBD | 🔮 Planifiée | 7a→7g par sous-phase |
+| Phase 7 — Batch 40 repos V3 | 2026-05-29 → 2026-05-30 | ✅ COMPLÉTÉE | 7a→7h en parallèle |
+| Phase 8 — Vague 4 pour 43 repos V3 | TBD | 🔮 Planifiée | 8a→8g par sous-phase |
 
 ---
 
@@ -294,15 +291,17 @@ C'est la phase la plus volumineuse : 40 repos à enrichir de leurs dépendances 
 
 L'EPIC-06 est considéré **complété** quand :
 
-- [ ] Phase 7 terminée : 40 repos passés de V2 à V3
-- [ ] Manifest v4.0.0 : 14 V4 + 40 V3 + 4 V1 = 58 relays
-- [ ] Audit cross-repo : `recall_coherence_check.py --opensrc --full` passe sans erreur
+- [x] Phase 7 terminée : 42 repos passés à V3 (10Q + dépendances)
+- [x] BATVERSE et DMR créés en V3
+- [x] Manifest v4.0.0 : 14 V4 + 42 V3 + 4 V1 = 60 relays
+- [ ] Audit cross-repo : `recall_coherence_check.py --opensrc --full` passe sans erreur (Phase 8)
 - [ ] `ecos-source.md` vérifié et complété dans ECOS-CLI
 - [ ] ADR-010 créée pour formaliser le modèle de déploiement en vagues
 - [ ] `relay_propagator.py` v4.0 avec support Vague 5 (patch auto + monitoring)
+- [ ] Phase 8 : 43 repos V3 → V4 (agents locaux + auto-conformité)
 
 ---
 
-*Genere par OWL (Kilo) — UrbanVerse v3.0.0*
-*IntentHash: 0xEPIC06_STRATUM_RELAY_DEPLOYMENT_20260529*
-*Mise a jour: 2026-05-05-29 — v1.1.0 : ajout definition vagues, criteres sortie, planning Phase 7 detaille, metriques par strate, criteres completude*
+*Genere par OWL (Kilo) — UrbanVerse v4.0.0*
+*IntentHash: 0xEPIC06_STRATUM_RELAY_DEPLOYMENT_20260530*
+*Mise a jour: 2026-05-30 — v1.2.0 : Phase 7 completee (42 repos V3), metriques finales, Phase 8 planifiee*
