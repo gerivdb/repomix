@@ -1,4 +1,4 @@
-# cadastre_full.yaml — Cadastre complet de l'ecosysteme gerivdb
+﻿# cadastre_full.yaml — Cadastre complet de l'ecosysteme gerivdb
 # Source : GOVERNANCE-HUB/known_repositories.yaml (76 repos, v1.2, 2026-05-29)
 # Version: 1.2.0 | Date: 2026-05-29
 
@@ -59,10 +59,10 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: ACTIVE
-    priorite: P2
+     vague_cible: 2
+     vague_courante: 2
+     lifecycle: ACTIVE
+     priorite: P2
 
   - repo_name: BRAIN
      strate: L2
@@ -329,8 +329,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -342,8 +342,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -367,8 +367,8 @@ parcelles:
     role_canonique: "Vector database — embeddings nomic-embed 768-dim — 29 issues"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P1
 
@@ -379,8 +379,8 @@ parcelles:
     role_canonique: "Mining Software Repositories — detection anti-patterns"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -512,8 +512,8 @@ parcelles:
     role_canonique: "Trusted Intelligent Neurosymbolic Architecture"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -536,8 +536,8 @@ parcelles:
     role_canonique: "Orchestrateur IA pour GPUs NVIDIA Fermi abandonnes"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -548,8 +548,8 @@ parcelles:
     role_canonique: "Langage video ternaire pour LLM graphes — substrat IA locale"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -560,8 +560,8 @@ parcelles:
     role_canonique: "Fork CodeDB pour Xeon E5620 sans AVX — Zig"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -572,8 +572,8 @@ parcelles:
     role_canonique: "Fork CodeDB avec FLUENCE matrix encoding + Janus compression — Zig"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -608,8 +608,8 @@ parcelles:
     role_canonique: "Orchestration LXC/LXD native HP Z600"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -617,13 +617,13 @@ parcelles:
     strate: L4
     layer_source: L0_INFRASTRUCTURE
     arrondissement: "L4 — Infrastructure (IaC declaratif)"
-    role_canonique: "Infrastructure as Code — Terraform/K8s/Docker"
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: ACTIVE
-    priorite: P2
+     role_canonique: "Infrastructure as Code — Terraform/K8s/Docker"
+     connectivite: DSL
+     zone: zone_1
+     vague_cible: 2
+     vague_courante: 2
+     lifecycle: ACTIVE
+     priorite: P2
 
   - repo_name: WAZAA
     strate: L2
@@ -632,8 +632,8 @@ parcelles:
     role_canonique: "Orchestrateur multi-depots — bots, agentique — LangChain/CrewAI, n8n"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -871,9 +871,8 @@ parcelles:
    deprecated: 12
    pending_creation: 0
     vague_3_deployes: 14
-    vague_2_deployees: 10
-    vague_1_cible: 37
-    vague_1_a_deployer: 37
+    vague_2_deployees: 23
+    vague_1_a_deployer: 24
     exclu_deploiement: 12
     session_G_completee: true
     session_G_repos: [IRIS, KRONOS, ARGUS]
@@ -881,3 +880,5 @@ parcelles:
     session_H_repos: [GOVERNANCE-HUB, LLM-REPO, ECOYSTEM, NEXUS, BRAIN, FLUENCE, ECOS-CLI, KIVA, MIMIR, COMET, VERSUS]
     session_I_completee: true
     session_I_repos: [DevTools, FORGE, KIVA-CLI, FLUENCE-CLI, BRAIN-CLI, OPENCLAW-CLI, DevTools-CLI, strix, GOST, ecos-plugin-perplexity]
+    session_J_completee: true
+    session_J_repos: [GATEWAY-MANAGER, PULSE, ATLAS, CONTAINER-ORCHESTRATOR, FERMI-EVER, LYCOS, CodeDB-E5620, vsix-ai-orchestrator, vscode-lm-proxy, PLIX, VDB, DATA-MINER, WAZAA, TINA]

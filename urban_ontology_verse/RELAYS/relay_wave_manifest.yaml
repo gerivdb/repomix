@@ -97,15 +97,15 @@ repos:
 summary:
    total_repos_cadastre: 76
    vague_3_deployes: 14
-    vague_2_deployes: 10
-    vague_1_deployes: 34
-    vague_0_deployes: 0
-    total_stratum_relay_deployes: 61
+   vague_2_deployes: 23
+   vague_1_deployes: 21
+   vague_0_deployes: 0
+   total_stratum_relay_deployes: 61
     exclus_L9_deprecated: 12
     local_only_non_github: 5
     taux_couverture: "80% (61/76) — 100% sur 61 eligibles"
-    phase_courante: "Phase 5 Session I completee — 10 L3 moteur Vague 2"
-    phase_suivante: "Phase 5 Session J — Vague 2 batch L4/L5/L2 infra+IA (14 repos)"
+    phase_courante: "Phase 5 Session J completee — 13 L4/L5/L2 Vague 2"
+    phase_suivante: "Phase 5 Session K — Vague 2 batch L6/L7/L8/L1 memoire+vie reelle (18 repos)"
    outils:
     relay_propagator: v3.0 (auto-commit, detect_branch, upsert, batch_deploy, validate)
     skill_deploy: urbanverse-deploy v1.0
