@@ -1,7 +1,7 @@
 # relay_wave_manifest.yaml — Etat des vagues Stratum Relays
 # UrbanVerse v1.0.0 | gerivdb/VERSUS | Mis a jour: 2026-05-29
 
-version: "1.7.0"
+version: "2.0.0"
 last_updated: "2026-05-29"
 propagator: "urban_ontology_verse/TOOLS/relay_propagator.py v3.0"
 template: "urban_ontology_verse/TEMPLATES/STRATUM_RELAY_TEMPLATE.md"
@@ -109,8 +109,8 @@ summary:
     exclus_L9_deprecated: 12
     local_only_non_github: 5
     taux_couverture: "76% (58/76) — 92% sur 64 eligibles"
-    phase_courante: "Phase 5 Sessions H-K completees — 58 relays deployes"
-    phase_suivante: "Phase 5 Session L — Clôture DORMANT + audit + v2.0.0"
+    phase_courante: "Phase 5 COMPLETEE — 58 relays deploiess, v2.0.0"
+    phase_suivante: "Phase 6 — Vague 3+ pour critiques, audit cross-repo continu"
    outils:
     relay_propagator: v3.0 (auto-commit, detect_branch, upsert, batch_deploy, validate)
     skill_deploy: urbanverse-deploy v1.0

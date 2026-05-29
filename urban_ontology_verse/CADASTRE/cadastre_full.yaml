@@ -2,7 +2,7 @@
 # Source : GOVERNANCE-HUB/known_repositories.yaml (76 repos, v1.2, 2026-05-29)
 # Version: 1.2.0 | Date: 2026-05-29
 
-version: "1.2.0"
+version: "2.0.0"
 last_updated: "2026-05-29"
 source: "GOVERNANCE-HUB/known_repositories.yaml"
 total_repos: 76
