@@ -1,0 +1,53 @@
+# tram_lines.yaml — Manifeste des lignes de Tramway UrbanVerse
+# Version: 1.0.0 | Date: 2026-05-29
+
+lignes:
+  - id: T1
+    nom: "Tramway Infrastructure L4"
+    type: tram
+    stratum: L4
+    arrets:
+      - repo: KIVA
+        role: "Orchestrateur LXC/LXD HP Z600"
+      - repo: ATLAS
+        role: "IaC declaratif (Terraform/K8s/Docker)"
+      - repo: GATEWAY-MANAGER
+        role: "Proxy/reverse proxy, BDCP, Clapet"
+      - repo: CONTAINER-ORCHESTRATOR
+        role: "Orchestration LXC/LXD native HP Z600"
+    frequence: "propagation vague N dans L4"
+    description: "Mise a jour groupee repos infrastructure"
+
+  - id: T2
+    nom: "Tramway IA Distribuee L5"
+    type: tram
+    stratum: L5
+    arrets:
+      - repo: BOINC-LLM-P2P
+        role: "Inference LLM distribuee (DHT Kademlia)"
+      - repo: CLIP-FACTORY
+        role: "Generation embeddings CLIP vision-language (DORMANT)"
+      - repo: vsix-ai-orchestrator
+        role: "Orchestration agents IDE (Cline, Kilocode, Copilot)"
+      - repo: vscode-lm-proxy
+        role: "Proxy LM pour VSCode"
+      - repo: PLIX
+        role: "Langage video ternaire pour LLM graphes"
+    frequence: "propagation vague N dans L5"
+    description: "Mise a jour groupee repos IA"
+
+  - id: T3
+    nom: "Tramway Memoire L6"
+    type: tram
+    stratum: L6
+    arrets:
+      - repo: MIMIR
+        role: "Wiki Atomique Diamond — roadmaps visuelles"
+      - repo: BRAIN-DOCS
+        role: "Documentation BRAIN-specific"
+      - repo: DOC-UNIV-DEV
+        role: "Base de connaissances R&D"
+      - repo: SKILLS
+        role: "Registre des skills (natifs/assimiles/externes)"
+    frequence: "propagation vague N dans L6"
+    description: "Mise a jour groupee repos memoire/documentation"
