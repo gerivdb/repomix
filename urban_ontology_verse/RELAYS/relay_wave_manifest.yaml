@@ -31,21 +31,17 @@ repos:
   DATA-MINER:   { strate: L2, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
   VDB:          { strate: L2, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee (branche: master)", derniere_synchro: "2026-05-29" }
 
-  DevTools:               { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  FORGE:                  { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  ATLAS:                  { strate: L4, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  PULSE:                  { strate: L4, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  CONTAINER-ORCHESTRATOR: { strate: L4, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  GATEWAY-MANAGER:        { strate: L4, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  DevTools-CLI:           { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  DevTools:               { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — SOT infra DevOps", derniere_synchro: "2026-05-29" }
+  FORGE:                  { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — CI/CD pipelines", derniere_synchro: "2026-05-29" }
+  DevTools-CLI:           { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — DevOps CLI templates", derniere_synchro: "2026-05-29" }
 
-  KIVA-CLI:               { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  BRAIN-CLI:              { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  OPENCLAW-CLI:           { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  FLUENCE-CLI:            { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  strix:                  { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
-  GOST:                   { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee (branche: master)", derniere_synchro: "2026-05-29" }
-  ecos-plugin-perplexity: { strate: L3, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
+  KIVA-CLI:               { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — CLI orchestrateur projets", derniere_synchro: "2026-05-29" }
+  BRAIN-CLI:              { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — CLI extraction BRAIN phi-CPS", derniere_synchro: "2026-05-29" }
+  OPENCLAW-CLI:           { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — Intent Normalization Gateway", derniere_synchro: "2026-05-29" }
+  FLUENCE-CLI:            { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — CLI orchestration cognitive", derniere_synchro: "2026-05-29" }
+  strix:                  { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — outil systeme interne", derniere_synchro: "2026-05-29" }
+  GOST:                   { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — Ghost Operations furtif", derniere_synchro: "2026-05-29" }
+  ecos-plugin-perplexity: { strate: L3, vague_courante: 2, vague_cible: 2, statut: "Vague 2 deployee — Perplexity plugin ECOS-CLI", derniere_synchro: "2026-05-29" }
 
   vsix-ai-orchestrator: { strate: L5, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
   vscode-lm-proxy:      { strate: L5, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
@@ -101,15 +97,15 @@ repos:
 summary:
    total_repos_cadastre: 76
    vague_3_deployes: 14
-   vague_2_deployes: 0
-   vague_1_deployes: 44
-   vague_0_deployes: 0
-   total_stratum_relay_deployes: 58
-   exclus_L9_deprecated: 12
-   local_only_non_github: 5
-   taux_couverture: "76% (58/76) — 95% sur 61 eligibles"
-   phase_courante: "Phase 5 Session H completee — 14 repos Vague 3 (P0/P1 SOT)"
-   phase_suivante: "Phase 5 Session I — Vague 2 batch L3 moteur (14 repos)"
+    vague_2_deployes: 10
+    vague_1_deployes: 34
+    vague_0_deployes: 0
+    total_stratum_relay_deployes: 61
+    exclus_L9_deprecated: 12
+    local_only_non_github: 5
+    taux_couverture: "80% (61/76) — 100% sur 61 eligibles"
+    phase_courante: "Phase 5 Session I completee — 10 L3 moteur Vague 2"
+    phase_suivante: "Phase 5 Session J — Vague 2 batch L4/L5/L2 infra+IA (14 repos)"
    outils:
     relay_propagator: v3.0 (auto-commit, detect_branch, upsert, batch_deploy, validate)
     skill_deploy: urbanverse-deploy v1.0

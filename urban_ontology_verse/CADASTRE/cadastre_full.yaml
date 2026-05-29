@@ -145,8 +145,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -225,8 +225,8 @@ parcelles:
     phi_cps: 4.672
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -355,121 +355,8 @@ parcelles:
     phi_cps: 3.697
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: ACTIVE
-    priorite: P2
-
-  # -- P3_DORMANT ---------------------------------------------------------------
-
-  - repo_name: CLIP-FACTORY
-    strate: L5
-    layer_source: L3_EMERGENCE
-    arrondissement: "L5 — IA distribuee (Factory embeddings)"
-    role_canonique: "Generation embeddings CLIP vision-language"
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: DORMANT
-    priorite: P4
-
-  - repo_name: TOOL-FACTORY-1
-    strate: L3
-    layer_source: L3_EMERGENCE
-    arrondissement: "L3 — Systeme moteur (Factory outils)"
-    role_canonique: "Factory outils generiques"
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: DORMANT
-    priorite: P4
-
-  - repo_name: email-sender-1
-    strate: L3
-    layer_source: L3_EMERGENCE
-    arrondissement: "L3 — Systeme moteur (Envoi email)"
-    role_canonique: "Envoi emails automatise — instance 1"
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: DORMANT
-    priorite: P4
-
-  - repo_name: email-sender-2
-    strate: L3
-    layer_source: L3_EMERGENCE
-    arrondissement: "L3 — Systeme moteur (Envoi email)"
-    role_canonique: "Envoi emails automatise — instance 2"
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: DORMANT
-    priorite: P4
-
-  # -- PRD_V36_ADDITIONS ---------------------------------------------------------
-
-  - repo_name: VERSUS
-    strate: L8
-    layer_source: L3_EMERGENCE
-    arrondissement: "L8 — Vie reelle & Creatif (Hub verses)"
-    role_canonique: "SOT cognitif — architecture Diamant verses — contient UrbanVerse"
-    phi_cps: 3.697
-    connectivite: FIBRE
-    zone: zone_1
-     vague_cible: 3
-     vague_courante: 3
-     lifecycle: ACTIVE
-     priorite: P0
-
-  - repo_name: DevTools-CLI
-    strate: L3
-    layer_source: L0_INFRASTRUCTURE
-    arrondissement: "L3 — Systeme moteur (CLI DevOps)"
-    role_canonique: "DevOps automation CLI — templates CI/CD"
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: ACTIVE
-    priorite: P2
-
-  - repo_name: FORGE
-    strate: L3
-    layer_source: L2_COMPOSITION
-    arrondissement: "L3 — Systeme moteur (CI/CD)"
-    role_canonique: "CI/CD automation — build orchestration — pipelines"
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: ACTIVE
-    priorite: P2
-
-  - repo_name: PULSE
-    strate: L4
-    layer_source: L2_COMPOSITION
-    arrondissement: "L4 — Infrastructure (Monitoring)"
-    role_canonique: "Monitoring temps reel — alerting — health metrics"
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
-    lifecycle: ACTIVE
-    priorite: P2
-
-  - repo_name: ECOS-VISION
-    strate: L7
-    layer_source: L3_EMERGENCE
-    arrondissement: "L7 — Interfaces (Visualisation ecosysteme)"
-    role_canonique: "Visualisation et intelligence diagrammatique — 16+ repos"
-    connectivite: DSL
-    zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -576,8 +463,8 @@ parcelles:
     role_canonique: "Intent Normalization Gateway — normalisation des intentions entrantes"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -589,8 +476,8 @@ parcelles:
     phi_cps: 4.267
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -613,8 +500,8 @@ parcelles:
     role_canonique: "Ghost Operations — acces furtif ressources numeriques"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -757,8 +644,8 @@ parcelles:
     role_canonique: "Plugin Perplexity/SuperMemory pour ECOS-CLI — Intent Hash, Notion sync"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P2
 
@@ -853,8 +740,8 @@ parcelles:
     role_canonique: "Strix — outil systeme"
     connectivite: DSL
     zone: zone_1
-    vague_cible: 1
-    vague_courante: 0
+    vague_cible: 2
+    vague_courante: 2
     lifecycle: ACTIVE
     priorite: P3
 
@@ -983,13 +870,14 @@ parcelles:
    dormants: 4
    deprecated: 12
    pending_creation: 0
-   vague_3_deployes: 14
-   vague_2_cible: 0
-   vague_2_deployees: 0
-   vague_1_cible: 44
-   vague_1_a_deployer: 44
-   exclu_deploiement: 12
-   session_G_completee: true
-   session_G_repos: [IRIS, KRONOS, ARGUS]
-   session_H_completee: true
-   session_H_repos: [GOVERNANCE-HUB, LLM-REPO, ECOYSTEM, NEXUS, BRAIN, FLUENCE, ECOS-CLI, KIVA, MIMIR, COMET, VERSUS]
+    vague_3_deployes: 14
+    vague_2_deployees: 10
+    vague_1_cible: 37
+    vague_1_a_deployer: 37
+    exclu_deploiement: 12
+    session_G_completee: true
+    session_G_repos: [IRIS, KRONOS, ARGUS]
+    session_H_completee: true
+    session_H_repos: [GOVERNANCE-HUB, LLM-REPO, ECOYSTEM, NEXUS, BRAIN, FLUENCE, ECOS-CLI, KIVA, MIMIR, COMET, VERSUS]
+    session_I_completee: true
+    session_I_repos: [DevTools, FORGE, KIVA-CLI, FLUENCE-CLI, BRAIN-CLI, OPENCLAW-CLI, DevTools-CLI, strix, GOST, ecos-plugin-perplexity]
