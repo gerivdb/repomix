@@ -1,11 +1,11 @@
 # cadastre_full.yaml — Cadastre complet de l'ecosysteme gerivdb
-# Source : GOVERNANCE-HUB/known_repositories.yaml (73 repos, v1.1, 2026-05-29)
-# Version: 1.1.0 | Date: 2026-05-29
+# Source : GOVERNANCE-HUB/known_repositories.yaml (76 repos, v1.2, 2026-05-29)
+# Version: 1.2.0 | Date: 2026-05-29
 
-version: "1.1.0"
+version: "1.2.0"
 last_updated: "2026-05-29"
 source: "GOVERNANCE-HUB/known_repositories.yaml"
-total_repos: 73
+total_repos: 76
 schema_ref: "CADASTRE/cadastre_schema.yaml"
 
 parcelles:
@@ -78,19 +78,64 @@ parcelles:
     priorite: P0
 
   - repo_name: ECOS-CLI
-    strate: L3
-    layer_source: L1_CAUSALITY
-    arrondissement: "L3 — Systeme moteur (Gare centrale)"
-    role_canonique: "Orchestrateur local CLI — workflows EECS — executable pur post-migration v1.1.0"
-    phi_cps: 3.697
-    connectivite: FIBRE
-    zone: zone_1
-    vague_cible: 2
-    vague_courante: 2
-    lifecycle: ACTIVE
-    priorite: P0
+     strate: L3
+     layer_source: L1_CAUSALITY
+     arrondissement: "L3 — Systeme moteur (Gare centrale)"
+     role_canonique: "Orchestrateur local CLI — workflows EECS — executable pur post-migration v1.1.0"
+     phi_cps: 3.697
+     connectivite: FIBRE
+     zone: zone_1
+     vague_cible: 2
+     vague_courante: 2
+     lifecycle: ACTIVE
+     priorite: P0
 
-  # -- P1_STRATEGIC -------------------------------------------------------------
+   - repo_name: IRIS
+     strate: L3
+     layer_source: L3_EMERGENCE
+     arrondissement: "L3 — Systeme moteur (Capteur externe)"
+     role_canonique: "Capteur d'observation — Triade Cognitive (IRIS/KRONOS/FLUX). Poll repos tiers, extraction signaux bruts, emission vers KRONOS."
+     phi_cps: 3.697
+     connectivite: DSL
+     zone: zone_1
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P1
+     opensrc_canal: true
+     session_deploiement: "Session G — 2026-05-29"
+
+   - repo_name: KRONOS
+     strate: L3
+     layer_source: L3_EMERGENCE
+     arrondissement: "L3 — Systeme moteur (Digesteur)"
+     role_canonique: "Digesteur signaux bruts — Triade Cognitive (IRIS/KRONOS/FLUX). Qualification, scoring, timeline, deduplication, fiches."
+     phi_cps: 3.697
+     connectivite: DSL
+     zone: zone_1
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P1
+     source_diff_pipeline: true
+     session_deploiement: "Session G — 2026-05-29"
+
+   - repo_name: ARGUS
+     strate: L1
+     layer_source: L1_CAUSALITY
+     arrondissement: "L1 — Substrat global (Correlateur automatise)"
+     role_canonique: "Gouvernance automatisee — detection/correction ecarts semantiques, structurels, ontologiques cross-repo."
+     phi_cps: 3.697
+     connectivite: FIBRE
+     zone: zone_1
+     vague_cible: 3
+     vague_courante: 3
+     lifecycle: ACTIVE
+     priorite: P0
+     scan_proprioceptif: true
+     session_deploiement: "Session G — 2026-05-29"
+
+   # -- P1_STRATEGIC -------------------------------------------------------------
 
   - repo_name: KIVA-CLI
     strate: L3
@@ -933,13 +978,16 @@ parcelles:
     note: "Cree 2026-05-29 — enregistre dans known_repositories.yaml v1.1 (73 repos)"
 
 summary:
-  total: 73
-  actifs: 56
-  dormants: 4
-  deprecated: 12
-  pending_creation: 0
-  vague_2_cible: 11
-  vague_2_deployees: 11
-  vague_1_cible: 50
-  vague_1_a_deployer: 50
-  exclu_deploiement: 12
+   total: 76
+   actifs: 59
+   dormants: 4
+   deprecated: 12
+   pending_creation: 0
+   vague_3_deployes: 3
+   vague_2_cible: 11
+   vague_2_deployees: 11
+   vague_1_cible: 50
+   vague_1_a_deployer: 50
+   exclu_deploiement: 12
+   session_G_completee: true
+   session_G_repos: [IRIS, KRONOS, ARGUS]

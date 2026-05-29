@@ -1,7 +1,7 @@
 # relay_wave_manifest.yaml — Etat des vagues Stratum Relays
 # UrbanVerse v1.0.0 | gerivdb/VERSUS | Mis a jour: 2026-05-29
 
-version: "1.6.0"
+version: "1.7.0"
 last_updated: "2026-05-29"
 propagator: "urban_ontology_verse/TOOLS/relay_propagator.py v3.0"
 template: "urban_ontology_verse/TEMPLATES/STRATUM_RELAY_TEMPLATE.md"
@@ -20,6 +20,10 @@ repos:
   MIMIR:          { strate: L6, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P2 }
   COMET:          { strate: L7, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee", derniere_synchro: "2026-05-29", priorite: P2 }
   VERSUS:         { strate: L8, vague_courante: 2, vague_cible: 3, statut: "Vague 2 deployee (auto-ref)", derniere_synchro: "2026-05-28", priorite: P0-CRITIQUE }
+
+  IRIS:           { strate: L3, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — canal opensrc + triade cognitive", derniere_synchro: "2026-05-29", priorite: P1 }
+  KRONOS:         { strate: L3, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — pipeline source diff + triade cognitive", derniere_synchro: "2026-05-29", priorite: P1 }
+  ARGUS:          { strate: L1, vague_courante: 3, vague_cible: 3, statut: "Vague 3 deployee — scan proprioceptif ecos source fetch", derniere_synchro: "2026-05-29", priorite: P0-CRITIQUE }
 
   ONTOLOGY:     { strate: L1, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
   TINA:         { strate: L2, vague_courante: 1, vague_cible: 2, statut: "Vague 1 deployee", derniere_synchro: "2026-05-29" }
@@ -95,17 +99,18 @@ repos:
   LUKAS-PRESTATIONS: { strate: L8, statut: "LOCAL ONLY — D:\\DO\\WEB\\TOOLS\\L3-CITIZENS\\LUKAS-PRESTATIONS" }
 
 summary:
-  total_repos_cadastre: 73
-  vague_2_deployes: 11
-  vague_1_deployes: 44
-  vague_0_deployes: 0
-  total_stratum_relay_deployes: 55
-  exclus_L9_deprecated: 12
-  local_only_non_github: 5
-  taux_couverture: "75% (55/73) — 92% sur 61 eligibles"
-  phase_courante: "Phase 5 Session A completee"
-  phase_suivante: "Phase 5 Session B — TRAINING/ + recall_coherence_check v2"
-  outils:
+   total_repos_cadastre: 76
+   vague_3_deployes: 3
+   vague_2_deployes: 11
+   vague_1_deployes: 44
+   vague_0_deployes: 0
+   total_stratum_relay_deployes: 58
+   exclus_L9_deprecated: 12
+   local_only_non_github: 5
+   taux_couverture: "76% (58/76) — 95% sur 61 eligibles"
+   phase_courante: "Phase 5 Session G completee — IRIS/KRONOS/ARGUS Vague 3"
+   phase_suivante: "Phase 5 Session H — Vague 4 (agents locaux) pour 14 repos critiques"
+   outils:
     relay_propagator: v3.0 (auto-commit, detect_branch, upsert, batch_deploy, validate)
     skill_deploy: urbanverse-deploy v1.0
     P5_01A_patched: true
