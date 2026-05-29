@@ -1,0 +1,48 @@
+# zonage_idf.yaml — Zonage de la Metropole UrbanVerse
+# Version: 1.0.0 | Date: 2026-05-29
+
+zonage:
+  zone_1:
+    nom: "Paris intra-muros"
+    stratum: "L0→L9 core"
+    trust: FULL
+    perimetre: "repos gerivdb actifs avec STRATUM_RELAY.md"
+    comptage: 55
+    
+  zone_2:
+    nom: "Petite Couronne"
+    stratum: "partenaires"
+    trust: TRUSTED
+    perimetre: "depots partenaires de confiance"
+    comptage: 0
+    
+  zone_3:
+    nom: "Grande Couronne"
+    stratum: "externe"
+    trust: LIMITED
+    perimetre: "integrations publiques, forks communautaires"
+    comptage: 0
+    
+  zone_4:
+    nom: "Hors IDF — SaaS"
+    stratum: "cloud"
+    trust: EXTERNAL
+    perimetre: "services cloud tiers (GitHub, Anthropic, etc.)"
+    comptage: 0
+
+  # Périphérique (anneau de contrôle L3→L9)
+  peripherique:
+    nom: "Peripherique UrbanVerse"
+    portes:
+      - type: API_GATEWAY
+        repo: GATEWAY-MANAGER
+      - type: CLI_PUBLIQUE
+        repo: ECOS-CLI
+      - type: WEBHOOK
+        description: "Réception événements externes"
+    echangeurs:
+      - repo: GATEWAY-MANAGER
+        role: "Proxy/reverse proxy, BDCP, Clapet"
+      - repo: COMET
+        role: "Browser automation, interface humain-web"
+    regle: "Aucune connexion directe Zone 3→Zone 1 sans échangeur validé"
