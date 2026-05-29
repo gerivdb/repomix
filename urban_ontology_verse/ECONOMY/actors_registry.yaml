@@ -1,0 +1,66 @@
+# actors_registry.yaml — Acteurs Urbains UrbanVerse
+# Version: 1.0.0 | Date: 2026-05-29
+
+acteurs:
+  marchands_rungis:
+    nom: "Marchand de Rungis"
+    type: "Composant reutilisable"
+    role: "Library, module partage, utilitaire generique"
+    repos:
+      - SKILLS
+      - BRAIN-DOCS
+    frequence_usage: "eleve"
+
+  salarie_script:
+    nom: "Salarie-script"
+    type: "Fonction/script"
+    role: "Travailleur productif — execute des taches repetitives"
+    repos:
+      - email-sender-1
+      - email-sender-2
+      - TOOL-FACTORY-1
+    frequence_usage: "moyenne"
+
+  manager_agent:
+    nom: "Manager-agent"
+    type: "Agent LLM"
+    role: "Decideur cognitif — prend des decisions strategique"
+    repos:
+      - BRAIN
+      - LLM-REPO
+      - FLUENCE
+    frequence_usage: "eleve"
+
+  controleur_ratp:
+    nom: "Controleur RATP"
+    type: "Regles de strate"
+    role: "Validation conformite — verifie que les regles sont respectees"
+    repos:
+      - ONTOLOGY
+      - RULES (LLM-REPO/behavior_rules.md)
+    frequence_usage: "eleve"
+
+  voyageur:
+    nom: "Voyageur"
+    type: "Requete / session LLM"
+    role: "Trafic cognitif temporaire — entre dans un repo, agit, sort"
+    repos: "tous"
+    frequence_usage: "variable"
+
+  aeroport_cdg:
+    nom: "Aeroport (CDG)"
+    type: "SaaS critique"
+    role: "Services cloud essentiels a l'ecosysteme"
+    services:
+      - GitHub (hebergement repos)
+      - Anthropic Claude (LLM principal)
+    frequence_usage: "eleve"
+
+  aeroport_orly:
+    nom: "Aeroport (Orly)"
+    type: "SaaS secondaire"
+    role: "Services externes mineurs"
+    services:
+      - Perplexity
+      - Notion (remplace par appflowy)
+    frequence_usage: "faible"
