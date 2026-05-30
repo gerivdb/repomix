@@ -74,6 +74,7 @@ repos:
    PLIX:         { strate: L5, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö langage video ternaire", derniere_synchro: "2026-05-29" }
    LYCOS:        { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö CodeDB+FLUENCE Zig", derniere_synchro: "2026-05-29" }
    CodeDB-E5620: { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö CodeDB Xeon E5620 Zig", derniere_synchro: "2026-05-29" }
+   REPOMIX:         { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 4 deployee — agents locaux + auto-conformite", derniere_synchro: "2026-05-30", priorite: P2 }
 
   CLIP-FACTORY:   { strate: L5, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
   TOOL-FACTORY-1: { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
@@ -101,16 +102,16 @@ repos:
 
 summary:
    total_repos_cadastre: 79
-    vague_4_deployes: 54
+    vague_4_deployes: 55
     vague_3_deployes: 0
     vague_2_deployes: 0
     vague_1_deployes: 4
     vague_0_deployes: 0
-    total_stratum_relay_deployes: 58
+    total_stratum_relay_deployes: 59
     exclus_L9_deprecated: 12
     local_only_non_github: 5
-    taux_couverture: "74% (58/79) — 92% sur 62 eligibles"
-    phase_courante: "Phase 8 COMPLETEE — 54 repos V4, v5.0.0"
+    taux_couverture: "75% (59/79) — 93% sur 63 eligibles"
+    phase_courante: "Phase 8 COMPLETEE — 55 repos V4 + REPOMIX, v5.0.0"
     phase_suivante: "Phase 9 — Audit cross-repo + ecos-source verification"
    outils:
     relay_propagator: v3.0 (auto-commit, detect_branch, upsert, batch_deploy, validate)
