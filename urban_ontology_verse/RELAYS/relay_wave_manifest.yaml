@@ -25,55 +25,55 @@ repos:
   KRONOS:         { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 4 deployee ÔÇö agents locaux + auto-conformite", derniere_synchro: "2026-05-29", priorite: P1 }
   ARGUS:          { strate: L1, vague_courante: 4, vague_cible: 4, statut: "Vague 4 deployee ÔÇö agents locaux + auto-conformite + patch auto", derniere_synchro: "2026-05-29", priorite: P0-CRITIQUE }
 
-  ONTOLOGY:     { strate: L1, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö SOT semantique ontologies", derniere_synchro: "2026-05-29" }
-   VDB:          { strate: L2, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö vector DB nomic-embed 768-dim", derniere_synchro: "2026-05-29" }
-   DATA-MINER:   { strate: L2, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö mining repos anti-patterns", derniere_synchro: "2026-05-29" }
-   WAZAA:        { strate: L2, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö orchestrateur multi-depots", derniere_synchro: "2026-05-29" }
-   TINA:         { strate: L2, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö architecture neuro-symbolique", derniere_synchro: "2026-05-29" }
+  ONTOLOGY:     { strate: L1, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö SOT semantique ontologies", derniere_synchro: "2026-05-29" }
+   VDB:          { strate: L2, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö vector DB nomic-embed 768-dim", derniere_synchro: "2026-05-29" }
+   DATA-MINER:   { strate: L2, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö mining repos anti-patterns", derniere_synchro: "2026-05-29" }
+   WAZAA:        { strate: L2, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö orchestrateur multi-depots", derniere_synchro: "2026-05-29" }
+   TINA:         { strate: L2, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö architecture neuro-symbolique", derniere_synchro: "2026-05-29" }
 
-  DevTools:               { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö SOT infra DevOps", derniere_synchro: "2026-05-29" }
-  FORGE:                  { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö CI/CD pipelines", derniere_synchro: "2026-05-29" }
-  DevTools-CLI:           { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö DevOps CLI templates", derniere_synchro: "2026-05-29" }
+  DevTools:               { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö SOT infra DevOps", derniere_synchro: "2026-05-29" }
+  FORGE:                  { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö CI/CD pipelines", derniere_synchro: "2026-05-29" }
+  DevTools-CLI:           { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö DevOps CLI templates", derniere_synchro: "2026-05-29" }
 
-  KIVA-CLI:               { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö CLI orchestrateur projets", derniere_synchro: "2026-05-29" }
-  BRAIN-CLI:              { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö CLI extraction BRAIN phi-CPS", derniere_synchro: "2026-05-29" }
-  OPENCLAW-CLI:           { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö Intent Normalization Gateway", derniere_synchro: "2026-05-29" }
-  FLUENCE-CLI:            { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö CLI orchestration cognitive", derniere_synchro: "2026-05-29" }
-  strix:                  { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö outil systeme interne", derniere_synchro: "2026-05-29" }
-  GOST:                   { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö Ghost Operations furtif", derniere_synchro: "2026-05-29" }
-   ecos-plugin-perplexity: { strate: L3, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö Perplexity plugin ECOS-CLI", derniere_synchro: "2026-05-29" }
+  KIVA-CLI:               { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö CLI orchestrateur projets", derniere_synchro: "2026-05-29" }
+  BRAIN-CLI:              { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö CLI extraction BRAIN phi-CPS", derniere_synchro: "2026-05-29" }
+  OPENCLAW-CLI:           { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö Intent Normalization Gateway", derniere_synchro: "2026-05-29" }
+  FLUENCE-CLI:            { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö CLI orchestration cognitive", derniere_synchro: "2026-05-29" }
+  strix:                  { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö outil systeme interne", derniere_synchro: "2026-05-29" }
+  GOST:                   { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö Ghost Operations furtif", derniere_synchro: "2026-05-29" }
+   ecos-plugin-perplexity: { strate: L3, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö Perplexity plugin ECOS-CLI", derniere_synchro: "2026-05-29" }
 
-   GATEWAY-MANAGER: { strate: L4, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö proxy BDCP Clapet", derniere_synchro: "2026-05-29" }
-   PULSE:           { strate: L4, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö monitoring alerting", derniere_synchro: "2026-05-29" }
-   ATLAS:           { strate: L4, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö IaC Terraform/K8s/Docker", derniere_synchro: "2026-05-29" }
-   CONTAINER-ORCHESTRATOR: { strate: L4, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö LXC/LXD native HP Z600", derniere_synchro: "2026-05-29" }
+   GATEWAY-MANAGER: { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö proxy BDCP Clapet", derniere_synchro: "2026-05-29" }
+   PULSE:           { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö monitoring alerting", derniere_synchro: "2026-05-29" }
+   ATLAS:           { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö IaC Terraform/K8s/Docker", derniere_synchro: "2026-05-29" }
+   CONTAINER-ORCHESTRATOR: { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö LXC/LXD native HP Z600", derniere_synchro: "2026-05-29" }
 
-   vsix-ai-orchestrator: { strate: L5, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö multi-agent VSCode", derniere_synchro: "2026-05-29" }
-   vscode-lm-proxy:      { strate: L5, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö proxy LM VSCode", derniere_synchro: "2026-05-29" }
+   vsix-ai-orchestrator: { strate: L5, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö multi-agent VSCode", derniere_synchro: "2026-05-29" }
+   vscode-lm-proxy:      { strate: L5, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö proxy LM VSCode", derniere_synchro: "2026-05-29" }
 
-   SKILLS:       { strate: L6, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö registre skills tripartite", derniere_synchro: "2026-05-29" }
-   BRAIN-DOCS:   { strate: L6, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö wiki BRAIN-specific", derniere_synchro: "2026-05-29" }
-   DOC-UNIV-DEV: { strate: L6, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö base R&D", derniere_synchro: "2026-05-29" }
+   SKILLS:       { strate: L6, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö registre skills tripartite", derniere_synchro: "2026-05-29" }
+   BRAIN-DOCS:   { strate: L6, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö wiki BRAIN-specific", derniere_synchro: "2026-05-29" }
+   DOC-UNIV-DEV: { strate: L6, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö base R&D", derniere_synchro: "2026-05-29" }
 
-   GeriCode:    { strate: L7, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö fork KiloCode gen code", derniere_synchro: "2026-05-29" }
-   ECOS-VISION: { strate: L7, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö visualisation ecosysteme", derniere_synchro: "2026-05-29" }
-   Gitnote:     { strate: L7, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö sync Android bridge", derniere_synchro: "2026-05-29" }
-   GERIBOOKING: { strate: L7, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö reservation booking", derniere_synchro: "2026-05-29" }
+   GeriCode:    { strate: L7, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö fork KiloCode gen code", derniere_synchro: "2026-05-29" }
+   ECOS-VISION: { strate: L7, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö visualisation ecosysteme", derniere_synchro: "2026-05-29" }
+   Gitnote:     { strate: L7, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö sync Android bridge", derniere_synchro: "2026-05-29" }
+   GERIBOOKING: { strate: L7, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö reservation booking", derniere_synchro: "2026-05-29" }
 
-   CANDIDATOR: { strate: L8, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö gestion candidatures", derniere_synchro: "2026-05-29" }
-   BATVERSE:   { strate: L8, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö cluster narratif (ne pas fusionner VERSUS)", derniere_synchro: "2026-05-29" }
-   racines:    { strate: L8, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö fondation biographique", derniere_synchro: "2026-05-29" }
-   PITCH-1:    { strate: L8, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö pitch commercial", derniere_synchro: "2026-05-29" }
-   DMR:        { strate: L8, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö utilitaire Python interne", derniere_synchro: "2026-05-29" }
+   CANDIDATOR: { strate: L8, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö gestion candidatures", derniere_synchro: "2026-05-29" }
+   BATVERSE:   { strate: L8, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö cluster narratif (ne pas fusionner VERSUS)", derniere_synchro: "2026-05-29" }
+   racines:    { strate: L8, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö fondation biographique", derniere_synchro: "2026-05-29" }
+   PITCH-1:    { strate: L8, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö pitch commercial", derniere_synchro: "2026-05-29" }
+   DMR:        { strate: L8, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö utilitaire Python interne", derniere_synchro: "2026-05-29" }
 
-   TRANSCENDANCE:      { strate: L8, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö patterns transcendantaux NEXUS", derniere_synchro: "2026-05-29" }
-   GERI-VON-DER-BITSH: { strate: L8, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö gouvernance politique", derniere_synchro: "2026-05-29" }
-   BANK-BUSTER:        { strate: L8, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö audit financier", derniere_synchro: "2026-05-29" }
+   TRANSCENDANCE:      { strate: L8, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö patterns transcendantaux NEXUS", derniere_synchro: "2026-05-29" }
+   GERI-VON-DER-BITSH: { strate: L8, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö gouvernance politique", derniere_synchro: "2026-05-29" }
+   BANK-BUSTER:        { strate: L8, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö audit financier", derniere_synchro: "2026-05-29" }
 
-   FERMI-EVER:   { strate: L4, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö GPUs NVIDIA Fermi", derniere_synchro: "2026-05-29" }
-   PLIX:         { strate: L5, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö langage video ternaire", derniere_synchro: "2026-05-29" }
-   LYCOS:        { strate: L4, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö CodeDB+FLUENCE Zig", derniere_synchro: "2026-05-29" }
-   CodeDB-E5620: { strate: L4, vague_courante: 4, vague_cible: 2, statut: "Vague 2 deployee ÔÇö CodeDB Xeon E5620 Zig", derniere_synchro: "2026-05-29" }
+   FERMI-EVER:   { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö GPUs NVIDIA Fermi", derniere_synchro: "2026-05-29" }
+   PLIX:         { strate: L5, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö langage video ternaire", derniere_synchro: "2026-05-29" }
+   LYCOS:        { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö CodeDB+FLUENCE Zig", derniere_synchro: "2026-05-29" }
+   CodeDB-E5620: { strate: L4, vague_courante: 4, vague_cible: 4, statut: "Vague 2 deployee ÔÇö CodeDB Xeon E5620 Zig", derniere_synchro: "2026-05-29" }
 
   CLIP-FACTORY:   { strate: L5, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
   TOOL-FACTORY-1: { strate: L3, vague_courante: 1, vague_cible: 1, statut: "Vague 1 deployee (DORMANT)", derniere_synchro: "2026-05-29" }
@@ -100,8 +100,7 @@ repos:
   LUKAS-PRESTATIONS: { strate: L8, statut: "LOCAL ONLY ÔÇö D:\\DO\\WEB\\TOOLS\\L3-CITIZENS\\LUKAS-PRESTATIONS" }
 
 summary:
-   total_repos_cadastre: 76
-    vague_4_deployes: 14
+   total_repos_cadastre: 79
     vague_4_deployes: 54
     vague_3_deployes: 0
     vague_2_deployes: 0
